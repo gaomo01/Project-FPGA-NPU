@@ -1,0 +1,1884 @@
+[07/19/26 14:37:06.313] [I] Quantize DType: icraft::xir::IntegerTypeNode
+[07/19/26 14:37:06.313] [I] ******************Measure Begin******************
+[07/19/26 14:37:06.313] [I] Forward Mode: image
+[07/19/26 14:37:06.313] [I] Forward Directory: ../icraft_superpoint/qtset
+[07/19/26 14:37:06.313] [I] Forward List: ../icraft_superpoint/qtset/list.txt
+[07/19/26 14:37:06.313] [I] Calibration Set Size: 8
+[07/19/26 14:37:06.313] [I] Batch Number: 1
+[07/19/26 14:37:06.313] [I] Batch Size: 8
+[07/19/26 14:37:06.313] [I] Saturation Method: kld
+[07/19/26 14:37:06.313] [I] Before ReLU: 0
+[07/19/26 14:37:06.333] [I] ******************Batch 0 Begin******************
+[07/19/26 14:37:06.482] [I] Measuring Op Id: 0, Type: icraft::xir::InputNode
+[07/19/26 14:37:06.500] [I] 	ftmp id: 0, ftmp sat: 254.96889, ftmp max: 255
+[07/19/26 14:37:06.501] [I] 	ftmp id: 0, ftmp true_min: 0, true_max: 255
+[07/19/26 14:37:06.758] [I] Measuring Op Id: 4, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:07.378] [I] 	ftmp id: 12, ftmp sat: 379.82855, ftmp max: 379.8749
+[07/19/26 14:37:07.463] [I] 	ftmp id: 12, ftmp true_min: -379.8749, true_max: 363.52487
+[07/19/26 14:37:08.237] [I] Measuring Op Id: 5, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:08.819] [I] 	ftmp id: 14, ftmp sat: 363.48053, ftmp max: 363.52487
+[07/19/26 14:37:08.896] [I] 	ftmp id: 14, ftmp true_min: -0, true_max: 363.52487
+[07/19/26 14:37:10.056] [I] Measuring Op Id: 6, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:10.641] [I] 	ftmp id: 18, ftmp sat: 185.2015, ftmp max: 185.22412
+[07/19/26 14:37:10.712] [I] 	ftmp id: 18, ftmp true_min: -142.2398, true_max: 185.22412
+[07/19/26 14:37:11.450] [I] Measuring Op Id: 7, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:12.039] [I] 	ftmp id: 20, ftmp sat: 185.2015, ftmp max: 185.22412
+[07/19/26 14:37:12.119] [I] 	ftmp id: 20, ftmp true_min: -0, true_max: 185.22412
+[07/19/26 14:37:12.642] [I] Measuring Op Id: 8, Type: icraft::xir::MaxPool2dNode
+[07/19/26 14:37:12.809] [I] 	ftmp id: 22, ftmp sat: 185.2015, ftmp max: 185.22412
+[07/19/26 14:37:12.829] [I] 	ftmp id: 22, ftmp true_min: -0, true_max: 185.22412
+[07/19/26 14:37:13.123] [I] Measuring Op Id: 9, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:13.295] [I] 	ftmp id: 26, ftmp sat: 74.7472, ftmp max: 74.756325
+[07/19/26 14:37:13.312] [I] 	ftmp id: 26, ftmp true_min: -74.756325, true_max: 66.22236
+[07/19/26 14:37:13.511] [I] Measuring Op Id: 10, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:13.673] [I] 	ftmp id: 28, ftmp sat: 66.21427, ftmp max: 66.22236
+[07/19/26 14:37:13.692] [I] 	ftmp id: 28, ftmp true_min: -0, true_max: 66.22236
+[07/19/26 14:37:13.972] [I] Measuring Op Id: 11, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:14.134] [I] 	ftmp id: 32, ftmp sat: 23.684076, ftmp max: 24.450966
+[07/19/26 14:37:14.154] [I] 	ftmp id: 32, ftmp true_min: -23.458597, true_max: 24.450966
+[07/19/26 14:37:14.356] [I] Measuring Op Id: 12, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:14.515] [I] 	ftmp id: 34, ftmp sat: 24.44798, ftmp max: 24.450966
+[07/19/26 14:37:14.534] [I] 	ftmp id: 34, ftmp true_min: -0, true_max: 24.450966
+[07/19/26 14:37:14.647] [I] Measuring Op Id: 13, Type: icraft::xir::MaxPool2dNode
+[07/19/26 14:37:14.692] [I] 	ftmp id: 36, ftmp sat: 24.44798, ftmp max: 24.450966
+[07/19/26 14:37:14.697] [I] 	ftmp id: 36, ftmp true_min: -0, true_max: 24.450966
+[07/19/26 14:37:14.833] [I] Measuring Op Id: 14, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:14.922] [I] 	ftmp id: 40, ftmp sat: 10.806274, ftmp max: 10.807593
+[07/19/26 14:37:14.932] [I] 	ftmp id: 40, ftmp true_min: -10.21309, true_max: 10.807593
+[07/19/26 14:37:15.044] [I] Measuring Op Id: 15, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:15.135] [I] 	ftmp id: 42, ftmp sat: 10.806274, ftmp max: 10.807593
+[07/19/26 14:37:15.144] [I] 	ftmp id: 42, ftmp true_min: -0, true_max: 10.807593
+[07/19/26 14:37:15.365] [I] Measuring Op Id: 16, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:15.456] [I] 	ftmp id: 46, ftmp sat: 4.4543524, ftmp max: 4.454896
+[07/19/26 14:37:15.466] [I] 	ftmp id: 46, ftmp true_min: -4.454896, true_max: 4.0704165
+[07/19/26 14:37:15.582] [I] Measuring Op Id: 17, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:15.678] [I] 	ftmp id: 48, ftmp sat: 4.0699196, ftmp max: 4.0704165
+[07/19/26 14:37:15.687] [I] 	ftmp id: 48, ftmp true_min: -0, true_max: 4.0704165
+[07/19/26 14:37:15.761] [I] Measuring Op Id: 18, Type: icraft::xir::MaxPool2dNode
+[07/19/26 14:37:15.787] [I] 	ftmp id: 50, ftmp sat: 4.0699196, ftmp max: 4.0704165
+[07/19/26 14:37:15.789] [I] 	ftmp id: 50, ftmp true_min: -0, true_max: 4.0704165
+[07/19/26 14:37:15.857] [I] Measuring Op Id: 19, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:15.884] [I] 	ftmp id: 54, ftmp sat: 1.5637996, ftmp max: 1.6144356
+[07/19/26 14:37:15.886] [I] 	ftmp id: 54, ftmp true_min: -1.6144356, true_max: 1.5285951
+[07/19/26 14:37:15.928] [I] Measuring Op Id: 20, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:15.953] [I] 	ftmp id: 56, ftmp sat: 1.5284085, ftmp max: 1.5285951
+[07/19/26 14:37:15.955] [I] 	ftmp id: 56, ftmp true_min: -0, true_max: 1.5285951
+[07/19/26 14:37:16.024] [I] Measuring Op Id: 21, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:16.047] [I] 	ftmp id: 60, ftmp sat: 0.5379752, ftmp max: 0.5553948
+[07/19/26 14:37:16.049] [I] 	ftmp id: 60, ftmp true_min: -0.5553948, true_max: 0.44901747
+[07/19/26 14:37:16.100] [I] Measuring Op Id: 22, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:16.127] [I] 	ftmp id: 62, ftmp sat: 0.4489627, ftmp max: 0.44901747
+[07/19/26 14:37:16.130] [I] 	ftmp id: 62, ftmp true_min: -0, true_max: 0.44901747
+[07/19/26 14:37:16.246] [I] Measuring Op Id: 23, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:16.291] [I] 	ftmp id: 66, ftmp sat: 0.19166052, ftmp max: 0.19786648
+[07/19/26 14:37:16.295] [I] 	ftmp id: 66, ftmp true_min: -0.19786648, true_max: 0.18751417
+[07/19/26 14:37:16.378] [I] Measuring Op Id: 24, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:16.420] [I] 	ftmp id: 68, ftmp sat: 0.1874913, ftmp max: 0.18751417
+[07/19/26 14:37:16.425] [I] 	ftmp id: 68, ftmp true_min: -0, true_max: 0.18751417
+[07/19/26 14:37:16.474] [I] Measuring Op Id: 25, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:16.486] [I] 	ftmp id: 72, ftmp sat: 0.14399941, ftmp max: 0.144017
+[07/19/26 14:37:16.487] [I] 	ftmp id: 72, ftmp true_min: -0.09673584, true_max: 0.144017
+[07/19/26 14:37:16.506] [I] Measuring Op Id: 27, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:16.519] [I] 	ftmp id: 76, ftmp sat: 0.14399941, ftmp max: 0.144017
+[07/19/26 14:37:16.521] [I] 	ftmp id: 76, ftmp true_min: -0.09673584, true_max: 0.144017
+[07/19/26 14:37:16.540] [I] Measuring Op Id: 34, Type: icraft::xir::ReshapeNode
+[07/19/26 14:37:16.553] [I] 	ftmp id: 94, ftmp sat: 0.14399941, ftmp max: 0.144017
+[07/19/26 14:37:16.554] [I] 	ftmp id: 94, ftmp true_min: -0.09673584, true_max: 0.144017
+[07/19/26 14:37:16.579] [I] Measuring Op Id: 28, Type: icraft::xir::SoftmaxNode
+[07/19/26 14:37:16.594] [I] 	ftmp id: 78, ftmp sat: 0.017640384, ftmp max: 0.017642537
+[07/19/26 14:37:16.595] [I] 	ftmp id: 78, ftmp true_min: 0.013884715, true_max: 0.017642537
+[07/19/26 14:37:16.617] [I] Measuring Op Id: 35, Type: icraft::xir::ReshapeNode
+[07/19/26 14:37:16.631] [I] 	ftmp id: 96, ftmp sat: 0.017640384, ftmp max: 0.017642537
+[07/19/26 14:37:16.632] [I] 	ftmp id: 96, ftmp true_min: 0.013884715, true_max: 0.017642537
+[07/19/26 14:37:16.652] [I] Measuring Op Id: 39, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:16.668] [I] 	ftmp id: 104, ftmp sat: 0.017640384, ftmp max: 0.017642537
+[07/19/26 14:37:16.669] [I] 	ftmp id: 104, ftmp true_min: 0.013884715, true_max: 0.017642537
+[07/19/26 14:37:16.686] [I] Measuring Op Id: 40, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:16.699] [I] 	ftmp id: 106, ftmp sat: 0.017640384, ftmp max: 0.017642537
+[07/19/26 14:37:16.700] [I] 	ftmp id: 106, ftmp true_min: 0.013884715, true_max: 0.017642537
+[07/19/26 14:37:16.718] [I] Measuring Op Id: 41, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:16.737] [I] 	ftmp id: 108, ftmp sat: 0.017640384, ftmp max: 0.017642537
+[07/19/26 14:37:16.739] [I] 	ftmp id: 108, ftmp true_min: 0.013884715, true_max: 0.017642537
+[07/19/26 14:37:16.848] [I] Measuring Op Id: 30, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:16.895] [I] 	ftmp id: 84, ftmp sat: 0.21743234, ftmp max: 0.22447279
+[07/19/26 14:37:16.900] [I] 	ftmp id: 84, ftmp true_min: -0.22447279, true_max: 0.20720395
+[07/19/26 14:37:16.979] [I] Measuring Op Id: 31, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.024] [I] 	ftmp id: 86, ftmp sat: 0.20717867, ftmp max: 0.20720395
+[07/19/26 14:37:17.029] [I] 	ftmp id: 86, ftmp true_min: -0, true_max: 0.20720395
+[07/19/26 14:37:17.111] [I] Measuring Op Id: 32, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.161] [I] 	ftmp id: 90, ftmp sat: 0.14866978, ftmp max: 0.14868793
+[07/19/26 14:37:17.166] [I] 	ftmp id: 90, ftmp true_min: -0.13488644, true_max: 0.14868793
+[07/19/26 14:37:17.178] [I] ******************Batch 0 End******************
+[07/19/26 14:37:17.179] [I] ******************Measure End******************
+[07/19/26 14:37:17.180] [I] 	ftmp id: 0, default normratio = 0
+[07/19/26 14:37:17.180] [I] 	ftmp id: 12, calculate normratio = 2.8620515
+[07/19/26 14:37:17.180] [I] 	ftmp id: 14, calculate normratio = 2.8620515
+[07/19/26 14:37:17.180] [I] 	ftmp id: 18, calculate normratio = 1.4582796
+[07/19/26 14:37:17.180] [I] 	ftmp id: 20, calculate normratio = 1.4582796
+[07/19/26 14:37:17.180] [I] 	ftmp id: 22, calculate normratio = 1.4582796
+[07/19/26 14:37:17.180] [I] 	ftmp id: 26, calculate normratio = 0.5213722
+[07/19/26 14:37:17.180] [I] 	ftmp id: 28, calculate normratio = 0.5213722
+[07/19/26 14:37:17.180] [I] 	ftmp id: 32, calculate normratio = 0.19250378
+[07/19/26 14:37:17.180] [I] 	ftmp id: 34, calculate normratio = 0.19250378
+[07/19/26 14:37:17.180] [I] 	ftmp id: 36, calculate normratio = 0.19250378
+[07/19/26 14:37:17.180] [I] 	ftmp id: 40, calculate normratio = 0.085088775
+[07/19/26 14:37:17.180] [I] 	ftmp id: 42, calculate normratio = 0.085088775
+[07/19/26 14:37:17.180] [I] 	ftmp id: 46, calculate normratio = 0.032046612
+[07/19/26 14:37:17.180] [I] 	ftmp id: 48, calculate normratio = 0.032046612
+[07/19/26 14:37:17.180] [I] 	ftmp id: 50, calculate normratio = 0.032046612
+[07/19/26 14:37:17.180] [I] 	ftmp id: 54, calculate normratio = 0.012034712
+[07/19/26 14:37:17.180] [I] 	ftmp id: 56, calculate normratio = 0.012034712
+[07/19/26 14:37:17.180] [I] 	ftmp id: 60, calculate normratio = 0.0035351394
+[07/19/26 14:37:17.180] [I] 	ftmp id: 62, calculate normratio = 0.0035351394
+[07/19/26 14:37:17.180] [I] 	ftmp id: 66, calculate normratio = 0.0014763094
+[07/19/26 14:37:17.180] [I] 	ftmp id: 68, calculate normratio = 0.0014763094
+[07/19/26 14:37:17.180] [I] 	ftmp id: 72, calculate normratio = 0.0011338537
+[07/19/26 14:37:17.180] [I] 	ftmp id: 76, calculate normratio = 0.0011338537
+[07/19/26 14:37:17.180] [I] 	ftmp id: 94, calculate normratio = 0.0011338537
+[07/19/26 14:37:17.180] [I] 	ftmp id: 78, calculate normratio = 0.00013890066
+[07/19/26 14:37:17.180] [I] 	ftmp id: 96, calculate normratio = 0.00013890066
+[07/19/26 14:37:17.180] [I] 	ftmp id: 104, calculate normratio = 0.00013890066
+[07/19/26 14:37:17.180] [I] 	ftmp id: 106, calculate normratio = 0.00013890066
+[07/19/26 14:37:17.180] [I] 	ftmp id: 108, calculate normratio = 0.00013890066
+[07/19/26 14:37:17.180] [I] 	ftmp id: 84, calculate normratio = 0.0016313281
+[07/19/26 14:37:17.180] [I] 	ftmp id: 86, calculate normratio = 0.0016313281
+[07/19/26 14:37:17.180] [I] 	ftmp id: 90, calculate normratio = 0.0011706282
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 0, Type: icraft::xir::InputNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 0, default normratio = 0
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 49, Type: icraft::xir::CastNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 128, default normratio = 1
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 50, Type: icraft::xir::CastNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 130, calculate normratio = 2.007629
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 4, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 12, calculate normratio = 2.8620515
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 5, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 5,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 14, pass normratio from ftmp 12
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 6, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 18, calculate normratio = 1.4582796
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 7, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 7,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 20, pass normratio from ftmp 18
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 8, Type: icraft::xir::MaxPool2dNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 8,optype:icraft::xir::MaxPool2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 22, pass normratio from ftmp 20
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 9, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 26, calculate normratio = 0.5213722
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 10, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 10,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 28, pass normratio from ftmp 26
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 11, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 32, calculate normratio = 0.19250378
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 12, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 12,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 34, pass normratio from ftmp 32
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 13, Type: icraft::xir::MaxPool2dNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 13,optype:icraft::xir::MaxPool2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 36, pass normratio from ftmp 34
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 14, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 40, calculate normratio = 0.085088775
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 15, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 15,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 42, pass normratio from ftmp 40
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 16, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 46, calculate normratio = 0.032046612
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 17, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 17,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 48, pass normratio from ftmp 46
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 18, Type: icraft::xir::MaxPool2dNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 18,optype:icraft::xir::MaxPool2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 50, pass normratio from ftmp 48
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 19, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 54, calculate normratio = 0.012034712
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 20, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 20,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 56, pass normratio from ftmp 54
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 21, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 60, calculate normratio = 0.0035351394
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 22, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	 PassNormratio from opid: -1 to op : 22,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.180] [I] 	ftmp id: 62, pass normratio from ftmp 60
+[07/19/26 14:37:17.180] [I] Calculate Scale Op Id: 23, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 66, calculate normratio = 0.0014763094
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 24, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.181] [I] 	 PassNormratio from opid: -1 to op : 24,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 68, pass normratio from ftmp 66
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 25, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 72, calculate normratio = 0.0011338537
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 27, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:17.181] [I] 	 ReshapeNormratio from opid: -1 to op : 27,optype:icraft::xir::TransposeNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 76, pass normratio from ftmp 72
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 34, Type: icraft::xir::ReshapeNode
+[07/19/26 14:37:17.181] [I] 	 ReshapeNormratio from opid: -1 to op : 34,optype:icraft::xir::ReshapeNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 94, pass normratio from ftmp 76
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 28, Type: icraft::xir::SoftmaxNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 78, calculate normratio = 0.00013890066
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 35, Type: icraft::xir::ReshapeNode
+[07/19/26 14:37:17.181] [I] 	 ReshapeNormratio from opid: -1 to op : 35,optype:icraft::xir::ReshapeNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 96, pass normratio from ftmp 78
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 39, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:17.181] [I] 	 ReshapeNormratio from opid: -1 to op : 39,optype:icraft::xir::TransposeNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 104, pass normratio from ftmp 96
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 40, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:17.181] [I] 	 ReshapeNormratio from opid: -1 to op : 40,optype:icraft::xir::TransposeNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 106, pass normratio from ftmp 104
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 41, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:17.181] [I] 	 ReshapeNormratio from opid: -1 to op : 41,optype:icraft::xir::TransposeNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 108, pass normratio from ftmp 106
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 30, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 84, calculate normratio = 0.0016313281
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 31, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.181] [I] 	 PassNormratio from opid: -1 to op : 31,optype:icraft::xir::ReLUNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 86, pass normratio from ftmp 84
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 32, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 90, calculate normratio = 0.0011706282
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 51, Type: icraft::xir::CastNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 132, default normratio = 1
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 52, Type: icraft::xir::CastNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 134, default normratio = 1
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 53, Type: icraft::xir::CastNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 136, default normratio = 1
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 54, Type: icraft::xir::CastNode
+[07/19/26 14:37:17.181] [I] 	ftmp id: 138, default normratio = 1
+[07/19/26 14:37:17.181] [I] Calculate Scale Op Id: 33, Type: icraft::xir::OutputNode
+[07/19/26 14:37:17.181] [I] Quantizing Op Id: 0, Type: icraft::xir::InputNode
+[07/19/26 14:37:17.181] [I] Quantizing Op Id: 49, Type: icraft::xir::CastNode
+[07/19/26 14:37:17.181] [I] Quantizing Op Id: 50, Type: icraft::xir::CastNode
+[07/19/26 14:37:17.181] [I] Quantizing Op Id: 4, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.184] [I] 	Measuring Weight: channel: 1, sat: 0.33037716, max: 0.33041748
+[07/19/26 14:37:17.186] [I] 	Measuring Weight: channel: 2, sat: 0.328224, max: 0.32826406
+[07/19/26 14:37:17.188] [I] 	Measuring Weight: channel: 3, sat: 0.31343928, max: 0.31347752
+[07/19/26 14:37:17.190] [I] 	Measuring Weight: channel: 4, sat: 0.27068236, max: 0.2707154
+[07/19/26 14:37:17.193] [I] 	Measuring Weight: channel: 5, sat: 0.3095707, max: 0.3096085
+[07/19/26 14:37:17.195] [I] 	Measuring Weight: channel: 6, sat: 0.23765332, max: 0.23768231
+[07/19/26 14:37:17.197] [I] 	Measuring Weight: channel: 7, sat: 0.33192393, max: 0.33196446
+[07/19/26 14:37:17.200] [I] 	Measuring Weight: channel: 8, sat: 0.26363537, max: 0.26366752
+[07/19/26 14:37:17.202] [I] 	Measuring Weight: channel: 9, sat: 0.29257718, max: 0.29261288
+[07/19/26 14:37:17.204] [I] 	Measuring Weight: channel: 10, sat: 0.32381395, max: 0.32385346
+[07/19/26 14:37:17.206] [I] 	Measuring Weight: channel: 11, sat: 0.22662927, max: 0.22665694
+[07/19/26 14:37:17.208] [I] 	Measuring Weight: channel: 12, sat: 0.25553995, max: 0.25557113
+[07/19/26 14:37:17.210] [I] 	Measuring Weight: channel: 13, sat: 0.18237753, max: 0.1823998
+[07/19/26 14:37:17.212] [I] 	Measuring Weight: channel: 14, sat: 0.33117175, max: 0.3312122
+[07/19/26 14:37:17.213] [I] 	Measuring Weight: channel: 15, sat: 0.3000527, max: 0.30008933
+[07/19/26 14:37:17.215] [I] 	Measuring Weight: channel: 16, sat: 0.24650835, max: 0.24653843
+[07/19/26 14:37:17.216] [I] 	Measuring Weight: channel: 17, sat: 0.29084542, max: 0.29088092
+[07/19/26 14:37:17.218] [I] 	Measuring Weight: channel: 18, sat: 0.32752374, max: 0.32756373
+[07/19/26 14:37:17.220] [I] 	Measuring Weight: channel: 19, sat: 0.2860605, max: 0.2860954
+[07/19/26 14:37:17.221] [I] 	Measuring Weight: channel: 20, sat: 0.27727664, max: 0.27731046
+[07/19/26 14:37:17.223] [I] 	Measuring Weight: channel: 21, sat: 0.32731757, max: 0.3273575
+[07/19/26 14:37:17.224] [I] 	Measuring Weight: channel: 22, sat: 0.23452474, max: 0.23455337
+[07/19/26 14:37:17.226] [I] 	Measuring Weight: channel: 23, sat: 0.32298002, max: 0.32301944
+[07/19/26 14:37:17.228] [I] 	Measuring Weight: channel: 24, sat: 0.33084357, max: 0.33088395
+[07/19/26 14:37:17.229] [I] 	Measuring Weight: channel: 25, sat: 0.30869338, max: 0.30873108
+[07/19/26 14:37:17.231] [I] 	Measuring Weight: channel: 26, sat: 0.32654217, max: 0.32658204
+[07/19/26 14:37:17.232] [I] 	Measuring Weight: channel: 27, sat: 0.31316414, max: 0.31320235
+[07/19/26 14:37:17.234] [I] 	Measuring Weight: channel: 28, sat: 0.28715572, max: 0.28719077
+[07/19/26 14:37:17.236] [I] 	Measuring Weight: channel: 29, sat: 0.3190373, max: 0.3190762
+[07/19/26 14:37:17.238] [I] 	Measuring Weight: channel: 30, sat: 0.26281828, max: 0.26285037
+[07/19/26 14:37:17.239] [I] 	Measuring Weight: channel: 31, sat: 0.31276286, max: 0.31280103
+[07/19/26 14:37:17.241] [I] 	Measuring Weight: channel: 32, sat: 0.2789195, max: 0.27895355
+[07/19/26 14:37:17.243] [I] 	Measuring Weight: channel: 33, sat: 0.33172694, max: 0.3317674
+[07/19/26 14:37:17.244] [I] 	Measuring Weight: channel: 34, sat: 0.28331035, max: 0.28334495
+[07/19/26 14:37:17.246] [I] 	Measuring Weight: channel: 35, sat: 0.31875685, max: 0.31879577
+[07/19/26 14:37:17.248] [I] 	Measuring Weight: channel: 36, sat: 0.3256487, max: 0.32568842
+[07/19/26 14:37:17.250] [I] 	Measuring Weight: channel: 37, sat: 0.31424096, max: 0.31427932
+[07/19/26 14:37:17.252] [I] 	Measuring Weight: channel: 38, sat: 0.278851, max: 0.27888504
+[07/19/26 14:37:17.253] [I] 	Measuring Weight: channel: 39, sat: 0.32916594, max: 0.3292061
+[07/19/26 14:37:17.255] [I] 	Measuring Weight: channel: 40, sat: 0.31430483, max: 0.31434318
+[07/19/26 14:37:17.257] [I] 	Measuring Weight: channel: 41, sat: 0.3146662, max: 0.3147046
+[07/19/26 14:37:17.259] [I] 	Measuring Weight: channel: 42, sat: 0.3011201, max: 0.30115685
+[07/19/26 14:37:17.261] [I] 	Measuring Weight: channel: 43, sat: 0.31061706, max: 0.31065497
+[07/19/26 14:37:17.263] [I] 	Measuring Weight: channel: 44, sat: 0.32201394, max: 0.32205325
+[07/19/26 14:37:17.265] [I] 	Measuring Weight: channel: 45, sat: 0.3085704, max: 0.30860808
+[07/19/26 14:37:17.266] [I] 	Measuring Weight: channel: 46, sat: 0.32806635, max: 0.32810637
+[07/19/26 14:37:17.268] [I] 	Measuring Weight: channel: 47, sat: 0.28030434, max: 0.28033856
+[07/19/26 14:37:17.270] [I] 	Measuring Weight: channel: 48, sat: 0.31724244, max: 0.3172812
+[07/19/26 14:37:17.272] [I] 	Measuring Weight: channel: 49, sat: 0.31678018, max: 0.31681886
+[07/19/26 14:37:17.273] [I] 	Measuring Weight: channel: 50, sat: 0.32149962, max: 0.32153884
+[07/19/26 14:37:17.275] [I] 	Measuring Weight: channel: 51, sat: 0.28002435, max: 0.28005853
+[07/19/26 14:37:17.277] [I] 	Measuring Weight: channel: 52, sat: 0.28222924, max: 0.2822637
+[07/19/26 14:37:17.278] [I] 	Measuring Weight: channel: 53, sat: 0.33171862, max: 0.3317591
+[07/19/26 14:37:17.280] [I] 	Measuring Weight: channel: 54, sat: 0.27638167, max: 0.2764154
+[07/19/26 14:37:17.281] [I] 	Measuring Weight: channel: 55, sat: 0.30516818, max: 0.30520543
+[07/19/26 14:37:17.283] [I] 	Measuring Weight: channel: 56, sat: 0.30036104, max: 0.3003977
+[07/19/26 14:37:17.285] [I] 	Measuring Weight: channel: 57, sat: 0.30013508, max: 0.3001717
+[07/19/26 14:37:17.286] [I] 	Measuring Weight: channel: 58, sat: 0.32448447, max: 0.32452407
+[07/19/26 14:37:17.288] [I] 	Measuring Weight: channel: 59, sat: 0.31838086, max: 0.31841972
+[07/19/26 14:37:17.290] [I] 	Measuring Weight: channel: 60, sat: 0.32400754, max: 0.3240471
+[07/19/26 14:37:17.291] [I] 	Measuring Weight: channel: 61, sat: 0.33164686, max: 0.33168736
+[07/19/26 14:37:17.293] [I] 	Measuring Weight: channel: 62, sat: 0.21904492, max: 0.21907166
+[07/19/26 14:37:17.295] [I] 	Measuring Weight: channel: 63, sat: 0.2861077, max: 0.28614262
+[07/19/26 14:37:17.297] [I] 	Measuring Weight: channel: 64, sat: 0.30643165, max: 0.30646905
+[07/19/26 14:37:17.299] [I] Quantizing Op Id: 5, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.299] [I] Quantizing Op Id: 6, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.302] [I] 	Measuring Weight: channel: 1, sat: 0.04165894, max: 0.041664027
+[07/19/26 14:37:17.304] [I] 	Measuring Weight: channel: 2, sat: 0.04163205, max: 0.04163713
+[07/19/26 14:37:17.306] [I] 	Measuring Weight: channel: 3, sat: 0.04151801, max: 0.04152308
+[07/19/26 14:37:17.308] [I] 	Measuring Weight: channel: 4, sat: 0.04141247, max: 0.041417524
+[07/19/26 14:37:17.310] [I] 	Measuring Weight: channel: 5, sat: 0.04165484, max: 0.041659925
+[07/19/26 14:37:17.312] [I] 	Measuring Weight: channel: 6, sat: 0.041581217, max: 0.041586295
+[07/19/26 14:37:17.314] [I] 	Measuring Weight: channel: 7, sat: 0.041616414, max: 0.04162149
+[07/19/26 14:37:17.316] [I] 	Measuring Weight: channel: 8, sat: 0.041615028, max: 0.04162011
+[07/19/26 14:37:17.318] [I] 	Measuring Weight: channel: 9, sat: 0.041642815, max: 0.0416479
+[07/19/26 14:37:17.321] [I] 	Measuring Weight: channel: 10, sat: 0.041518133, max: 0.041523203
+[07/19/26 14:37:17.323] [I] 	Measuring Weight: channel: 11, sat: 0.041614573, max: 0.041619655
+[07/19/26 14:37:17.325] [I] 	Measuring Weight: channel: 12, sat: 0.04163807, max: 0.04164315
+[07/19/26 14:37:17.327] [I] 	Measuring Weight: channel: 13, sat: 0.041639782, max: 0.041644868
+[07/19/26 14:37:17.329] [I] 	Measuring Weight: channel: 14, sat: 0.04166046, max: 0.041665547
+[07/19/26 14:37:17.332] [I] 	Measuring Weight: channel: 15, sat: 0.041590683, max: 0.041595757
+[07/19/26 14:37:17.334] [I] 	Measuring Weight: channel: 16, sat: 0.04142212, max: 0.041427176
+[07/19/26 14:37:17.336] [I] 	Measuring Weight: channel: 17, sat: 0.041596465, max: 0.041601542
+[07/19/26 14:37:17.338] [I] 	Measuring Weight: channel: 18, sat: 0.041655652, max: 0.041660737
+[07/19/26 14:37:17.340] [I] 	Measuring Weight: channel: 19, sat: 0.041606285, max: 0.041611362
+[07/19/26 14:37:17.342] [I] 	Measuring Weight: channel: 20, sat: 0.04157732, max: 0.041582394
+[07/19/26 14:37:17.345] [I] 	Measuring Weight: channel: 21, sat: 0.041651186, max: 0.041656267
+[07/19/26 14:37:17.347] [I] 	Measuring Weight: channel: 22, sat: 0.041640475, max: 0.04164556
+[07/19/26 14:37:17.349] [I] 	Measuring Weight: channel: 23, sat: 0.04131849, max: 0.041323535
+[07/19/26 14:37:17.352] [I] 	Measuring Weight: channel: 24, sat: 0.04148248, max: 0.04148754
+[07/19/26 14:37:17.354] [I] 	Measuring Weight: channel: 25, sat: 0.04152353, max: 0.0415286
+[07/19/26 14:37:17.356] [I] 	Measuring Weight: channel: 26, sat: 0.04160227, max: 0.041607346
+[07/19/26 14:37:17.359] [I] 	Measuring Weight: channel: 27, sat: 0.041599907, max: 0.041604985
+[07/19/26 14:37:17.361] [I] 	Measuring Weight: channel: 28, sat: 0.041642934, max: 0.04164802
+[07/19/26 14:37:17.363] [I] 	Measuring Weight: channel: 29, sat: 0.04155042, max: 0.041555494
+[07/19/26 14:37:17.366] [I] 	Measuring Weight: channel: 30, sat: 0.041647702, max: 0.041652784
+[07/19/26 14:37:17.368] [I] 	Measuring Weight: channel: 31, sat: 0.04160364, max: 0.041608717
+[07/19/26 14:37:17.371] [I] 	Measuring Weight: channel: 32, sat: 0.041594896, max: 0.041599974
+[07/19/26 14:37:17.373] [I] 	Measuring Weight: channel: 33, sat: 0.041533474, max: 0.041538544
+[07/19/26 14:37:17.376] [I] 	Measuring Weight: channel: 34, sat: 0.041617922, max: 0.041623
+[07/19/26 14:37:17.379] [I] 	Measuring Weight: channel: 35, sat: 0.0416437, max: 0.041648787
+[07/19/26 14:37:17.382] [I] 	Measuring Weight: channel: 36, sat: 0.041329183, max: 0.041334227
+[07/19/26 14:37:17.384] [I] 	Measuring Weight: channel: 37, sat: 0.04161228, max: 0.04161736
+[07/19/26 14:37:17.387] [I] 	Measuring Weight: channel: 38, sat: 0.04157052, max: 0.041575592
+[07/19/26 14:37:17.389] [I] 	Measuring Weight: channel: 39, sat: 0.041586403, max: 0.041591477
+[07/19/26 14:37:17.392] [I] 	Measuring Weight: channel: 40, sat: 0.04163336, max: 0.04163844
+[07/19/26 14:37:17.395] [I] 	Measuring Weight: channel: 41, sat: 0.041517787, max: 0.041522857
+[07/19/26 14:37:17.397] [I] 	Measuring Weight: channel: 42, sat: 0.041556597, max: 0.041561667
+[07/19/26 14:37:17.399] [I] 	Measuring Weight: channel: 43, sat: 0.04166124, max: 0.041666325
+[07/19/26 14:37:17.401] [I] 	Measuring Weight: channel: 44, sat: 0.04164002, max: 0.041645106
+[07/19/26 14:37:17.403] [I] 	Measuring Weight: channel: 45, sat: 0.04164812, max: 0.0416532
+[07/19/26 14:37:17.406] [I] 	Measuring Weight: channel: 46, sat: 0.041618705, max: 0.041623782
+[07/19/26 14:37:17.408] [I] 	Measuring Weight: channel: 47, sat: 0.041555416, max: 0.041560486
+[07/19/26 14:37:17.410] [I] 	Measuring Weight: channel: 48, sat: 0.0416546, max: 0.041659687
+[07/19/26 14:37:17.412] [I] 	Measuring Weight: channel: 49, sat: 0.04161689, max: 0.04162197
+[07/19/26 14:37:17.414] [I] 	Measuring Weight: channel: 50, sat: 0.04165022, max: 0.041655302
+[07/19/26 14:37:17.417] [I] 	Measuring Weight: channel: 51, sat: 0.041524887, max: 0.041529953
+[07/19/26 14:37:17.419] [I] 	Measuring Weight: channel: 52, sat: 0.041577425, max: 0.0415825
+[07/19/26 14:37:17.421] [I] 	Measuring Weight: channel: 53, sat: 0.041237373, max: 0.041242406
+[07/19/26 14:37:17.423] [I] 	Measuring Weight: channel: 54, sat: 0.041422978, max: 0.041428033
+[07/19/26 14:37:17.425] [I] 	Measuring Weight: channel: 55, sat: 0.041660804, max: 0.04166589
+[07/19/26 14:37:17.427] [I] 	Measuring Weight: channel: 56, sat: 0.041652486, max: 0.041657567
+[07/19/26 14:37:17.429] [I] 	Measuring Weight: channel: 57, sat: 0.041592356, max: 0.04159743
+[07/19/26 14:37:17.431] [I] 	Measuring Weight: channel: 58, sat: 0.041610066, max: 0.041615147
+[07/19/26 14:37:17.433] [I] 	Measuring Weight: channel: 59, sat: 0.041619588, max: 0.041624665
+[07/19/26 14:37:17.435] [I] 	Measuring Weight: channel: 60, sat: 0.04162, max: 0.04162508
+[07/19/26 14:37:17.437] [I] 	Measuring Weight: channel: 61, sat: 0.041587885, max: 0.04159296
+[07/19/26 14:37:17.439] [I] 	Measuring Weight: channel: 62, sat: 0.041548014, max: 0.041553088
+[07/19/26 14:37:17.441] [I] 	Measuring Weight: channel: 63, sat: 0.041603375, max: 0.041608453
+[07/19/26 14:37:17.443] [I] 	Measuring Weight: channel: 64, sat: 0.04161502, max: 0.0416201
+[07/19/26 14:37:17.443] [I] Quantizing Op Id: 7, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.443] [I] Quantizing Op Id: 8, Type: icraft::xir::MaxPool2dNode
+[07/19/26 14:37:17.443] [I] Quantizing Op Id: 9, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.445] [I] 	Measuring Weight: channel: 1, sat: 0.041638132, max: 0.041643213
+[07/19/26 14:37:17.448] [I] 	Measuring Weight: channel: 2, sat: 0.041627944, max: 0.041633025
+[07/19/26 14:37:17.450] [I] 	Measuring Weight: channel: 3, sat: 0.04164903, max: 0.04165411
+[07/19/26 14:37:17.453] [I] 	Measuring Weight: channel: 4, sat: 0.041607864, max: 0.04161294
+[07/19/26 14:37:17.457] [I] 	Measuring Weight: channel: 5, sat: 0.04162738, max: 0.041632462
+[07/19/26 14:37:17.462] [I] 	Measuring Weight: channel: 6, sat: 0.041362785, max: 0.041367833
+[07/19/26 14:37:17.464] [I] 	Measuring Weight: channel: 7, sat: 0.04158298, max: 0.041588057
+[07/19/26 14:37:17.466] [I] 	Measuring Weight: channel: 8, sat: 0.041462258, max: 0.04146732
+[07/19/26 14:37:17.468] [I] 	Measuring Weight: channel: 9, sat: 0.04162351, max: 0.04162859
+[07/19/26 14:37:17.470] [I] 	Measuring Weight: channel: 10, sat: 0.041622605, max: 0.041627683
+[07/19/26 14:37:17.472] [I] 	Measuring Weight: channel: 11, sat: 0.041655213, max: 0.041660298
+[07/19/26 14:37:17.475] [I] 	Measuring Weight: channel: 12, sat: 0.041497536, max: 0.0415026
+[07/19/26 14:37:17.480] [I] 	Measuring Weight: channel: 13, sat: 0.041654617, max: 0.0416597
+[07/19/26 14:37:17.483] [I] 	Measuring Weight: channel: 14, sat: 0.04159488, max: 0.04159996
+[07/19/26 14:37:17.486] [I] 	Measuring Weight: channel: 15, sat: 0.041640542, max: 0.041645627
+[07/19/26 14:37:17.488] [I] 	Measuring Weight: channel: 16, sat: 0.041535467, max: 0.041540537
+[07/19/26 14:37:17.490] [I] 	Measuring Weight: channel: 17, sat: 0.041638263, max: 0.041643344
+[07/19/26 14:37:17.493] [I] 	Measuring Weight: channel: 18, sat: 0.041352943, max: 0.04135799
+[07/19/26 14:37:17.495] [I] 	Measuring Weight: channel: 19, sat: 0.041648097, max: 0.04165318
+[07/19/26 14:37:17.497] [I] 	Measuring Weight: channel: 20, sat: 0.0416519, max: 0.041656982
+[07/19/26 14:37:17.499] [I] 	Measuring Weight: channel: 21, sat: 0.041642487, max: 0.041647572
+[07/19/26 14:37:17.501] [I] 	Measuring Weight: channel: 22, sat: 0.041640677, max: 0.04164576
+[07/19/26 14:37:17.503] [I] 	Measuring Weight: channel: 23, sat: 0.041641228, max: 0.041646313
+[07/19/26 14:37:17.506] [I] 	Measuring Weight: channel: 24, sat: 0.041607328, max: 0.041612405
+[07/19/26 14:37:17.508] [I] 	Measuring Weight: channel: 25, sat: 0.04151842, max: 0.04152349
+[07/19/26 14:37:17.511] [I] 	Measuring Weight: channel: 26, sat: 0.041650865, max: 0.041655947
+[07/19/26 14:37:17.513] [I] 	Measuring Weight: channel: 27, sat: 0.04148539, max: 0.041490454
+[07/19/26 14:37:17.516] [I] 	Measuring Weight: channel: 28, sat: 0.04147493, max: 0.041479994
+[07/19/26 14:37:17.519] [I] 	Measuring Weight: channel: 29, sat: 0.041631553, max: 0.041636635
+[07/19/26 14:37:17.521] [I] 	Measuring Weight: channel: 30, sat: 0.041645292, max: 0.041650377
+[07/19/26 14:37:17.524] [I] 	Measuring Weight: channel: 31, sat: 0.04158363, max: 0.04158871
+[07/19/26 14:37:17.526] [I] 	Measuring Weight: channel: 32, sat: 0.04152903, max: 0.041534096
+[07/19/26 14:37:17.529] [I] 	Measuring Weight: channel: 33, sat: 0.041621473, max: 0.04162655
+[07/19/26 14:37:17.531] [I] 	Measuring Weight: channel: 34, sat: 0.04147409, max: 0.04147915
+[07/19/26 14:37:17.534] [I] 	Measuring Weight: channel: 35, sat: 0.041590277, max: 0.04159535
+[07/19/26 14:37:17.536] [I] 	Measuring Weight: channel: 36, sat: 0.04148533, max: 0.04149039
+[07/19/26 14:37:17.538] [I] 	Measuring Weight: channel: 37, sat: 0.041598395, max: 0.041603472
+[07/19/26 14:37:17.541] [I] 	Measuring Weight: channel: 38, sat: 0.04161703, max: 0.041622106
+[07/19/26 14:37:17.543] [I] 	Measuring Weight: channel: 39, sat: 0.041464347, max: 0.041469406
+[07/19/26 14:37:17.545] [I] 	Measuring Weight: channel: 40, sat: 0.04163092, max: 0.041636
+[07/19/26 14:37:17.547] [I] 	Measuring Weight: channel: 41, sat: 0.04160682, max: 0.0416119
+[07/19/26 14:37:17.550] [I] 	Measuring Weight: channel: 42, sat: 0.04163883, max: 0.041643914
+[07/19/26 14:37:17.552] [I] 	Measuring Weight: channel: 43, sat: 0.04144324, max: 0.0414483
+[07/19/26 14:37:17.554] [I] 	Measuring Weight: channel: 44, sat: 0.04160741, max: 0.041612487
+[07/19/26 14:37:17.556] [I] 	Measuring Weight: channel: 45, sat: 0.04161557, max: 0.041620653
+[07/19/26 14:37:17.558] [I] 	Measuring Weight: channel: 46, sat: 0.041620016, max: 0.041625094
+[07/19/26 14:37:17.560] [I] 	Measuring Weight: channel: 47, sat: 0.041658126, max: 0.04166321
+[07/19/26 14:37:17.561] [I] 	Measuring Weight: channel: 48, sat: 0.04148899, max: 0.041494057
+[07/19/26 14:37:17.563] [I] 	Measuring Weight: channel: 49, sat: 0.041602843, max: 0.04160792
+[07/19/26 14:37:17.565] [I] 	Measuring Weight: channel: 50, sat: 0.041471396, max: 0.04147646
+[07/19/26 14:37:17.567] [I] 	Measuring Weight: channel: 51, sat: 0.041656032, max: 0.041661117
+[07/19/26 14:37:17.569] [I] 	Measuring Weight: channel: 52, sat: 0.04155444, max: 0.041559514
+[07/19/26 14:37:17.571] [I] 	Measuring Weight: channel: 53, sat: 0.041610666, max: 0.041615747
+[07/19/26 14:37:17.573] [I] 	Measuring Weight: channel: 54, sat: 0.041620374, max: 0.04162545
+[07/19/26 14:37:17.574] [I] 	Measuring Weight: channel: 55, sat: 0.041556984, max: 0.041562054
+[07/19/26 14:37:17.576] [I] 	Measuring Weight: channel: 56, sat: 0.041655924, max: 0.04166101
+[07/19/26 14:37:17.579] [I] 	Measuring Weight: channel: 57, sat: 0.04162788, max: 0.04163296
+[07/19/26 14:37:17.581] [I] 	Measuring Weight: channel: 58, sat: 0.041646227, max: 0.041651312
+[07/19/26 14:37:17.583] [I] 	Measuring Weight: channel: 59, sat: 0.041435115, max: 0.04144017
+[07/19/26 14:37:17.585] [I] 	Measuring Weight: channel: 60, sat: 0.041641533, max: 0.04164662
+[07/19/26 14:37:17.587] [I] 	Measuring Weight: channel: 61, sat: 0.041588787, max: 0.04159386
+[07/19/26 14:37:17.589] [I] 	Measuring Weight: channel: 62, sat: 0.041568004, max: 0.041573077
+[07/19/26 14:37:17.591] [I] 	Measuring Weight: channel: 63, sat: 0.041475408, max: 0.04148047
+[07/19/26 14:37:17.593] [I] 	Measuring Weight: channel: 64, sat: 0.04157072, max: 0.041575793
+[07/19/26 14:37:17.593] [I] Quantizing Op Id: 10, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.593] [I] Quantizing Op Id: 11, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.596] [I] 	Measuring Weight: channel: 1, sat: 0.04165675, max: 0.041661836
+[07/19/26 14:37:17.598] [I] 	Measuring Weight: channel: 2, sat: 0.04161941, max: 0.041624486
+[07/19/26 14:37:17.600] [I] 	Measuring Weight: channel: 3, sat: 0.041553684, max: 0.041558757
+[07/19/26 14:37:17.602] [I] 	Measuring Weight: channel: 4, sat: 0.041655395, max: 0.04166048
+[07/19/26 14:37:17.604] [I] 	Measuring Weight: channel: 5, sat: 0.041567665, max: 0.04157274
+[07/19/26 14:37:17.606] [I] 	Measuring Weight: channel: 6, sat: 0.04165536, max: 0.041660447
+[07/19/26 14:37:17.609] [I] 	Measuring Weight: channel: 7, sat: 0.041557163, max: 0.041562233
+[07/19/26 14:37:17.611] [I] 	Measuring Weight: channel: 8, sat: 0.041652676, max: 0.041657757
+[07/19/26 14:37:17.613] [I] 	Measuring Weight: channel: 9, sat: 0.041518927, max: 0.041523997
+[07/19/26 14:37:17.616] [I] 	Measuring Weight: channel: 10, sat: 0.04164406, max: 0.041649144
+[07/19/26 14:37:17.618] [I] 	Measuring Weight: channel: 11, sat: 0.04163119, max: 0.04163627
+[07/19/26 14:37:17.621] [I] 	Measuring Weight: channel: 12, sat: 0.041634034, max: 0.041639116
+[07/19/26 14:37:17.623] [I] 	Measuring Weight: channel: 13, sat: 0.041505832, max: 0.0415109
+[07/19/26 14:37:17.625] [I] 	Measuring Weight: channel: 14, sat: 0.04148203, max: 0.041487094
+[07/19/26 14:37:17.628] [I] 	Measuring Weight: channel: 15, sat: 0.041512817, max: 0.041517884
+[07/19/26 14:37:17.630] [I] 	Measuring Weight: channel: 16, sat: 0.04165115, max: 0.04165623
+[07/19/26 14:37:17.633] [I] 	Measuring Weight: channel: 17, sat: 0.041577384, max: 0.041582458
+[07/19/26 14:37:17.635] [I] 	Measuring Weight: channel: 18, sat: 0.041579034, max: 0.04158411
+[07/19/26 14:37:17.637] [I] 	Measuring Weight: channel: 19, sat: 0.04166036, max: 0.041665446
+[07/19/26 14:37:17.639] [I] 	Measuring Weight: channel: 20, sat: 0.041598465, max: 0.041603543
+[07/19/26 14:37:17.642] [I] 	Measuring Weight: channel: 21, sat: 0.041648272, max: 0.041653354
+[07/19/26 14:37:17.644] [I] 	Measuring Weight: channel: 22, sat: 0.041602783, max: 0.04160786
+[07/19/26 14:37:17.648] [I] 	Measuring Weight: channel: 23, sat: 0.041604392, max: 0.04160947
+[07/19/26 14:37:17.653] [I] 	Measuring Weight: channel: 24, sat: 0.041643206, max: 0.04164829
+[07/19/26 14:37:17.657] [I] 	Measuring Weight: channel: 25, sat: 0.04147938, max: 0.04148444
+[07/19/26 14:37:17.659] [I] 	Measuring Weight: channel: 26, sat: 0.041659426, max: 0.04166451
+[07/19/26 14:37:17.661] [I] 	Measuring Weight: channel: 27, sat: 0.04154528, max: 0.04155035
+[07/19/26 14:37:17.664] [I] 	Measuring Weight: channel: 28, sat: 0.04165522, max: 0.041660305
+[07/19/26 14:37:17.666] [I] 	Measuring Weight: channel: 29, sat: 0.041582108, max: 0.041587185
+[07/19/26 14:37:17.669] [I] 	Measuring Weight: channel: 30, sat: 0.041657522, max: 0.041662607
+[07/19/26 14:37:17.671] [I] 	Measuring Weight: channel: 31, sat: 0.0416358, max: 0.04164088
+[07/19/26 14:37:17.674] [I] 	Measuring Weight: channel: 32, sat: 0.041640427, max: 0.041645512
+[07/19/26 14:37:17.677] [I] 	Measuring Weight: channel: 33, sat: 0.041583005, max: 0.041588083
+[07/19/26 14:37:17.679] [I] 	Measuring Weight: channel: 34, sat: 0.041289672, max: 0.041294713
+[07/19/26 14:37:17.682] [I] 	Measuring Weight: channel: 35, sat: 0.041571856, max: 0.04157693
+[07/19/26 14:37:17.684] [I] 	Measuring Weight: channel: 36, sat: 0.041578498, max: 0.041583575
+[07/19/26 14:37:17.687] [I] 	Measuring Weight: channel: 37, sat: 0.041639015, max: 0.0416441
+[07/19/26 14:37:17.689] [I] 	Measuring Weight: channel: 38, sat: 0.0416592, max: 0.041664284
+[07/19/26 14:37:17.691] [I] 	Measuring Weight: channel: 39, sat: 0.041601337, max: 0.041606415
+[07/19/26 14:37:17.693] [I] 	Measuring Weight: channel: 40, sat: 0.041649222, max: 0.041654304
+[07/19/26 14:37:17.695] [I] 	Measuring Weight: channel: 41, sat: 0.041406546, max: 0.041411597
+[07/19/26 14:37:17.697] [I] 	Measuring Weight: channel: 42, sat: 0.041563507, max: 0.04156858
+[07/19/26 14:37:17.699] [I] 	Measuring Weight: channel: 43, sat: 0.041657068, max: 0.041662153
+[07/19/26 14:37:17.701] [I] 	Measuring Weight: channel: 44, sat: 0.041524455, max: 0.04152952
+[07/19/26 14:37:17.703] [I] 	Measuring Weight: channel: 45, sat: 0.041635223, max: 0.041640304
+[07/19/26 14:37:17.705] [I] 	Measuring Weight: channel: 46, sat: 0.041599996, max: 0.041605074
+[07/19/26 14:37:17.707] [I] 	Measuring Weight: channel: 47, sat: 0.041338418, max: 0.041343465
+[07/19/26 14:37:17.709] [I] 	Measuring Weight: channel: 48, sat: 0.04162688, max: 0.041631963
+[07/19/26 14:37:17.710] [I] 	Measuring Weight: channel: 49, sat: 0.041562665, max: 0.04156774
+[07/19/26 14:37:17.712] [I] 	Measuring Weight: channel: 50, sat: 0.04153826, max: 0.04154333
+[07/19/26 14:37:17.714] [I] 	Measuring Weight: channel: 51, sat: 0.04152103, max: 0.0415261
+[07/19/26 14:37:17.716] [I] 	Measuring Weight: channel: 52, sat: 0.0416196, max: 0.041624676
+[07/19/26 14:37:17.718] [I] 	Measuring Weight: channel: 53, sat: 0.041614737, max: 0.04161982
+[07/19/26 14:37:17.720] [I] 	Measuring Weight: channel: 54, sat: 0.04160473, max: 0.04160981
+[07/19/26 14:37:17.722] [I] 	Measuring Weight: channel: 55, sat: 0.041562863, max: 0.041567937
+[07/19/26 14:37:17.724] [I] 	Measuring Weight: channel: 56, sat: 0.04160718, max: 0.041612256
+[07/19/26 14:37:17.726] [I] 	Measuring Weight: channel: 57, sat: 0.041661464, max: 0.04166655
+[07/19/26 14:37:17.728] [I] 	Measuring Weight: channel: 58, sat: 0.041604117, max: 0.041609194
+[07/19/26 14:37:17.729] [I] 	Measuring Weight: channel: 59, sat: 0.041404214, max: 0.041409265
+[07/19/26 14:37:17.731] [I] 	Measuring Weight: channel: 60, sat: 0.041590746, max: 0.04159582
+[07/19/26 14:37:17.733] [I] 	Measuring Weight: channel: 61, sat: 0.041590285, max: 0.04159536
+[07/19/26 14:37:17.735] [I] 	Measuring Weight: channel: 62, sat: 0.0415364, max: 0.04154147
+[07/19/26 14:37:17.737] [I] 	Measuring Weight: channel: 63, sat: 0.04163822, max: 0.041643303
+[07/19/26 14:37:17.739] [I] 	Measuring Weight: channel: 64, sat: 0.04165351, max: 0.04165859
+[07/19/26 14:37:17.739] [I] Quantizing Op Id: 12, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:17.739] [I] Quantizing Op Id: 13, Type: icraft::xir::MaxPool2dNode
+[07/19/26 14:37:17.739] [I] Quantizing Op Id: 14, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:17.742] [I] 	Measuring Weight: channel: 1, sat: 0.041636247, max: 0.04164133
+[07/19/26 14:37:17.744] [I] 	Measuring Weight: channel: 2, sat: 0.041654527, max: 0.041659612
+[07/19/26 14:37:17.746] [I] 	Measuring Weight: channel: 3, sat: 0.04150859, max: 0.041513655
+[07/19/26 14:37:17.748] [I] 	Measuring Weight: channel: 4, sat: 0.04165607, max: 0.041661154
+[07/19/26 14:37:17.749] [I] 	Measuring Weight: channel: 5, sat: 0.041498456, max: 0.04150352
+[07/19/26 14:37:17.751] [I] 	Measuring Weight: channel: 6, sat: 0.041618474, max: 0.04162355
+[07/19/26 14:37:17.753] [I] 	Measuring Weight: channel: 7, sat: 0.041618958, max: 0.041624036
+[07/19/26 14:37:17.755] [I] 	Measuring Weight: channel: 8, sat: 0.04165102, max: 0.041656103
+[07/19/26 14:37:17.757] [I] 	Measuring Weight: channel: 9, sat: 0.041561086, max: 0.041566156
+[07/19/26 14:37:17.759] [I] 	Measuring Weight: channel: 10, sat: 0.041572195, max: 0.04157727
+[07/19/26 14:37:17.761] [I] 	Measuring Weight: channel: 11, sat: 0.041558977, max: 0.041564047
+[07/19/26 14:37:17.763] [I] 	Measuring Weight: channel: 12, sat: 0.041606374, max: 0.04161145
+[07/19/26 14:37:17.766] [I] 	Measuring Weight: channel: 13, sat: 0.04151501, max: 0.041520078
+[07/19/26 14:37:17.768] [I] 	Measuring Weight: channel: 14, sat: 0.041654557, max: 0.041659642
+[07/19/26 14:37:17.771] [I] 	Measuring Weight: channel: 15, sat: 0.04162837, max: 0.04163345
+[07/19/26 14:37:17.774] [I] 	Measuring Weight: channel: 16, sat: 0.041638665, max: 0.041643746
+[07/19/26 14:37:17.777] [I] 	Measuring Weight: channel: 17, sat: 0.04160435, max: 0.04160943
+[07/19/26 14:37:17.779] [I] 	Measuring Weight: channel: 18, sat: 0.041561738, max: 0.041566808
+[07/19/26 14:37:17.781] [I] 	Measuring Weight: channel: 19, sat: 0.041549746, max: 0.04155482
+[07/19/26 14:37:17.783] [I] 	Measuring Weight: channel: 20, sat: 0.04162898, max: 0.04163406
+[07/19/26 14:37:17.786] [I] 	Measuring Weight: channel: 21, sat: 0.04163765, max: 0.041642733
+[07/19/26 14:37:17.788] [I] 	Measuring Weight: channel: 22, sat: 0.04163204, max: 0.041637123
+[07/19/26 14:37:17.791] [I] 	Measuring Weight: channel: 23, sat: 0.041653793, max: 0.041658875
+[07/19/26 14:37:17.793] [I] 	Measuring Weight: channel: 24, sat: 0.041631717, max: 0.0416368
+[07/19/26 14:37:17.796] [I] 	Measuring Weight: channel: 25, sat: 0.041508447, max: 0.041513514
+[07/19/26 14:37:17.798] [I] 	Measuring Weight: channel: 26, sat: 0.04144224, max: 0.0414473
+[07/19/26 14:37:17.801] [I] 	Measuring Weight: channel: 27, sat: 0.041636802, max: 0.041641884
+[07/19/26 14:37:17.803] [I] 	Measuring Weight: channel: 28, sat: 0.041506723, max: 0.04151179
+[07/19/26 14:37:17.806] [I] 	Measuring Weight: channel: 29, sat: 0.04160506, max: 0.041610137
+[07/19/26 14:37:17.808] [I] 	Measuring Weight: channel: 30, sat: 0.04162947, max: 0.041634552
+[07/19/26 14:37:17.811] [I] 	Measuring Weight: channel: 31, sat: 0.041611694, max: 0.041616775
+[07/19/26 14:37:17.814] [I] 	Measuring Weight: channel: 32, sat: 0.041624565, max: 0.041629646
+[07/19/26 14:37:17.816] [I] 	Measuring Weight: channel: 33, sat: 0.041580852, max: 0.04158593
+[07/19/26 14:37:17.819] [I] 	Measuring Weight: channel: 34, sat: 0.04164517, max: 0.041650254
+[07/19/26 14:37:17.821] [I] 	Measuring Weight: channel: 35, sat: 0.041583866, max: 0.041588943
+[07/19/26 14:37:17.824] [I] 	Measuring Weight: channel: 36, sat: 0.041638426, max: 0.041643508
+[07/19/26 14:37:17.827] [I] 	Measuring Weight: channel: 37, sat: 0.04156895, max: 0.041574024
+[07/19/26 14:37:17.830] [I] 	Measuring Weight: channel: 38, sat: 0.041626155, max: 0.041631237
+[07/19/26 14:37:17.832] [I] 	Measuring Weight: channel: 39, sat: 0.041658238, max: 0.041663323
+[07/19/26 14:37:17.835] [I] 	Measuring Weight: channel: 40, sat: 0.041642718, max: 0.041647803
+[07/19/26 14:37:17.837] [I] 	Measuring Weight: channel: 41, sat: 0.04155641, max: 0.04156148
+[07/19/26 14:37:17.839] [I] 	Measuring Weight: channel: 42, sat: 0.0415005, max: 0.041505564
+[07/19/26 14:37:17.842] [I] 	Measuring Weight: channel: 43, sat: 0.04162602, max: 0.041631103
+[07/19/26 14:37:17.844] [I] 	Measuring Weight: channel: 44, sat: 0.041606553, max: 0.04161163
+[07/19/26 14:37:17.847] [I] 	Measuring Weight: channel: 45, sat: 0.0414346, max: 0.041439656
+[07/19/26 14:37:17.849] [I] 	Measuring Weight: channel: 46, sat: 0.04165291, max: 0.04165799
+[07/19/26 14:37:17.851] [I] 	Measuring Weight: channel: 47, sat: 0.041643057, max: 0.041648142
+[07/19/26 14:37:17.853] [I] 	Measuring Weight: channel: 48, sat: 0.041654967, max: 0.04166005
+[07/19/26 14:37:17.854] [I] 	Measuring Weight: channel: 49, sat: 0.041583672, max: 0.04158875
+[07/19/26 14:37:17.856] [I] 	Measuring Weight: channel: 50, sat: 0.041651234, max: 0.041656315
+[07/19/26 14:37:17.858] [I] 	Measuring Weight: channel: 51, sat: 0.04166078, max: 0.041665863
+[07/19/26 14:37:17.860] [I] 	Measuring Weight: channel: 52, sat: 0.041528475, max: 0.04153354
+[07/19/26 14:37:17.862] [I] 	Measuring Weight: channel: 53, sat: 0.041620985, max: 0.041626062
+[07/19/26 14:37:17.864] [I] 	Measuring Weight: channel: 54, sat: 0.041617177, max: 0.041622255
+[07/19/26 14:37:17.866] [I] 	Measuring Weight: channel: 55, sat: 0.041546024, max: 0.041551095
+[07/19/26 14:37:17.868] [I] 	Measuring Weight: channel: 56, sat: 0.04164089, max: 0.041645974
+[07/19/26 14:37:17.869] [I] 	Measuring Weight: channel: 57, sat: 0.04165842, max: 0.041663505
+[07/19/26 14:37:17.871] [I] 	Measuring Weight: channel: 58, sat: 0.041661162, max: 0.041666247
+[07/19/26 14:37:17.873] [I] 	Measuring Weight: channel: 59, sat: 0.0415096, max: 0.041514665
+[07/19/26 14:37:17.875] [I] 	Measuring Weight: channel: 60, sat: 0.041658748, max: 0.041663833
+[07/19/26 14:37:17.877] [I] 	Measuring Weight: channel: 61, sat: 0.04163645, max: 0.04164153
+[07/19/26 14:37:17.879] [I] 	Measuring Weight: channel: 62, sat: 0.04157234, max: 0.041577414
+[07/19/26 14:37:17.881] [I] 	Measuring Weight: channel: 63, sat: 0.04159086, max: 0.041595932
+[07/19/26 14:37:17.883] [I] 	Measuring Weight: channel: 64, sat: 0.04163813, max: 0.04164321
+[07/19/26 14:37:17.884] [I] 	Measuring Weight: channel: 65, sat: 0.0416483, max: 0.04165338
+[07/19/26 14:37:17.886] [I] 	Measuring Weight: channel: 66, sat: 0.041660216, max: 0.0416653
+[07/19/26 14:37:17.888] [I] 	Measuring Weight: channel: 67, sat: 0.041625693, max: 0.041630775
+[07/19/26 14:37:17.890] [I] 	Measuring Weight: channel: 68, sat: 0.04155509, max: 0.04156016
+[07/19/26 14:37:17.892] [I] 	Measuring Weight: channel: 69, sat: 0.041651424, max: 0.041656505
+[07/19/26 14:37:17.894] [I] 	Measuring Weight: channel: 70, sat: 0.041595526, max: 0.041600604
+[07/19/26 14:37:17.896] [I] 	Measuring Weight: channel: 71, sat: 0.041480526, max: 0.04148559
+[07/19/26 14:37:17.897] [I] 	Measuring Weight: channel: 72, sat: 0.041577335, max: 0.04158241
+[07/19/26 14:37:17.899] [I] 	Measuring Weight: channel: 73, sat: 0.041632388, max: 0.04163747
+[07/19/26 14:37:17.901] [I] 	Measuring Weight: channel: 74, sat: 0.04164652, max: 0.041651603
+[07/19/26 14:37:17.903] [I] 	Measuring Weight: channel: 75, sat: 0.041556157, max: 0.041561227
+[07/19/26 14:37:17.905] [I] 	Measuring Weight: channel: 76, sat: 0.041537188, max: 0.041542258
+[07/19/26 14:37:17.907] [I] 	Measuring Weight: channel: 77, sat: 0.04158658, max: 0.041591655
+[07/19/26 14:37:17.909] [I] 	Measuring Weight: channel: 78, sat: 0.041659594, max: 0.04166468
+[07/19/26 14:37:17.910] [I] 	Measuring Weight: channel: 79, sat: 0.041510705, max: 0.04151577
+[07/19/26 14:37:17.912] [I] 	Measuring Weight: channel: 80, sat: 0.041608498, max: 0.04161358
+[07/19/26 14:37:17.914] [I] 	Measuring Weight: channel: 81, sat: 0.041324437, max: 0.04132948
+[07/19/26 14:37:17.916] [I] 	Measuring Weight: channel: 82, sat: 0.04129087, max: 0.041295912
+[07/19/26 14:37:17.918] [I] 	Measuring Weight: channel: 83, sat: 0.041610274, max: 0.041615356
+[07/19/26 14:37:17.920] [I] 	Measuring Weight: channel: 84, sat: 0.04163449, max: 0.04163957
+[07/19/26 14:37:17.921] [I] 	Measuring Weight: channel: 85, sat: 0.041550595, max: 0.04155567
+[07/19/26 14:37:17.923] [I] 	Measuring Weight: channel: 86, sat: 0.04157658, max: 0.041581653
+[07/19/26 14:37:17.925] [I] 	Measuring Weight: channel: 87, sat: 0.041632395, max: 0.041637477
+[07/19/26 14:37:17.927] [I] 	Measuring Weight: channel: 88, sat: 0.041621447, max: 0.041626524
+[07/19/26 14:37:17.929] [I] 	Measuring Weight: channel: 89, sat: 0.041650195, max: 0.041655276
+[07/19/26 14:37:17.931] [I] 	Measuring Weight: channel: 90, sat: 0.04161961, max: 0.041624688
+[07/19/26 14:37:17.933] [I] 	Measuring Weight: channel: 91, sat: 0.04160304, max: 0.041608118
+[07/19/26 14:37:17.934] [I] 	Measuring Weight: channel: 92, sat: 0.041542254, max: 0.041547325
+[07/19/26 14:37:17.936] [I] 	Measuring Weight: channel: 93, sat: 0.041612547, max: 0.04161763
+[07/19/26 14:37:17.938] [I] 	Measuring Weight: channel: 94, sat: 0.0416314, max: 0.041636482
+[07/19/26 14:37:17.940] [I] 	Measuring Weight: channel: 95, sat: 0.04149775, max: 0.04150281
+[07/19/26 14:37:17.942] [I] 	Measuring Weight: channel: 96, sat: 0.04165631, max: 0.041661397
+[07/19/26 14:37:17.944] [I] 	Measuring Weight: channel: 97, sat: 0.04163273, max: 0.04163781
+[07/19/26 14:37:17.945] [I] 	Measuring Weight: channel: 98, sat: 0.04162426, max: 0.04162934
+[07/19/26 14:37:17.947] [I] 	Measuring Weight: channel: 99, sat: 0.041535854, max: 0.041540924
+[07/19/26 14:37:17.949] [I] 	Measuring Weight: channel: 100, sat: 0.041602947, max: 0.041608024
+[07/19/26 14:37:17.951] [I] 	Measuring Weight: channel: 101, sat: 0.04164777, max: 0.04165285
+[07/19/26 14:37:17.953] [I] 	Measuring Weight: channel: 102, sat: 0.041576028, max: 0.0415811
+[07/19/26 14:37:17.955] [I] 	Measuring Weight: channel: 103, sat: 0.041386914, max: 0.041391965
+[07/19/26 14:37:17.956] [I] 	Measuring Weight: channel: 104, sat: 0.041641563, max: 0.04164665
+[07/19/26 14:37:17.958] [I] 	Measuring Weight: channel: 105, sat: 0.04155426, max: 0.041559335
+[07/19/26 14:37:17.960] [I] 	Measuring Weight: channel: 106, sat: 0.041567817, max: 0.04157289
+[07/19/26 14:37:17.962] [I] 	Measuring Weight: channel: 107, sat: 0.041456543, max: 0.041461606
+[07/19/26 14:37:17.964] [I] 	Measuring Weight: channel: 108, sat: 0.041571744, max: 0.041576818
+[07/19/26 14:37:17.965] [I] 	Measuring Weight: channel: 109, sat: 0.041653663, max: 0.041658744
+[07/19/26 14:37:17.967] [I] 	Measuring Weight: channel: 110, sat: 0.04156627, max: 0.041571345
+[07/19/26 14:37:17.969] [I] 	Measuring Weight: channel: 111, sat: 0.04160799, max: 0.04161307
+[07/19/26 14:37:17.971] [I] 	Measuring Weight: channel: 112, sat: 0.041624594, max: 0.041629676
+[07/19/26 14:37:17.973] [I] 	Measuring Weight: channel: 113, sat: 0.041627187, max: 0.04163227
+[07/19/26 14:37:17.974] [I] 	Measuring Weight: channel: 114, sat: 0.04159919, max: 0.04160427
+[07/19/26 14:37:17.976] [I] 	Measuring Weight: channel: 115, sat: 0.041629322, max: 0.041634403
+[07/19/26 14:37:17.978] [I] 	Measuring Weight: channel: 116, sat: 0.04164444, max: 0.041649524
+[07/19/26 14:37:17.980] [I] 	Measuring Weight: channel: 117, sat: 0.041611668, max: 0.04161675
+[07/19/26 14:37:17.982] [I] 	Measuring Weight: channel: 118, sat: 0.04152957, max: 0.041534636
+[07/19/26 14:37:17.983] [I] 	Measuring Weight: channel: 119, sat: 0.041639406, max: 0.04164449
+[07/19/26 14:37:17.985] [I] 	Measuring Weight: channel: 120, sat: 0.041658852, max: 0.041663937
+[07/19/26 14:37:17.987] [I] 	Measuring Weight: channel: 121, sat: 0.04163835, max: 0.04164343
+[07/19/26 14:37:17.989] [I] 	Measuring Weight: channel: 122, sat: 0.04158855, max: 0.041593622
+[07/19/26 14:37:17.991] [I] 	Measuring Weight: channel: 123, sat: 0.041567955, max: 0.04157303
+[07/19/26 14:37:17.993] [I] 	Measuring Weight: channel: 124, sat: 0.04135292, max: 0.041357968
+[07/19/26 14:37:17.994] [I] 	Measuring Weight: channel: 125, sat: 0.041613366, max: 0.041618448
+[07/19/26 14:37:17.996] [I] 	Measuring Weight: channel: 126, sat: 0.041624375, max: 0.041629456
+[07/19/26 14:37:17.998] [I] 	Measuring Weight: channel: 127, sat: 0.041508134, max: 0.0415132
+[07/19/26 14:37:18.000] [I] 	Measuring Weight: channel: 128, sat: 0.041651115, max: 0.041656196
+[07/19/26 14:37:18.000] [I] Quantizing Op Id: 15, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:18.000] [I] Quantizing Op Id: 16, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:18.004] [I] 	Measuring Weight: channel: 1, sat: 0.02944463, max: 0.029448224
+[07/19/26 14:37:18.005] [I] 	Measuring Weight: channel: 2, sat: 0.02938621, max: 0.029389795
+[07/19/26 14:37:18.007] [I] 	Measuring Weight: channel: 3, sat: 0.029404147, max: 0.029407736
+[07/19/26 14:37:18.009] [I] 	Measuring Weight: channel: 4, sat: 0.029456208, max: 0.029459802
+[07/19/26 14:37:18.011] [I] 	Measuring Weight: channel: 5, sat: 0.029418794, max: 0.029422386
+[07/19/26 14:37:18.013] [I] 	Measuring Weight: channel: 6, sat: 0.029450867, max: 0.029454462
+[07/19/26 14:37:18.015] [I] 	Measuring Weight: channel: 7, sat: 0.029424911, max: 0.029428503
+[07/19/26 14:37:18.017] [I] 	Measuring Weight: channel: 8, sat: 0.029444212, max: 0.029447807
+[07/19/26 14:37:18.019] [I] 	Measuring Weight: channel: 9, sat: 0.029444398, max: 0.029447993
+[07/19/26 14:37:18.021] [I] 	Measuring Weight: channel: 10, sat: 0.029455246, max: 0.029458841
+[07/19/26 14:37:18.023] [I] 	Measuring Weight: channel: 11, sat: 0.029457416, max: 0.029461013
+[07/19/26 14:37:18.025] [I] 	Measuring Weight: channel: 12, sat: 0.0294467, max: 0.029450294
+[07/19/26 14:37:18.027] [I] 	Measuring Weight: channel: 13, sat: 0.029446661, max: 0.029450255
+[07/19/26 14:37:18.029] [I] 	Measuring Weight: channel: 14, sat: 0.029422881, max: 0.029426472
+[07/19/26 14:37:18.031] [I] 	Measuring Weight: channel: 15, sat: 0.02945316, max: 0.029456755
+[07/19/26 14:37:18.033] [I] 	Measuring Weight: channel: 16, sat: 0.02939825, max: 0.029401839
+[07/19/26 14:37:18.036] [I] 	Measuring Weight: channel: 17, sat: 0.029444972, max: 0.029448567
+[07/19/26 14:37:18.038] [I] 	Measuring Weight: channel: 18, sat: 0.029438036, max: 0.029441629
+[07/19/26 14:37:18.040] [I] 	Measuring Weight: channel: 19, sat: 0.02945736, max: 0.029460957
+[07/19/26 14:37:18.042] [I] 	Measuring Weight: channel: 20, sat: 0.029440202, max: 0.029443795
+[07/19/26 14:37:18.045] [I] 	Measuring Weight: channel: 21, sat: 0.029446026, max: 0.02944962
+[07/19/26 14:37:18.047] [I] 	Measuring Weight: channel: 22, sat: 0.02942187, max: 0.02942546
+[07/19/26 14:37:18.050] [I] 	Measuring Weight: channel: 23, sat: 0.029454965, max: 0.02945856
+[07/19/26 14:37:18.053] [I] 	Measuring Weight: channel: 24, sat: 0.029439226, max: 0.029442819
+[07/19/26 14:37:18.055] [I] 	Measuring Weight: channel: 25, sat: 0.029394303, max: 0.02939789
+[07/19/26 14:37:18.057] [I] 	Measuring Weight: channel: 26, sat: 0.02942311, max: 0.029426701
+[07/19/26 14:37:18.060] [I] 	Measuring Weight: channel: 27, sat: 0.029444367, max: 0.029447962
+[07/19/26 14:37:18.062] [I] 	Measuring Weight: channel: 28, sat: 0.029448533, max: 0.029452126
+[07/19/26 14:37:18.065] [I] 	Measuring Weight: channel: 29, sat: 0.02945456, max: 0.029458154
+[07/19/26 14:37:18.067] [I] 	Measuring Weight: channel: 30, sat: 0.029435774, max: 0.029439367
+[07/19/26 14:37:18.069] [I] 	Measuring Weight: channel: 31, sat: 0.02940606, max: 0.029409649
+[07/19/26 14:37:18.071] [I] 	Measuring Weight: channel: 32, sat: 0.029455995, max: 0.02945959
+[07/19/26 14:37:18.073] [I] 	Measuring Weight: channel: 33, sat: 0.02942863, max: 0.029432222
+[07/19/26 14:37:18.076] [I] 	Measuring Weight: channel: 34, sat: 0.029451234, max: 0.02945483
+[07/19/26 14:37:18.078] [I] 	Measuring Weight: channel: 35, sat: 0.029424975, max: 0.029428566
+[07/19/26 14:37:18.080] [I] 	Measuring Weight: channel: 36, sat: 0.029458698, max: 0.029462295
+[07/19/26 14:37:18.082] [I] 	Measuring Weight: channel: 37, sat: 0.02945882, max: 0.029462418
+[07/19/26 14:37:18.084] [I] 	Measuring Weight: channel: 38, sat: 0.029451054, max: 0.029454648
+[07/19/26 14:37:18.086] [I] 	Measuring Weight: channel: 39, sat: 0.029362725, max: 0.029366309
+[07/19/26 14:37:18.089] [I] 	Measuring Weight: channel: 40, sat: 0.029444939, max: 0.029448533
+[07/19/26 14:37:18.091] [I] 	Measuring Weight: channel: 41, sat: 0.029445827, max: 0.02944942
+[07/19/26 14:37:18.093] [I] 	Measuring Weight: channel: 42, sat: 0.02945589, max: 0.029459486
+[07/19/26 14:37:18.096] [I] 	Measuring Weight: channel: 43, sat: 0.029438268, max: 0.029441861
+[07/19/26 14:37:18.098] [I] 	Measuring Weight: channel: 44, sat: 0.029436488, max: 0.02944008
+[07/19/26 14:37:18.100] [I] 	Measuring Weight: channel: 45, sat: 0.02940611, max: 0.0294097
+[07/19/26 14:37:18.102] [I] 	Measuring Weight: channel: 46, sat: 0.029375952, max: 0.029379537
+[07/19/26 14:37:18.104] [I] 	Measuring Weight: channel: 47, sat: 0.029458337, max: 0.029461933
+[07/19/26 14:37:18.106] [I] 	Measuring Weight: channel: 48, sat: 0.029456316, max: 0.02945991
+[07/19/26 14:37:18.107] [I] 	Measuring Weight: channel: 49, sat: 0.029458651, max: 0.029462248
+[07/19/26 14:37:18.109] [I] 	Measuring Weight: channel: 50, sat: 0.029454298, max: 0.029457893
+[07/19/26 14:37:18.111] [I] 	Measuring Weight: channel: 51, sat: 0.029453026, max: 0.029456621
+[07/19/26 14:37:18.113] [I] 	Measuring Weight: channel: 52, sat: 0.029449312, max: 0.029452907
+[07/19/26 14:37:18.115] [I] 	Measuring Weight: channel: 53, sat: 0.029362032, max: 0.029365616
+[07/19/26 14:37:18.116] [I] 	Measuring Weight: channel: 54, sat: 0.029397164, max: 0.029400753
+[07/19/26 14:37:18.118] [I] 	Measuring Weight: channel: 55, sat: 0.02945399, max: 0.029457584
+[07/19/26 14:37:18.120] [I] 	Measuring Weight: channel: 56, sat: 0.029444173, max: 0.029447768
+[07/19/26 14:37:18.122] [I] 	Measuring Weight: channel: 57, sat: 0.029357096, max: 0.029360678
+[07/19/26 14:37:18.124] [I] 	Measuring Weight: channel: 58, sat: 0.02942709, max: 0.029430684
+[07/19/26 14:37:18.126] [I] 	Measuring Weight: channel: 59, sat: 0.02938595, max: 0.029389536
+[07/19/26 14:37:18.127] [I] 	Measuring Weight: channel: 60, sat: 0.029391412, max: 0.029395
+[07/19/26 14:37:18.129] [I] 	Measuring Weight: channel: 61, sat: 0.029448112, max: 0.029451706
+[07/19/26 14:37:18.131] [I] 	Measuring Weight: channel: 62, sat: 0.029432734, max: 0.029436326
+[07/19/26 14:37:18.133] [I] 	Measuring Weight: channel: 63, sat: 0.029415557, max: 0.029419146
+[07/19/26 14:37:18.135] [I] 	Measuring Weight: channel: 64, sat: 0.029440789, max: 0.029444382
+[07/19/26 14:37:18.136] [I] 	Measuring Weight: channel: 65, sat: 0.029459016, max: 0.029462613
+[07/19/26 14:37:18.138] [I] 	Measuring Weight: channel: 66, sat: 0.029391311, max: 0.029394899
+[07/19/26 14:37:18.140] [I] 	Measuring Weight: channel: 67, sat: 0.029449923, max: 0.029453518
+[07/19/26 14:37:18.142] [I] 	Measuring Weight: channel: 68, sat: 0.029447809, max: 0.029451402
+[07/19/26 14:37:18.144] [I] 	Measuring Weight: channel: 69, sat: 0.029447284, max: 0.029450877
+[07/19/26 14:37:18.146] [I] 	Measuring Weight: channel: 70, sat: 0.02943609, max: 0.029439682
+[07/19/26 14:37:18.148] [I] 	Measuring Weight: channel: 71, sat: 0.029395463, max: 0.02939905
+[07/19/26 14:37:18.149] [I] 	Measuring Weight: channel: 72, sat: 0.029455012, max: 0.029458607
+[07/19/26 14:37:18.151] [I] 	Measuring Weight: channel: 73, sat: 0.029429859, max: 0.029433452
+[07/19/26 14:37:18.153] [I] 	Measuring Weight: channel: 74, sat: 0.029429618, max: 0.029433211
+[07/19/26 14:37:18.155] [I] 	Measuring Weight: channel: 75, sat: 0.029457752, max: 0.029461348
+[07/19/26 14:37:18.157] [I] 	Measuring Weight: channel: 76, sat: 0.029435173, max: 0.029438766
+[07/19/26 14:37:18.159] [I] 	Measuring Weight: channel: 77, sat: 0.029435117, max: 0.02943871
+[07/19/26 14:37:18.161] [I] 	Measuring Weight: channel: 78, sat: 0.029443074, max: 0.029446669
+[07/19/26 14:37:18.162] [I] 	Measuring Weight: channel: 79, sat: 0.029453302, max: 0.029456897
+[07/19/26 14:37:18.164] [I] 	Measuring Weight: channel: 80, sat: 0.0294452, max: 0.029448794
+[07/19/26 14:37:18.166] [I] 	Measuring Weight: channel: 81, sat: 0.029424073, max: 0.029427664
+[07/19/26 14:37:18.168] [I] 	Measuring Weight: channel: 82, sat: 0.029441953, max: 0.029445548
+[07/19/26 14:37:18.170] [I] 	Measuring Weight: channel: 83, sat: 0.029436108, max: 0.0294397
+[07/19/26 14:37:18.172] [I] 	Measuring Weight: channel: 84, sat: 0.02945125, max: 0.029454844
+[07/19/26 14:37:18.173] [I] 	Measuring Weight: channel: 85, sat: 0.029452462, max: 0.029456057
+[07/19/26 14:37:18.175] [I] 	Measuring Weight: channel: 86, sat: 0.029413061, max: 0.029416652
+[07/19/26 14:37:18.177] [I] 	Measuring Weight: channel: 87, sat: 0.029458305, max: 0.029461902
+[07/19/26 14:37:18.179] [I] 	Measuring Weight: channel: 88, sat: 0.029455232, max: 0.029458826
+[07/19/26 14:37:18.181] [I] 	Measuring Weight: channel: 89, sat: 0.029425696, max: 0.029429287
+[07/19/26 14:37:18.182] [I] 	Measuring Weight: channel: 90, sat: 0.029441357, max: 0.02944495
+[07/19/26 14:37:18.184] [I] 	Measuring Weight: channel: 91, sat: 0.029444838, max: 0.029448433
+[07/19/26 14:37:18.186] [I] 	Measuring Weight: channel: 92, sat: 0.029426705, max: 0.029430298
+[07/19/26 14:37:18.188] [I] 	Measuring Weight: channel: 93, sat: 0.029405471, max: 0.02940906
+[07/19/26 14:37:18.190] [I] 	Measuring Weight: channel: 94, sat: 0.029422117, max: 0.029425709
+[07/19/26 14:37:18.192] [I] 	Measuring Weight: channel: 95, sat: 0.029409045, max: 0.029412635
+[07/19/26 14:37:18.193] [I] 	Measuring Weight: channel: 96, sat: 0.029450046, max: 0.02945364
+[07/19/26 14:37:18.195] [I] 	Measuring Weight: channel: 97, sat: 0.029458266, max: 0.029461863
+[07/19/26 14:37:18.197] [I] 	Measuring Weight: channel: 98, sat: 0.02943313, max: 0.02943672
+[07/19/26 14:37:18.199] [I] 	Measuring Weight: channel: 99, sat: 0.0293362, max: 0.029339781
+[07/19/26 14:37:18.201] [I] 	Measuring Weight: channel: 100, sat: 0.029448897, max: 0.02945249
+[07/19/26 14:37:18.203] [I] 	Measuring Weight: channel: 101, sat: 0.029458795, max: 0.029462392
+[07/19/26 14:37:18.204] [I] 	Measuring Weight: channel: 102, sat: 0.029450031, max: 0.029453626
+[07/19/26 14:37:18.206] [I] 	Measuring Weight: channel: 103, sat: 0.02945387, max: 0.029457465
+[07/19/26 14:37:18.208] [I] 	Measuring Weight: channel: 104, sat: 0.029438373, max: 0.029441966
+[07/19/26 14:37:18.210] [I] 	Measuring Weight: channel: 105, sat: 0.029431878, max: 0.029435469
+[07/19/26 14:37:18.212] [I] 	Measuring Weight: channel: 106, sat: 0.029420363, max: 0.029423954
+[07/19/26 14:37:18.213] [I] 	Measuring Weight: channel: 107, sat: 0.029458556, max: 0.029462153
+[07/19/26 14:37:18.215] [I] 	Measuring Weight: channel: 108, sat: 0.029390203, max: 0.02939379
+[07/19/26 14:37:18.217] [I] 	Measuring Weight: channel: 109, sat: 0.02944703, max: 0.029450623
+[07/19/26 14:37:18.219] [I] 	Measuring Weight: channel: 110, sat: 0.029404476, max: 0.029408066
+[07/19/26 14:37:18.221] [I] 	Measuring Weight: channel: 111, sat: 0.029456614, max: 0.029460208
+[07/19/26 14:37:18.223] [I] 	Measuring Weight: channel: 112, sat: 0.029390687, max: 0.029394275
+[07/19/26 14:37:18.225] [I] 	Measuring Weight: channel: 113, sat: 0.029443854, max: 0.02944745
+[07/19/26 14:37:18.227] [I] 	Measuring Weight: channel: 114, sat: 0.029435083, max: 0.029438676
+[07/19/26 14:37:18.229] [I] 	Measuring Weight: channel: 115, sat: 0.029444855, max: 0.02944845
+[07/19/26 14:37:18.231] [I] 	Measuring Weight: channel: 116, sat: 0.029425152, max: 0.029428743
+[07/19/26 14:37:18.233] [I] 	Measuring Weight: channel: 117, sat: 0.029401334, max: 0.029404921
+[07/19/26 14:37:18.235] [I] 	Measuring Weight: channel: 118, sat: 0.029439218, max: 0.029442811
+[07/19/26 14:37:18.237] [I] 	Measuring Weight: channel: 119, sat: 0.029447451, max: 0.029451044
+[07/19/26 14:37:18.239] [I] 	Measuring Weight: channel: 120, sat: 0.029443273, max: 0.029446868
+[07/19/26 14:37:18.241] [I] 	Measuring Weight: channel: 121, sat: 0.029453231, max: 0.029456826
+[07/19/26 14:37:18.243] [I] 	Measuring Weight: channel: 122, sat: 0.02944854, max: 0.029452134
+[07/19/26 14:37:18.244] [I] 	Measuring Weight: channel: 123, sat: 0.029416414, max: 0.029420003
+[07/19/26 14:37:18.246] [I] 	Measuring Weight: channel: 124, sat: 0.029450158, max: 0.029453753
+[07/19/26 14:37:18.248] [I] 	Measuring Weight: channel: 125, sat: 0.029450245, max: 0.02945384
+[07/19/26 14:37:18.252] [I] 	Measuring Weight: channel: 126, sat: 0.029451419, max: 0.029455014
+[07/19/26 14:37:18.253] [I] 	Measuring Weight: channel: 127, sat: 0.02940301, max: 0.029406598
+[07/19/26 14:37:18.255] [I] 	Measuring Weight: channel: 128, sat: 0.029449403, max: 0.029452998
+[07/19/26 14:37:18.256] [I] Quantizing Op Id: 17, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:18.256] [I] Quantizing Op Id: 18, Type: icraft::xir::MaxPool2dNode
+[07/19/26 14:37:18.256] [I] Quantizing Op Id: 19, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:18.259] [I] 	Measuring Weight: channel: 1, sat: 0.029394226, max: 0.029397814
+[07/19/26 14:37:18.261] [I] 	Measuring Weight: channel: 2, sat: 0.029457834, max: 0.02946143
+[07/19/26 14:37:18.262] [I] 	Measuring Weight: channel: 3, sat: 0.029439736, max: 0.02944333
+[07/19/26 14:37:18.264] [I] 	Measuring Weight: channel: 4, sat: 0.029427387, max: 0.02943098
+[07/19/26 14:37:18.267] [I] 	Measuring Weight: channel: 5, sat: 0.02945783, max: 0.029461427
+[07/19/26 14:37:18.269] [I] 	Measuring Weight: channel: 6, sat: 0.029429486, max: 0.029433079
+[07/19/26 14:37:18.271] [I] 	Measuring Weight: channel: 7, sat: 0.02934546, max: 0.029349042
+[07/19/26 14:37:18.273] [I] 	Measuring Weight: channel: 8, sat: 0.029453961, max: 0.029457556
+[07/19/26 14:37:18.276] [I] 	Measuring Weight: channel: 9, sat: 0.029456148, max: 0.029459743
+[07/19/26 14:37:18.278] [I] 	Measuring Weight: channel: 10, sat: 0.029431665, max: 0.029435256
+[07/19/26 14:37:18.281] [I] 	Measuring Weight: channel: 11, sat: 0.029398013, max: 0.029401602
+[07/19/26 14:37:18.283] [I] 	Measuring Weight: channel: 12, sat: 0.029444983, max: 0.029448578
+[07/19/26 14:37:18.285] [I] 	Measuring Weight: channel: 13, sat: 0.029420393, max: 0.029423984
+[07/19/26 14:37:18.287] [I] 	Measuring Weight: channel: 14, sat: 0.02942443, max: 0.029428022
+[07/19/26 14:37:18.289] [I] 	Measuring Weight: channel: 15, sat: 0.029417759, max: 0.029421348
+[07/19/26 14:37:18.291] [I] 	Measuring Weight: channel: 16, sat: 0.029443642, max: 0.029447237
+[07/19/26 14:37:18.293] [I] 	Measuring Weight: channel: 17, sat: 0.029431418, max: 0.029435009
+[07/19/26 14:37:18.296] [I] 	Measuring Weight: channel: 18, sat: 0.0294577, max: 0.029461296
+[07/19/26 14:37:18.298] [I] 	Measuring Weight: channel: 19, sat: 0.029449468, max: 0.029453063
+[07/19/26 14:37:18.300] [I] 	Measuring Weight: channel: 20, sat: 0.029455164, max: 0.02945876
+[07/19/26 14:37:18.303] [I] 	Measuring Weight: channel: 21, sat: 0.029356085, max: 0.029359667
+[07/19/26 14:37:18.305] [I] 	Measuring Weight: channel: 22, sat: 0.029427387, max: 0.02943098
+[07/19/26 14:37:18.308] [I] 	Measuring Weight: channel: 23, sat: 0.029439162, max: 0.029442756
+[07/19/26 14:37:18.310] [I] 	Measuring Weight: channel: 24, sat: 0.029457636, max: 0.029461233
+[07/19/26 14:37:18.312] [I] 	Measuring Weight: channel: 25, sat: 0.029456267, max: 0.029459862
+[07/19/26 14:37:18.315] [I] 	Measuring Weight: channel: 26, sat: 0.029447863, max: 0.029451456
+[07/19/26 14:37:18.317] [I] 	Measuring Weight: channel: 27, sat: 0.029365472, max: 0.029369058
+[07/19/26 14:37:18.319] [I] 	Measuring Weight: channel: 28, sat: 0.02941056, max: 0.029414149
+[07/19/26 14:37:18.322] [I] 	Measuring Weight: channel: 29, sat: 0.029425014, max: 0.029428605
+[07/19/26 14:37:18.324] [I] 	Measuring Weight: channel: 30, sat: 0.029435273, max: 0.029438866
+[07/19/26 14:37:18.327] [I] 	Measuring Weight: channel: 31, sat: 0.029429423, max: 0.029433016
+[07/19/26 14:37:18.331] [I] 	Measuring Weight: channel: 32, sat: 0.029437378, max: 0.029440971
+[07/19/26 14:37:18.336] [I] 	Measuring Weight: channel: 33, sat: 0.029405544, max: 0.029409133
+[07/19/26 14:37:18.340] [I] 	Measuring Weight: channel: 34, sat: 0.029412298, max: 0.029415889
+[07/19/26 14:37:18.343] [I] 	Measuring Weight: channel: 35, sat: 0.029458655, max: 0.029462252
+[07/19/26 14:37:18.346] [I] 	Measuring Weight: channel: 36, sat: 0.02944807, max: 0.029451663
+[07/19/26 14:37:18.348] [I] 	Measuring Weight: channel: 37, sat: 0.02944906, max: 0.029452654
+[07/19/26 14:37:18.350] [I] 	Measuring Weight: channel: 38, sat: 0.029442308, max: 0.029445903
+[07/19/26 14:37:18.353] [I] 	Measuring Weight: channel: 39, sat: 0.029425466, max: 0.029429058
+[07/19/26 14:37:18.355] [I] 	Measuring Weight: channel: 40, sat: 0.029375568, max: 0.029379154
+[07/19/26 14:37:18.357] [I] 	Measuring Weight: channel: 41, sat: 0.029454373, max: 0.029457968
+[07/19/26 14:37:18.359] [I] 	Measuring Weight: channel: 42, sat: 0.029450187, max: 0.029453782
+[07/19/26 14:37:18.361] [I] 	Measuring Weight: channel: 43, sat: 0.029450716, max: 0.029454311
+[07/19/26 14:37:18.364] [I] 	Measuring Weight: channel: 44, sat: 0.029434824, max: 0.029438417
+[07/19/26 14:37:18.366] [I] 	Measuring Weight: channel: 45, sat: 0.029426105, max: 0.029429697
+[07/19/26 14:37:18.368] [I] 	Measuring Weight: channel: 46, sat: 0.0294093, max: 0.02941289
+[07/19/26 14:37:18.369] [I] 	Measuring Weight: channel: 47, sat: 0.029388571, max: 0.029392159
+[07/19/26 14:37:18.371] [I] 	Measuring Weight: channel: 48, sat: 0.029458603, max: 0.0294622
+[07/19/26 14:37:18.373] [I] 	Measuring Weight: channel: 49, sat: 0.029449275, max: 0.02945287
+[07/19/26 14:37:18.375] [I] 	Measuring Weight: channel: 50, sat: 0.029403536, max: 0.029407125
+[07/19/26 14:37:18.378] [I] 	Measuring Weight: channel: 51, sat: 0.029428931, max: 0.029432524
+[07/19/26 14:37:18.379] [I] 	Measuring Weight: channel: 52, sat: 0.029438931, max: 0.029442525
+[07/19/26 14:37:18.381] [I] 	Measuring Weight: channel: 53, sat: 0.029446186, max: 0.02944978
+[07/19/26 14:37:18.383] [I] 	Measuring Weight: channel: 54, sat: 0.02944968, max: 0.029453276
+[07/19/26 14:37:18.385] [I] 	Measuring Weight: channel: 55, sat: 0.029415231, max: 0.02941882
+[07/19/26 14:37:18.386] [I] 	Measuring Weight: channel: 56, sat: 0.029411467, max: 0.029415058
+[07/19/26 14:37:18.388] [I] 	Measuring Weight: channel: 57, sat: 0.029423373, max: 0.029426964
+[07/19/26 14:37:18.390] [I] 	Measuring Weight: channel: 58, sat: 0.029455198, max: 0.029458793
+[07/19/26 14:37:18.392] [I] 	Measuring Weight: channel: 59, sat: 0.029401494, max: 0.029405082
+[07/19/26 14:37:18.394] [I] 	Measuring Weight: channel: 60, sat: 0.029440315, max: 0.029443908
+[07/19/26 14:37:18.396] [I] 	Measuring Weight: channel: 61, sat: 0.029456893, max: 0.02946049
+[07/19/26 14:37:18.397] [I] 	Measuring Weight: channel: 62, sat: 0.0294497, max: 0.029453294
+[07/19/26 14:37:18.399] [I] 	Measuring Weight: channel: 63, sat: 0.02943543, max: 0.029439023
+[07/19/26 14:37:18.401] [I] 	Measuring Weight: channel: 64, sat: 0.029418614, max: 0.029422203
+[07/19/26 14:37:18.403] [I] 	Measuring Weight: channel: 65, sat: 0.02944123, max: 0.029444823
+[07/19/26 14:37:18.404] [I] 	Measuring Weight: channel: 66, sat: 0.02943865, max: 0.029442243
+[07/19/26 14:37:18.406] [I] 	Measuring Weight: channel: 67, sat: 0.029440442, max: 0.029444035
+[07/19/26 14:37:18.408] [I] 	Measuring Weight: channel: 68, sat: 0.029422738, max: 0.029426329
+[07/19/26 14:37:18.410] [I] 	Measuring Weight: channel: 69, sat: 0.029405896, max: 0.029409485
+[07/19/26 14:37:18.412] [I] 	Measuring Weight: channel: 70, sat: 0.029433787, max: 0.029437378
+[07/19/26 14:37:18.414] [I] 	Measuring Weight: channel: 71, sat: 0.029454505, max: 0.0294581
+[07/19/26 14:37:18.415] [I] 	Measuring Weight: channel: 72, sat: 0.029457869, max: 0.029461466
+[07/19/26 14:37:18.417] [I] 	Measuring Weight: channel: 73, sat: 0.029451482, max: 0.029455077
+[07/19/26 14:37:18.419] [I] 	Measuring Weight: channel: 74, sat: 0.02944315, max: 0.029446745
+[07/19/26 14:37:18.421] [I] 	Measuring Weight: channel: 75, sat: 0.029451957, max: 0.029455552
+[07/19/26 14:37:18.423] [I] 	Measuring Weight: channel: 76, sat: 0.029404627, max: 0.029408216
+[07/19/26 14:37:18.425] [I] 	Measuring Weight: channel: 77, sat: 0.029437043, max: 0.029440636
+[07/19/26 14:37:18.427] [I] 	Measuring Weight: channel: 78, sat: 0.029419007, max: 0.029422598
+[07/19/26 14:37:18.428] [I] 	Measuring Weight: channel: 79, sat: 0.02943151, max: 0.029435102
+[07/19/26 14:37:18.430] [I] 	Measuring Weight: channel: 80, sat: 0.029439054, max: 0.029442647
+[07/19/26 14:37:18.432] [I] 	Measuring Weight: channel: 81, sat: 0.029342195, max: 0.029345775
+[07/19/26 14:37:18.434] [I] 	Measuring Weight: channel: 82, sat: 0.029435996, max: 0.029439589
+[07/19/26 14:37:18.436] [I] 	Measuring Weight: channel: 83, sat: 0.029399369, max: 0.029402958
+[07/19/26 14:37:18.438] [I] 	Measuring Weight: channel: 84, sat: 0.02942351, max: 0.029427102
+[07/19/26 14:37:18.440] [I] 	Measuring Weight: channel: 85, sat: 0.029456304, max: 0.0294599
+[07/19/26 14:37:18.441] [I] 	Measuring Weight: channel: 86, sat: 0.02945224, max: 0.029455835
+[07/19/26 14:37:18.443] [I] 	Measuring Weight: channel: 87, sat: 0.029407535, max: 0.029411124
+[07/19/26 14:37:18.445] [I] 	Measuring Weight: channel: 88, sat: 0.029431596, max: 0.029435188
+[07/19/26 14:37:18.447] [I] 	Measuring Weight: channel: 89, sat: 0.02945467, max: 0.029458266
+[07/19/26 14:37:18.449] [I] 	Measuring Weight: channel: 90, sat: 0.029452125, max: 0.02945572
+[07/19/26 14:37:18.450] [I] 	Measuring Weight: channel: 91, sat: 0.029446963, max: 0.029450556
+[07/19/26 14:37:18.453] [I] 	Measuring Weight: channel: 92, sat: 0.029427886, max: 0.029431479
+[07/19/26 14:37:18.455] [I] 	Measuring Weight: channel: 93, sat: 0.029432705, max: 0.029436296
+[07/19/26 14:37:18.456] [I] 	Measuring Weight: channel: 94, sat: 0.029456599, max: 0.029460194
+[07/19/26 14:37:18.458] [I] 	Measuring Weight: channel: 95, sat: 0.029454092, max: 0.029457686
+[07/19/26 14:37:18.460] [I] 	Measuring Weight: channel: 96, sat: 0.029417742, max: 0.029421331
+[07/19/26 14:37:18.462] [I] 	Measuring Weight: channel: 97, sat: 0.029452315, max: 0.02945591
+[07/19/26 14:37:18.464] [I] 	Measuring Weight: channel: 98, sat: 0.029450195, max: 0.02945379
+[07/19/26 14:37:18.465] [I] 	Measuring Weight: channel: 99, sat: 0.029388795, max: 0.029392382
+[07/19/26 14:37:18.467] [I] 	Measuring Weight: channel: 100, sat: 0.02945329, max: 0.029456886
+[07/19/26 14:37:18.469] [I] 	Measuring Weight: channel: 101, sat: 0.029446952, max: 0.029450545
+[07/19/26 14:37:18.471] [I] 	Measuring Weight: channel: 102, sat: 0.029437136, max: 0.029440729
+[07/19/26 14:37:18.473] [I] 	Measuring Weight: channel: 103, sat: 0.029435458, max: 0.02943905
+[07/19/26 14:37:18.475] [I] 	Measuring Weight: channel: 104, sat: 0.029431952, max: 0.029435543
+[07/19/26 14:37:18.477] [I] 	Measuring Weight: channel: 105, sat: 0.029389555, max: 0.029393142
+[07/19/26 14:37:18.478] [I] 	Measuring Weight: channel: 106, sat: 0.02942424, max: 0.029427832
+[07/19/26 14:37:18.480] [I] 	Measuring Weight: channel: 107, sat: 0.029436577, max: 0.02944017
+[07/19/26 14:37:18.482] [I] 	Measuring Weight: channel: 108, sat: 0.029456185, max: 0.02945978
+[07/19/26 14:37:18.484] [I] 	Measuring Weight: channel: 109, sat: 0.029387642, max: 0.029391227
+[07/19/26 14:37:18.486] [I] 	Measuring Weight: channel: 110, sat: 0.029448923, max: 0.029452516
+[07/19/26 14:37:18.488] [I] 	Measuring Weight: channel: 111, sat: 0.029444292, max: 0.029447887
+[07/19/26 14:37:18.489] [I] 	Measuring Weight: channel: 112, sat: 0.02945903, max: 0.029462626
+[07/19/26 14:37:18.491] [I] 	Measuring Weight: channel: 113, sat: 0.029418377, max: 0.029421967
+[07/19/26 14:37:18.493] [I] 	Measuring Weight: channel: 114, sat: 0.029400231, max: 0.029403819
+[07/19/26 14:37:18.495] [I] 	Measuring Weight: channel: 115, sat: 0.02943358, max: 0.029437171
+[07/19/26 14:37:18.497] [I] 	Measuring Weight: channel: 116, sat: 0.029435962, max: 0.029439555
+[07/19/26 14:37:18.499] [I] 	Measuring Weight: channel: 117, sat: 0.029438455, max: 0.029442048
+[07/19/26 14:37:18.501] [I] 	Measuring Weight: channel: 118, sat: 0.029439729, max: 0.029443322
+[07/19/26 14:37:18.502] [I] 	Measuring Weight: channel: 119, sat: 0.029452577, max: 0.029456172
+[07/19/26 14:37:18.504] [I] 	Measuring Weight: channel: 120, sat: 0.029391227, max: 0.029394815
+[07/19/26 14:37:18.506] [I] 	Measuring Weight: channel: 121, sat: 0.029454371, max: 0.029457966
+[07/19/26 14:37:18.508] [I] 	Measuring Weight: channel: 122, sat: 0.029399168, max: 0.029402757
+[07/19/26 14:37:18.510] [I] 	Measuring Weight: channel: 123, sat: 0.029453503, max: 0.029457098
+[07/19/26 14:37:18.512] [I] 	Measuring Weight: channel: 124, sat: 0.029445006, max: 0.0294486
+[07/19/26 14:37:18.514] [I] 	Measuring Weight: channel: 125, sat: 0.02940032, max: 0.029403908
+[07/19/26 14:37:18.516] [I] 	Measuring Weight: channel: 126, sat: 0.029440552, max: 0.029444145
+[07/19/26 14:37:18.518] [I] 	Measuring Weight: channel: 127, sat: 0.029457869, max: 0.029461466
+[07/19/26 14:37:18.520] [I] 	Measuring Weight: channel: 128, sat: 0.029453933, max: 0.029457528
+[07/19/26 14:37:18.521] [I] Quantizing Op Id: 20, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:18.521] [I] Quantizing Op Id: 21, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:18.523] [I] 	Measuring Weight: channel: 1, sat: 0.029384658, max: 0.029388243
+[07/19/26 14:37:18.525] [I] 	Measuring Weight: channel: 2, sat: 0.029431349, max: 0.02943494
+[07/19/26 14:37:18.527] [I] 	Measuring Weight: channel: 3, sat: 0.02944642, max: 0.029450012
+[07/19/26 14:37:18.529] [I] 	Measuring Weight: channel: 4, sat: 0.029418666, max: 0.029422255
+[07/19/26 14:37:18.531] [I] 	Measuring Weight: channel: 5, sat: 0.029373966, max: 0.029377552
+[07/19/26 14:37:18.533] [I] 	Measuring Weight: channel: 6, sat: 0.029438734, max: 0.029442327
+[07/19/26 14:37:18.535] [I] 	Measuring Weight: channel: 7, sat: 0.029458554, max: 0.029462151
+[07/19/26 14:37:18.537] [I] 	Measuring Weight: channel: 8, sat: 0.029450575, max: 0.02945417
+[07/19/26 14:37:18.540] [I] 	Measuring Weight: channel: 9, sat: 0.029436698, max: 0.029440291
+[07/19/26 14:37:18.542] [I] 	Measuring Weight: channel: 10, sat: 0.029436663, max: 0.029440256
+[07/19/26 14:37:18.544] [I] 	Measuring Weight: channel: 11, sat: 0.029442089, max: 0.029445684
+[07/19/26 14:37:18.547] [I] 	Measuring Weight: channel: 12, sat: 0.029272625, max: 0.029276198
+[07/19/26 14:37:18.549] [I] 	Measuring Weight: channel: 13, sat: 0.029421883, max: 0.029425474
+[07/19/26 14:37:18.551] [I] 	Measuring Weight: channel: 14, sat: 0.029446498, max: 0.02945009
+[07/19/26 14:37:18.554] [I] 	Measuring Weight: channel: 15, sat: 0.029454695, max: 0.02945829
+[07/19/26 14:37:18.558] [I] 	Measuring Weight: channel: 16, sat: 0.029382853, max: 0.02938644
+[07/19/26 14:37:18.562] [I] 	Measuring Weight: channel: 17, sat: 0.02945296, max: 0.029456554
+[07/19/26 14:37:18.564] [I] 	Measuring Weight: channel: 18, sat: 0.029444141, max: 0.029447736
+[07/19/26 14:37:18.566] [I] 	Measuring Weight: channel: 19, sat: 0.029456973, max: 0.02946057
+[07/19/26 14:37:18.568] [I] 	Measuring Weight: channel: 20, sat: 0.029429637, max: 0.02943323
+[07/19/26 14:37:18.570] [I] 	Measuring Weight: channel: 21, sat: 0.02942186, max: 0.029425452
+[07/19/26 14:37:18.572] [I] 	Measuring Weight: channel: 22, sat: 0.029444968, max: 0.029448563
+[07/19/26 14:37:18.574] [I] 	Measuring Weight: channel: 23, sat: 0.029430531, max: 0.029434122
+[07/19/26 14:37:18.576] [I] 	Measuring Weight: channel: 24, sat: 0.029397286, max: 0.029400876
+[07/19/26 14:37:18.578] [I] 	Measuring Weight: channel: 25, sat: 0.029426115, max: 0.029429706
+[07/19/26 14:37:18.580] [I] 	Measuring Weight: channel: 26, sat: 0.029404676, max: 0.029408265
+[07/19/26 14:37:18.583] [I] 	Measuring Weight: channel: 27, sat: 0.029453298, max: 0.029456893
+[07/19/26 14:37:18.585] [I] 	Measuring Weight: channel: 28, sat: 0.029402519, max: 0.029406106
+[07/19/26 14:37:18.587] [I] 	Measuring Weight: channel: 29, sat: 0.029431542, max: 0.029435134
+[07/19/26 14:37:18.590] [I] 	Measuring Weight: channel: 30, sat: 0.029425716, max: 0.029429307
+[07/19/26 14:37:18.592] [I] 	Measuring Weight: channel: 31, sat: 0.029343342, max: 0.029346924
+[07/19/26 14:37:18.594] [I] 	Measuring Weight: channel: 32, sat: 0.029457353, max: 0.02946095
+[07/19/26 14:37:18.597] [I] 	Measuring Weight: channel: 33, sat: 0.029428348, max: 0.029431941
+[07/19/26 14:37:18.600] [I] 	Measuring Weight: channel: 34, sat: 0.029441595, max: 0.029445188
+[07/19/26 14:37:18.602] [I] 	Measuring Weight: channel: 35, sat: 0.029456211, max: 0.029459806
+[07/19/26 14:37:18.605] [I] 	Measuring Weight: channel: 36, sat: 0.029436417, max: 0.02944001
+[07/19/26 14:37:18.608] [I] 	Measuring Weight: channel: 37, sat: 0.029420959, max: 0.02942455
+[07/19/26 14:37:18.611] [I] 	Measuring Weight: channel: 38, sat: 0.029458912, max: 0.029462509
+[07/19/26 14:37:18.613] [I] 	Measuring Weight: channel: 39, sat: 0.029409684, max: 0.029413274
+[07/19/26 14:37:18.616] [I] 	Measuring Weight: channel: 40, sat: 0.029419595, max: 0.029423187
+[07/19/26 14:37:18.618] [I] 	Measuring Weight: channel: 41, sat: 0.029443368, max: 0.029446963
+[07/19/26 14:37:18.620] [I] 	Measuring Weight: channel: 42, sat: 0.029410742, max: 0.029414332
+[07/19/26 14:37:18.622] [I] 	Measuring Weight: channel: 43, sat: 0.029428648, max: 0.02943224
+[07/19/26 14:37:18.624] [I] 	Measuring Weight: channel: 44, sat: 0.029451484, max: 0.029455079
+[07/19/26 14:37:18.626] [I] 	Measuring Weight: channel: 45, sat: 0.02945274, max: 0.029456334
+[07/19/26 14:37:18.628] [I] 	Measuring Weight: channel: 46, sat: 0.029418577, max: 0.029422166
+[07/19/26 14:37:18.630] [I] 	Measuring Weight: channel: 47, sat: 0.029440753, max: 0.029444346
+[07/19/26 14:37:18.632] [I] 	Measuring Weight: channel: 48, sat: 0.029457819, max: 0.029461415
+[07/19/26 14:37:18.634] [I] 	Measuring Weight: channel: 49, sat: 0.02944785, max: 0.029451443
+[07/19/26 14:37:18.636] [I] 	Measuring Weight: channel: 50, sat: 0.029384375, max: 0.029387962
+[07/19/26 14:37:18.638] [I] 	Measuring Weight: channel: 51, sat: 0.029452799, max: 0.029456394
+[07/19/26 14:37:18.640] [I] 	Measuring Weight: channel: 52, sat: 0.029447174, max: 0.029450767
+[07/19/26 14:37:18.641] [I] 	Measuring Weight: channel: 53, sat: 0.02943609, max: 0.029439682
+[07/19/26 14:37:18.643] [I] 	Measuring Weight: channel: 54, sat: 0.02943723, max: 0.029440824
+[07/19/26 14:37:18.645] [I] 	Measuring Weight: channel: 55, sat: 0.029438592, max: 0.029442186
+[07/19/26 14:37:18.647] [I] 	Measuring Weight: channel: 56, sat: 0.029443914, max: 0.029447509
+[07/19/26 14:37:18.648] [I] 	Measuring Weight: channel: 57, sat: 0.029434681, max: 0.029438274
+[07/19/26 14:37:18.650] [I] 	Measuring Weight: channel: 58, sat: 0.029441835, max: 0.02944543
+[07/19/26 14:37:18.652] [I] 	Measuring Weight: channel: 59, sat: 0.029433072, max: 0.029436663
+[07/19/26 14:37:18.654] [I] 	Measuring Weight: channel: 60, sat: 0.029457834, max: 0.02946143
+[07/19/26 14:37:18.656] [I] 	Measuring Weight: channel: 61, sat: 0.029442372, max: 0.029445967
+[07/19/26 14:37:18.658] [I] 	Measuring Weight: channel: 62, sat: 0.02943951, max: 0.029443104
+[07/19/26 14:37:18.660] [I] 	Measuring Weight: channel: 63, sat: 0.029453265, max: 0.02945686
+[07/19/26 14:37:18.661] [I] 	Measuring Weight: channel: 64, sat: 0.029458396, max: 0.029461993
+[07/19/26 14:37:18.663] [I] 	Measuring Weight: channel: 65, sat: 0.029355098, max: 0.02935868
+[07/19/26 14:37:18.665] [I] 	Measuring Weight: channel: 66, sat: 0.029455924, max: 0.02945952
+[07/19/26 14:37:18.667] [I] 	Measuring Weight: channel: 67, sat: 0.02938897, max: 0.029392557
+[07/19/26 14:37:18.669] [I] 	Measuring Weight: channel: 68, sat: 0.029415779, max: 0.029419368
+[07/19/26 14:37:18.670] [I] 	Measuring Weight: channel: 69, sat: 0.029457793, max: 0.02946139
+[07/19/26 14:37:18.672] [I] 	Measuring Weight: channel: 70, sat: 0.029391974, max: 0.029395562
+[07/19/26 14:37:18.674] [I] 	Measuring Weight: channel: 71, sat: 0.029449629, max: 0.029453224
+[07/19/26 14:37:18.676] [I] 	Measuring Weight: channel: 72, sat: 0.029442038, max: 0.029445633
+[07/19/26 14:37:18.678] [I] 	Measuring Weight: channel: 73, sat: 0.02942031, max: 0.029423902
+[07/19/26 14:37:18.680] [I] 	Measuring Weight: channel: 74, sat: 0.029440753, max: 0.029444346
+[07/19/26 14:37:18.682] [I] 	Measuring Weight: channel: 75, sat: 0.029458087, max: 0.029461684
+[07/19/26 14:37:18.684] [I] 	Measuring Weight: channel: 76, sat: 0.0294357, max: 0.029439293
+[07/19/26 14:37:18.686] [I] 	Measuring Weight: channel: 77, sat: 0.02943712, max: 0.029440712
+[07/19/26 14:37:18.688] [I] 	Measuring Weight: channel: 78, sat: 0.029327912, max: 0.029331492
+[07/19/26 14:37:18.689] [I] 	Measuring Weight: channel: 79, sat: 0.029455481, max: 0.029459076
+[07/19/26 14:37:18.691] [I] 	Measuring Weight: channel: 80, sat: 0.029452343, max: 0.029455937
+[07/19/26 14:37:18.693] [I] 	Measuring Weight: channel: 81, sat: 0.029445492, max: 0.029449085
+[07/19/26 14:37:18.695] [I] 	Measuring Weight: channel: 82, sat: 0.029407822, max: 0.02941141
+[07/19/26 14:37:18.697] [I] 	Measuring Weight: channel: 83, sat: 0.029447876, max: 0.029451469
+[07/19/26 14:37:18.698] [I] 	Measuring Weight: channel: 84, sat: 0.029458473, max: 0.02946207
+[07/19/26 14:37:18.700] [I] 	Measuring Weight: channel: 85, sat: 0.02944338, max: 0.029446974
+[07/19/26 14:37:18.702] [I] 	Measuring Weight: channel: 86, sat: 0.029453551, max: 0.029457146
+[07/19/26 14:37:18.704] [I] 	Measuring Weight: channel: 87, sat: 0.029452402, max: 0.029455997
+[07/19/26 14:37:18.706] [I] 	Measuring Weight: channel: 88, sat: 0.029398888, max: 0.029402478
+[07/19/26 14:37:18.708] [I] 	Measuring Weight: channel: 89, sat: 0.029451465, max: 0.02945506
+[07/19/26 14:37:18.710] [I] 	Measuring Weight: channel: 90, sat: 0.029439423, max: 0.029443016
+[07/19/26 14:37:18.711] [I] 	Measuring Weight: channel: 91, sat: 0.029441109, max: 0.029444702
+[07/19/26 14:37:18.713] [I] 	Measuring Weight: channel: 92, sat: 0.029411854, max: 0.029415445
+[07/19/26 14:37:18.715] [I] 	Measuring Weight: channel: 93, sat: 0.029458277, max: 0.029461874
+[07/19/26 14:37:18.717] [I] 	Measuring Weight: channel: 94, sat: 0.029418442, max: 0.029422032
+[07/19/26 14:37:18.719] [I] 	Measuring Weight: channel: 95, sat: 0.029453548, max: 0.029457143
+[07/19/26 14:37:18.721] [I] 	Measuring Weight: channel: 96, sat: 0.029447198, max: 0.029450791
+[07/19/26 14:37:18.722] [I] 	Measuring Weight: channel: 97, sat: 0.02933968, max: 0.02934326
+[07/19/26 14:37:18.724] [I] 	Measuring Weight: channel: 98, sat: 0.029417465, max: 0.029421054
+[07/19/26 14:37:18.726] [I] 	Measuring Weight: channel: 99, sat: 0.029451096, max: 0.029454691
+[07/19/26 14:37:18.728] [I] 	Measuring Weight: channel: 100, sat: 0.029398719, max: 0.029402308
+[07/19/26 14:37:18.730] [I] 	Measuring Weight: channel: 101, sat: 0.02943622, max: 0.029439813
+[07/19/26 14:37:18.731] [I] 	Measuring Weight: channel: 102, sat: 0.02944369, max: 0.029447285
+[07/19/26 14:37:18.733] [I] 	Measuring Weight: channel: 103, sat: 0.029412992, max: 0.029416583
+[07/19/26 14:37:18.735] [I] 	Measuring Weight: channel: 104, sat: 0.02942205, max: 0.029425642
+[07/19/26 14:37:18.737] [I] 	Measuring Weight: channel: 105, sat: 0.029421097, max: 0.029424688
+[07/19/26 14:37:18.739] [I] 	Measuring Weight: channel: 106, sat: 0.02945412, max: 0.029457714
+[07/19/26 14:37:18.741] [I] 	Measuring Weight: channel: 107, sat: 0.029453682, max: 0.029457277
+[07/19/26 14:37:18.743] [I] 	Measuring Weight: channel: 108, sat: 0.029440269, max: 0.029443862
+[07/19/26 14:37:18.745] [I] 	Measuring Weight: channel: 109, sat: 0.02941684, max: 0.02942043
+[07/19/26 14:37:18.747] [I] 	Measuring Weight: channel: 110, sat: 0.029449068, max: 0.029452661
+[07/19/26 14:37:18.748] [I] 	Measuring Weight: channel: 111, sat: 0.029425142, max: 0.029428734
+[07/19/26 14:37:18.750] [I] 	Measuring Weight: channel: 112, sat: 0.029394848, max: 0.029398436
+[07/19/26 14:37:18.752] [I] 	Measuring Weight: channel: 113, sat: 0.029447265, max: 0.029450858
+[07/19/26 14:37:18.754] [I] 	Measuring Weight: channel: 114, sat: 0.029404026, max: 0.029407615
+[07/19/26 14:37:18.756] [I] 	Measuring Weight: channel: 115, sat: 0.029454028, max: 0.029457623
+[07/19/26 14:37:18.758] [I] 	Measuring Weight: channel: 116, sat: 0.0294549, max: 0.029458495
+[07/19/26 14:37:18.759] [I] 	Measuring Weight: channel: 117, sat: 0.029450158, max: 0.029453753
+[07/19/26 14:37:18.761] [I] 	Measuring Weight: channel: 118, sat: 0.02942883, max: 0.029432423
+[07/19/26 14:37:18.763] [I] 	Measuring Weight: channel: 119, sat: 0.029452087, max: 0.029455682
+[07/19/26 14:37:18.766] [I] 	Measuring Weight: channel: 120, sat: 0.029458754, max: 0.02946235
+[07/19/26 14:37:18.768] [I] 	Measuring Weight: channel: 121, sat: 0.029424066, max: 0.029427657
+[07/19/26 14:37:18.769] [I] 	Measuring Weight: channel: 122, sat: 0.029451465, max: 0.02945506
+[07/19/26 14:37:18.771] [I] 	Measuring Weight: channel: 123, sat: 0.02943924, max: 0.029442834
+[07/19/26 14:37:18.773] [I] 	Measuring Weight: channel: 124, sat: 0.02943673, max: 0.029440323
+[07/19/26 14:37:18.775] [I] 	Measuring Weight: channel: 125, sat: 0.029450214, max: 0.029453808
+[07/19/26 14:37:18.777] [I] 	Measuring Weight: channel: 126, sat: 0.029458791, max: 0.029462388
+[07/19/26 14:37:18.780] [I] 	Measuring Weight: channel: 127, sat: 0.0294584, max: 0.029461997
+[07/19/26 14:37:18.782] [I] 	Measuring Weight: channel: 128, sat: 0.029456386, max: 0.029459981
+[07/19/26 14:37:18.783] [I] Quantizing Op Id: 22, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:18.783] [I] Quantizing Op Id: 23, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:18.789] [I] 	Measuring Weight: channel: 1, sat: 0.029456286, max: 0.02945988
+[07/19/26 14:37:18.793] [I] 	Measuring Weight: channel: 2, sat: 0.029456316, max: 0.02945991
+[07/19/26 14:37:18.796] [I] 	Measuring Weight: channel: 3, sat: 0.029458951, max: 0.029462548
+[07/19/26 14:37:18.798] [I] 	Measuring Weight: channel: 4, sat: 0.029436287, max: 0.02943988
+[07/19/26 14:37:18.800] [I] 	Measuring Weight: channel: 5, sat: 0.029409975, max: 0.029413564
+[07/19/26 14:37:18.802] [I] 	Measuring Weight: channel: 6, sat: 0.029436123, max: 0.029439716
+[07/19/26 14:37:18.804] [I] 	Measuring Weight: channel: 7, sat: 0.029443877, max: 0.029447472
+[07/19/26 14:37:18.806] [I] 	Measuring Weight: channel: 8, sat: 0.029454159, max: 0.029457754
+[07/19/26 14:37:18.808] [I] 	Measuring Weight: channel: 9, sat: 0.029458914, max: 0.02946251
+[07/19/26 14:37:18.810] [I] 	Measuring Weight: channel: 10, sat: 0.029448649, max: 0.029452242
+[07/19/26 14:37:18.812] [I] 	Measuring Weight: channel: 11, sat: 0.029449249, max: 0.029452844
+[07/19/26 14:37:18.815] [I] 	Measuring Weight: channel: 12, sat: 0.02942453, max: 0.02942812
+[07/19/26 14:37:18.817] [I] 	Measuring Weight: channel: 13, sat: 0.029453693, max: 0.029457288
+[07/19/26 14:37:18.819] [I] 	Measuring Weight: channel: 14, sat: 0.029412251, max: 0.029415842
+[07/19/26 14:37:18.821] [I] 	Measuring Weight: channel: 15, sat: 0.029428028, max: 0.02943162
+[07/19/26 14:37:18.823] [I] 	Measuring Weight: channel: 16, sat: 0.029365625, max: 0.02936921
+[07/19/26 14:37:18.825] [I] 	Measuring Weight: channel: 17, sat: 0.029428443, max: 0.029432036
+[07/19/26 14:37:18.827] [I] 	Measuring Weight: channel: 18, sat: 0.029457897, max: 0.029461494
+[07/19/26 14:37:18.829] [I] 	Measuring Weight: channel: 19, sat: 0.029451707, max: 0.029455302
+[07/19/26 14:37:18.831] [I] 	Measuring Weight: channel: 20, sat: 0.029423794, max: 0.029427385
+[07/19/26 14:37:18.833] [I] 	Measuring Weight: channel: 21, sat: 0.029424863, max: 0.029428454
+[07/19/26 14:37:18.835] [I] 	Measuring Weight: channel: 22, sat: 0.029446254, max: 0.029449847
+[07/19/26 14:37:18.837] [I] 	Measuring Weight: channel: 23, sat: 0.029458784, max: 0.02946238
+[07/19/26 14:37:18.839] [I] 	Measuring Weight: channel: 24, sat: 0.029393207, max: 0.029396795
+[07/19/26 14:37:18.841] [I] 	Measuring Weight: channel: 25, sat: 0.029431578, max: 0.029435169
+[07/19/26 14:37:18.843] [I] 	Measuring Weight: channel: 26, sat: 0.029453574, max: 0.029457169
+[07/19/26 14:37:18.845] [I] 	Measuring Weight: channel: 27, sat: 0.029448178, max: 0.02945177
+[07/19/26 14:37:18.847] [I] 	Measuring Weight: channel: 28, sat: 0.029445753, max: 0.029449346
+[07/19/26 14:37:18.849] [I] 	Measuring Weight: channel: 29, sat: 0.029437456, max: 0.02944105
+[07/19/26 14:37:18.851] [I] 	Measuring Weight: channel: 30, sat: 0.029458463, max: 0.02946206
+[07/19/26 14:37:18.853] [I] 	Measuring Weight: channel: 31, sat: 0.02945634, max: 0.029459935
+[07/19/26 14:37:18.855] [I] 	Measuring Weight: channel: 32, sat: 0.029385597, max: 0.029389182
+[07/19/26 14:37:18.858] [I] 	Measuring Weight: channel: 33, sat: 0.029394647, max: 0.029398235
+[07/19/26 14:37:18.860] [I] 	Measuring Weight: channel: 34, sat: 0.029430486, max: 0.029434077
+[07/19/26 14:37:18.863] [I] 	Measuring Weight: channel: 35, sat: 0.029417649, max: 0.029421238
+[07/19/26 14:37:18.865] [I] 	Measuring Weight: channel: 36, sat: 0.029413125, max: 0.029416716
+[07/19/26 14:37:18.868] [I] 	Measuring Weight: channel: 37, sat: 0.029446501, max: 0.029450094
+[07/19/26 14:37:18.871] [I] 	Measuring Weight: channel: 38, sat: 0.02938445, max: 0.029388035
+[07/19/26 14:37:18.873] [I] 	Measuring Weight: channel: 39, sat: 0.029383527, max: 0.029387115
+[07/19/26 14:37:18.876] [I] 	Measuring Weight: channel: 40, sat: 0.02944099, max: 0.029444583
+[07/19/26 14:37:18.878] [I] 	Measuring Weight: channel: 41, sat: 0.029412668, max: 0.02941626
+[07/19/26 14:37:18.880] [I] 	Measuring Weight: channel: 42, sat: 0.029448576, max: 0.02945217
+[07/19/26 14:37:18.882] [I] 	Measuring Weight: channel: 43, sat: 0.029413667, max: 0.029417258
+[07/19/26 14:37:18.884] [I] 	Measuring Weight: channel: 44, sat: 0.029427633, max: 0.029431226
+[07/19/26 14:37:18.886] [I] 	Measuring Weight: channel: 45, sat: 0.029445492, max: 0.029449085
+[07/19/26 14:37:18.888] [I] 	Measuring Weight: channel: 46, sat: 0.029447276, max: 0.02945087
+[07/19/26 14:37:18.890] [I] 	Measuring Weight: channel: 47, sat: 0.029438421, max: 0.029442014
+[07/19/26 14:37:18.892] [I] 	Measuring Weight: channel: 48, sat: 0.029374601, max: 0.029378187
+[07/19/26 14:37:18.894] [I] 	Measuring Weight: channel: 49, sat: 0.029417265, max: 0.029420855
+[07/19/26 14:37:18.896] [I] 	Measuring Weight: channel: 50, sat: 0.029436937, max: 0.02944053
+[07/19/26 14:37:18.898] [I] 	Measuring Weight: channel: 51, sat: 0.029442443, max: 0.029446037
+[07/19/26 14:37:18.900] [I] 	Measuring Weight: channel: 52, sat: 0.029437363, max: 0.029440956
+[07/19/26 14:37:18.902] [I] 	Measuring Weight: channel: 53, sat: 0.029456114, max: 0.02945971
+[07/19/26 14:37:18.903] [I] 	Measuring Weight: channel: 54, sat: 0.02945697, max: 0.029460566
+[07/19/26 14:37:18.905] [I] 	Measuring Weight: channel: 55, sat: 0.029445512, max: 0.029449105
+[07/19/26 14:37:18.907] [I] 	Measuring Weight: channel: 56, sat: 0.029333537, max: 0.029337117
+[07/19/26 14:37:18.909] [I] 	Measuring Weight: channel: 57, sat: 0.02941146, max: 0.02941505
+[07/19/26 14:37:18.911] [I] 	Measuring Weight: channel: 58, sat: 0.029448483, max: 0.029452076
+[07/19/26 14:37:18.912] [I] 	Measuring Weight: channel: 59, sat: 0.029456943, max: 0.02946054
+[07/19/26 14:37:18.914] [I] 	Measuring Weight: channel: 60, sat: 0.029437311, max: 0.029440904
+[07/19/26 14:37:18.916] [I] 	Measuring Weight: channel: 61, sat: 0.029431695, max: 0.029435286
+[07/19/26 14:37:18.918] [I] 	Measuring Weight: channel: 62, sat: 0.029380549, max: 0.029384134
+[07/19/26 14:37:18.920] [I] 	Measuring Weight: channel: 63, sat: 0.02944448, max: 0.029448075
+[07/19/26 14:37:18.922] [I] 	Measuring Weight: channel: 64, sat: 0.029454814, max: 0.02945841
+[07/19/26 14:37:18.924] [I] 	Measuring Weight: channel: 65, sat: 0.029455094, max: 0.029458689
+[07/19/26 14:37:18.926] [I] 	Measuring Weight: channel: 66, sat: 0.02939318, max: 0.029396767
+[07/19/26 14:37:18.929] [I] 	Measuring Weight: channel: 67, sat: 0.029450327, max: 0.029453922
+[07/19/26 14:37:18.931] [I] 	Measuring Weight: channel: 68, sat: 0.029409304, max: 0.029412894
+[07/19/26 14:37:18.933] [I] 	Measuring Weight: channel: 69, sat: 0.029444376, max: 0.02944797
+[07/19/26 14:37:18.935] [I] 	Measuring Weight: channel: 70, sat: 0.029425, max: 0.029428592
+[07/19/26 14:37:18.937] [I] 	Measuring Weight: channel: 71, sat: 0.029450653, max: 0.029454248
+[07/19/26 14:37:18.939] [I] 	Measuring Weight: channel: 72, sat: 0.029440343, max: 0.029443936
+[07/19/26 14:37:18.941] [I] 	Measuring Weight: channel: 73, sat: 0.029451739, max: 0.029455334
+[07/19/26 14:37:18.943] [I] 	Measuring Weight: channel: 74, sat: 0.029435158, max: 0.02943875
+[07/19/26 14:37:18.944] [I] 	Measuring Weight: channel: 75, sat: 0.0294585, max: 0.029462097
+[07/19/26 14:37:18.946] [I] 	Measuring Weight: channel: 76, sat: 0.029426403, max: 0.029429996
+[07/19/26 14:37:18.948] [I] 	Measuring Weight: channel: 77, sat: 0.029449211, max: 0.029452804
+[07/19/26 14:37:18.950] [I] 	Measuring Weight: channel: 78, sat: 0.029455824, max: 0.029459419
+[07/19/26 14:37:18.952] [I] 	Measuring Weight: channel: 79, sat: 0.029393962, max: 0.02939755
+[07/19/26 14:37:18.955] [I] 	Measuring Weight: channel: 80, sat: 0.029446341, max: 0.029449934
+[07/19/26 14:37:18.956] [I] 	Measuring Weight: channel: 81, sat: 0.02943389, max: 0.02943748
+[07/19/26 14:37:18.958] [I] 	Measuring Weight: channel: 82, sat: 0.029398551, max: 0.02940214
+[07/19/26 14:37:18.960] [I] 	Measuring Weight: channel: 83, sat: 0.029402407, max: 0.029405994
+[07/19/26 14:37:18.962] [I] 	Measuring Weight: channel: 84, sat: 0.029351939, max: 0.029355522
+[07/19/26 14:37:18.964] [I] 	Measuring Weight: channel: 85, sat: 0.02942531, max: 0.029428901
+[07/19/26 14:37:18.966] [I] 	Measuring Weight: channel: 86, sat: 0.02945814, max: 0.029461736
+[07/19/26 14:37:18.967] [I] 	Measuring Weight: channel: 87, sat: 0.029454557, max: 0.029458152
+[07/19/26 14:37:18.969] [I] 	Measuring Weight: channel: 88, sat: 0.029447347, max: 0.02945094
+[07/19/26 14:37:18.971] [I] 	Measuring Weight: channel: 89, sat: 0.02945757, max: 0.029461166
+[07/19/26 14:37:18.973] [I] 	Measuring Weight: channel: 90, sat: 0.029458852, max: 0.02946245
+[07/19/26 14:37:18.975] [I] 	Measuring Weight: channel: 91, sat: 0.029422618, max: 0.02942621
+[07/19/26 14:37:18.976] [I] 	Measuring Weight: channel: 92, sat: 0.029439248, max: 0.029442841
+[07/19/26 14:37:18.978] [I] 	Measuring Weight: channel: 93, sat: 0.029459042, max: 0.02946264
+[07/19/26 14:37:18.980] [I] 	Measuring Weight: channel: 94, sat: 0.029398754, max: 0.029402344
+[07/19/26 14:37:18.982] [I] 	Measuring Weight: channel: 95, sat: 0.029425016, max: 0.029428607
+[07/19/26 14:37:18.984] [I] 	Measuring Weight: channel: 96, sat: 0.029400414, max: 0.029404001
+[07/19/26 14:37:18.985] [I] 	Measuring Weight: channel: 97, sat: 0.029446099, max: 0.029449692
+[07/19/26 14:37:18.987] [I] 	Measuring Weight: channel: 98, sat: 0.029453015, max: 0.02945661
+[07/19/26 14:37:18.989] [I] 	Measuring Weight: channel: 99, sat: 0.02944754, max: 0.029451134
+[07/19/26 14:37:18.991] [I] 	Measuring Weight: channel: 100, sat: 0.029455729, max: 0.029459324
+[07/19/26 14:37:18.993] [I] 	Measuring Weight: channel: 101, sat: 0.02932419, max: 0.029327769
+[07/19/26 14:37:18.994] [I] 	Measuring Weight: channel: 102, sat: 0.029429311, max: 0.029432904
+[07/19/26 14:37:18.996] [I] 	Measuring Weight: channel: 103, sat: 0.029403133, max: 0.02940672
+[07/19/26 14:37:18.998] [I] 	Measuring Weight: channel: 104, sat: 0.029426182, max: 0.029429773
+[07/19/26 14:37:19.000] [I] 	Measuring Weight: channel: 105, sat: 0.02942882, max: 0.029432412
+[07/19/26 14:37:19.002] [I] 	Measuring Weight: channel: 106, sat: 0.029453544, max: 0.029457139
+[07/19/26 14:37:19.004] [I] 	Measuring Weight: channel: 107, sat: 0.02941463, max: 0.02941822
+[07/19/26 14:37:19.006] [I] 	Measuring Weight: channel: 108, sat: 0.0294397, max: 0.029443294
+[07/19/26 14:37:19.007] [I] 	Measuring Weight: channel: 109, sat: 0.029445201, max: 0.029448796
+[07/19/26 14:37:19.009] [I] 	Measuring Weight: channel: 110, sat: 0.029453093, max: 0.029456688
+[07/19/26 14:37:19.011] [I] 	Measuring Weight: channel: 111, sat: 0.029446002, max: 0.029449595
+[07/19/26 14:37:19.013] [I] 	Measuring Weight: channel: 112, sat: 0.029455334, max: 0.029458929
+[07/19/26 14:37:19.015] [I] 	Measuring Weight: channel: 113, sat: 0.029445931, max: 0.029449524
+[07/19/26 14:37:19.017] [I] 	Measuring Weight: channel: 114, sat: 0.029435087, max: 0.02943868
+[07/19/26 14:37:19.019] [I] 	Measuring Weight: channel: 115, sat: 0.029401867, max: 0.029405454
+[07/19/26 14:37:19.021] [I] 	Measuring Weight: channel: 116, sat: 0.029427081, max: 0.029430674
+[07/19/26 14:37:19.022] [I] 	Measuring Weight: channel: 117, sat: 0.029442364, max: 0.02944596
+[07/19/26 14:37:19.024] [I] 	Measuring Weight: channel: 118, sat: 0.029452438, max: 0.029456032
+[07/19/26 14:37:19.026] [I] 	Measuring Weight: channel: 119, sat: 0.029441735, max: 0.02944533
+[07/19/26 14:37:19.028] [I] 	Measuring Weight: channel: 120, sat: 0.029456412, max: 0.029460007
+[07/19/26 14:37:19.030] [I] 	Measuring Weight: channel: 121, sat: 0.029442381, max: 0.029445976
+[07/19/26 14:37:19.031] [I] 	Measuring Weight: channel: 122, sat: 0.029426381, max: 0.029429974
+[07/19/26 14:37:19.033] [I] 	Measuring Weight: channel: 123, sat: 0.02943151, max: 0.029435102
+[07/19/26 14:37:19.035] [I] 	Measuring Weight: channel: 124, sat: 0.02944927, max: 0.029452864
+[07/19/26 14:37:19.037] [I] 	Measuring Weight: channel: 125, sat: 0.029387187, max: 0.029390773
+[07/19/26 14:37:19.039] [I] 	Measuring Weight: channel: 126, sat: 0.029432207, max: 0.029435799
+[07/19/26 14:37:19.041] [I] 	Measuring Weight: channel: 127, sat: 0.029443482, max: 0.029447077
+[07/19/26 14:37:19.043] [I] 	Measuring Weight: channel: 128, sat: 0.029414454, max: 0.029418046
+[07/19/26 14:37:19.045] [I] 	Measuring Weight: channel: 129, sat: 0.029448226, max: 0.02945182
+[07/19/26 14:37:19.047] [I] 	Measuring Weight: channel: 130, sat: 0.029452445, max: 0.02945604
+[07/19/26 14:37:19.049] [I] 	Measuring Weight: channel: 131, sat: 0.02934095, max: 0.02934453
+[07/19/26 14:37:19.050] [I] 	Measuring Weight: channel: 132, sat: 0.02938663, max: 0.029390216
+[07/19/26 14:37:19.052] [I] 	Measuring Weight: channel: 133, sat: 0.029449308, max: 0.029452903
+[07/19/26 14:37:19.054] [I] 	Measuring Weight: channel: 134, sat: 0.029385518, max: 0.029389104
+[07/19/26 14:37:19.056] [I] 	Measuring Weight: channel: 135, sat: 0.029439691, max: 0.029443284
+[07/19/26 14:37:19.058] [I] 	Measuring Weight: channel: 136, sat: 0.029451465, max: 0.02945506
+[07/19/26 14:37:19.060] [I] 	Measuring Weight: channel: 137, sat: 0.029456874, max: 0.029460471
+[07/19/26 14:37:19.061] [I] 	Measuring Weight: channel: 138, sat: 0.029458424, max: 0.02946202
+[07/19/26 14:37:19.063] [I] 	Measuring Weight: channel: 139, sat: 0.029450804, max: 0.029454399
+[07/19/26 14:37:19.065] [I] 	Measuring Weight: channel: 140, sat: 0.02944557, max: 0.029449163
+[07/19/26 14:37:19.067] [I] 	Measuring Weight: channel: 141, sat: 0.029446643, max: 0.029450236
+[07/19/26 14:37:19.069] [I] 	Measuring Weight: channel: 142, sat: 0.029440593, max: 0.029444186
+[07/19/26 14:37:19.071] [I] 	Measuring Weight: channel: 143, sat: 0.029446391, max: 0.029449984
+[07/19/26 14:37:19.073] [I] 	Measuring Weight: channel: 144, sat: 0.029419472, max: 0.029423064
+[07/19/26 14:37:19.075] [I] 	Measuring Weight: channel: 145, sat: 0.02939357, max: 0.029397158
+[07/19/26 14:37:19.076] [I] 	Measuring Weight: channel: 146, sat: 0.029448548, max: 0.029452141
+[07/19/26 14:37:19.078] [I] 	Measuring Weight: channel: 147, sat: 0.029439388, max: 0.02944298
+[07/19/26 14:37:19.080] [I] 	Measuring Weight: channel: 148, sat: 0.02944742, max: 0.029451013
+[07/19/26 14:37:19.082] [I] 	Measuring Weight: channel: 149, sat: 0.029410949, max: 0.029414538
+[07/19/26 14:37:19.084] [I] 	Measuring Weight: channel: 150, sat: 0.029450485, max: 0.02945408
+[07/19/26 14:37:19.085] [I] 	Measuring Weight: channel: 151, sat: 0.029436983, max: 0.029440576
+[07/19/26 14:37:19.087] [I] 	Measuring Weight: channel: 152, sat: 0.029397957, max: 0.029401546
+[07/19/26 14:37:19.089] [I] 	Measuring Weight: channel: 153, sat: 0.029455235, max: 0.02945883
+[07/19/26 14:37:19.091] [I] 	Measuring Weight: channel: 154, sat: 0.02944986, max: 0.029453455
+[07/19/26 14:37:19.093] [I] 	Measuring Weight: channel: 155, sat: 0.029378068, max: 0.029381653
+[07/19/26 14:37:19.095] [I] 	Measuring Weight: channel: 156, sat: 0.029458035, max: 0.029461632
+[07/19/26 14:37:19.097] [I] 	Measuring Weight: channel: 157, sat: 0.029455123, max: 0.029458718
+[07/19/26 14:37:19.099] [I] 	Measuring Weight: channel: 158, sat: 0.029435717, max: 0.02943931
+[07/19/26 14:37:19.101] [I] 	Measuring Weight: channel: 159, sat: 0.029414294, max: 0.029417885
+[07/19/26 14:37:19.103] [I] 	Measuring Weight: channel: 160, sat: 0.029454945, max: 0.02945854
+[07/19/26 14:37:19.105] [I] 	Measuring Weight: channel: 161, sat: 0.029423205, max: 0.029426796
+[07/19/26 14:37:19.106] [I] 	Measuring Weight: channel: 162, sat: 0.0293954, max: 0.029398987
+[07/19/26 14:37:19.108] [I] 	Measuring Weight: channel: 163, sat: 0.029453075, max: 0.02945667
+[07/19/26 14:37:19.110] [I] 	Measuring Weight: channel: 164, sat: 0.029413508, max: 0.0294171
+[07/19/26 14:37:19.112] [I] 	Measuring Weight: channel: 165, sat: 0.02943514, max: 0.029438732
+[07/19/26 14:37:19.114] [I] 	Measuring Weight: channel: 166, sat: 0.029442104, max: 0.029445698
+[07/19/26 14:37:19.116] [I] 	Measuring Weight: channel: 167, sat: 0.02940571, max: 0.029409299
+[07/19/26 14:37:19.117] [I] 	Measuring Weight: channel: 168, sat: 0.029406663, max: 0.029410252
+[07/19/26 14:37:19.119] [I] 	Measuring Weight: channel: 169, sat: 0.029400053, max: 0.02940364
+[07/19/26 14:37:19.121] [I] 	Measuring Weight: channel: 170, sat: 0.02934925, max: 0.029352833
+[07/19/26 14:37:19.123] [I] 	Measuring Weight: channel: 171, sat: 0.029390201, max: 0.029393788
+[07/19/26 14:37:19.125] [I] 	Measuring Weight: channel: 172, sat: 0.029393183, max: 0.02939677
+[07/19/26 14:37:19.127] [I] 	Measuring Weight: channel: 173, sat: 0.029442647, max: 0.029446242
+[07/19/26 14:37:19.129] [I] 	Measuring Weight: channel: 174, sat: 0.029430436, max: 0.029434027
+[07/19/26 14:37:19.131] [I] 	Measuring Weight: channel: 175, sat: 0.029437916, max: 0.02944151
+[07/19/26 14:37:19.132] [I] 	Measuring Weight: channel: 176, sat: 0.02942813, max: 0.029431723
+[07/19/26 14:37:19.134] [I] 	Measuring Weight: channel: 177, sat: 0.02945739, max: 0.029460987
+[07/19/26 14:37:19.136] [I] 	Measuring Weight: channel: 178, sat: 0.029405773, max: 0.029409362
+[07/19/26 14:37:19.138] [I] 	Measuring Weight: channel: 179, sat: 0.029390153, max: 0.02939374
+[07/19/26 14:37:19.140] [I] 	Measuring Weight: channel: 180, sat: 0.029446535, max: 0.029450128
+[07/19/26 14:37:19.142] [I] 	Measuring Weight: channel: 181, sat: 0.029438457, max: 0.02944205
+[07/19/26 14:37:19.144] [I] 	Measuring Weight: channel: 182, sat: 0.029447772, max: 0.029451365
+[07/19/26 14:37:19.146] [I] 	Measuring Weight: channel: 183, sat: 0.029453132, max: 0.029456727
+[07/19/26 14:37:19.147] [I] 	Measuring Weight: channel: 184, sat: 0.029408462, max: 0.029412052
+[07/19/26 14:37:19.149] [I] 	Measuring Weight: channel: 185, sat: 0.029443137, max: 0.029446732
+[07/19/26 14:37:19.151] [I] 	Measuring Weight: channel: 186, sat: 0.029451763, max: 0.029455358
+[07/19/26 14:37:19.153] [I] 	Measuring Weight: channel: 187, sat: 0.029454568, max: 0.029458163
+[07/19/26 14:37:19.154] [I] 	Measuring Weight: channel: 188, sat: 0.029446963, max: 0.029450556
+[07/19/26 14:37:19.156] [I] 	Measuring Weight: channel: 189, sat: 0.02942477, max: 0.029428361
+[07/19/26 14:37:19.158] [I] 	Measuring Weight: channel: 190, sat: 0.029454673, max: 0.029458268
+[07/19/26 14:37:19.160] [I] 	Measuring Weight: channel: 191, sat: 0.029436972, max: 0.029440565
+[07/19/26 14:37:19.162] [I] 	Measuring Weight: channel: 192, sat: 0.029454147, max: 0.029457742
+[07/19/26 14:37:19.164] [I] 	Measuring Weight: channel: 193, sat: 0.02944097, max: 0.029444562
+[07/19/26 14:37:19.165] [I] 	Measuring Weight: channel: 194, sat: 0.029456826, max: 0.02946042
+[07/19/26 14:37:19.167] [I] 	Measuring Weight: channel: 195, sat: 0.029346388, max: 0.02934997
+[07/19/26 14:37:19.169] [I] 	Measuring Weight: channel: 196, sat: 0.029456848, max: 0.029460443
+[07/19/26 14:37:19.171] [I] 	Measuring Weight: channel: 197, sat: 0.029436577, max: 0.02944017
+[07/19/26 14:37:19.173] [I] 	Measuring Weight: channel: 198, sat: 0.029455492, max: 0.029459087
+[07/19/26 14:37:19.175] [I] 	Measuring Weight: channel: 199, sat: 0.029453048, max: 0.029456643
+[07/19/26 14:37:19.177] [I] 	Measuring Weight: channel: 200, sat: 0.029442215, max: 0.02944581
+[07/19/26 14:37:19.179] [I] 	Measuring Weight: channel: 201, sat: 0.029439837, max: 0.02944343
+[07/19/26 14:37:19.180] [I] 	Measuring Weight: channel: 202, sat: 0.029455146, max: 0.02945874
+[07/19/26 14:37:19.182] [I] 	Measuring Weight: channel: 203, sat: 0.02936227, max: 0.029365854
+[07/19/26 14:37:19.184] [I] 	Measuring Weight: channel: 204, sat: 0.029457465, max: 0.029461062
+[07/19/26 14:37:19.186] [I] 	Measuring Weight: channel: 205, sat: 0.029403817, max: 0.029407406
+[07/19/26 14:37:19.188] [I] 	Measuring Weight: channel: 206, sat: 0.029454844, max: 0.029458439
+[07/19/26 14:37:19.189] [I] 	Measuring Weight: channel: 207, sat: 0.02940561, max: 0.0294092
+[07/19/26 14:37:19.191] [I] 	Measuring Weight: channel: 208, sat: 0.029415905, max: 0.029419495
+[07/19/26 14:37:19.193] [I] 	Measuring Weight: channel: 209, sat: 0.029410303, max: 0.029413892
+[07/19/26 14:37:19.195] [I] 	Measuring Weight: channel: 210, sat: 0.029457621, max: 0.029461218
+[07/19/26 14:37:19.197] [I] 	Measuring Weight: channel: 211, sat: 0.02942741, max: 0.029431002
+[07/19/26 14:37:19.198] [I] 	Measuring Weight: channel: 212, sat: 0.029454289, max: 0.029457884
+[07/19/26 14:37:19.200] [I] 	Measuring Weight: channel: 213, sat: 0.029433517, max: 0.029437108
+[07/19/26 14:37:19.202] [I] 	Measuring Weight: channel: 214, sat: 0.029448796, max: 0.02945239
+[07/19/26 14:37:19.204] [I] 	Measuring Weight: channel: 215, sat: 0.029447164, max: 0.029450757
+[07/19/26 14:37:19.206] [I] 	Measuring Weight: channel: 216, sat: 0.029430917, max: 0.029434508
+[07/19/26 14:37:19.208] [I] 	Measuring Weight: channel: 217, sat: 0.02942018, max: 0.029423771
+[07/19/26 14:37:19.210] [I] 	Measuring Weight: channel: 218, sat: 0.029457439, max: 0.029461036
+[07/19/26 14:37:19.211] [I] 	Measuring Weight: channel: 219, sat: 0.029447107, max: 0.0294507
+[07/19/26 14:37:19.214] [I] 	Measuring Weight: channel: 220, sat: 0.029436693, max: 0.029440286
+[07/19/26 14:37:19.215] [I] 	Measuring Weight: channel: 221, sat: 0.029419675, max: 0.029423267
+[07/19/26 14:37:19.217] [I] 	Measuring Weight: channel: 222, sat: 0.029427363, max: 0.029430956
+[07/19/26 14:37:19.219] [I] 	Measuring Weight: channel: 223, sat: 0.029415319, max: 0.029418908
+[07/19/26 14:37:19.221] [I] 	Measuring Weight: channel: 224, sat: 0.029439356, max: 0.02944295
+[07/19/26 14:37:19.223] [I] 	Measuring Weight: channel: 225, sat: 0.029361313, max: 0.029364897
+[07/19/26 14:37:19.225] [I] 	Measuring Weight: channel: 226, sat: 0.029440753, max: 0.029444346
+[07/19/26 14:37:19.226] [I] 	Measuring Weight: channel: 227, sat: 0.029448077, max: 0.02945167
+[07/19/26 14:37:19.228] [I] 	Measuring Weight: channel: 228, sat: 0.02944074, max: 0.029444333
+[07/19/26 14:37:19.230] [I] 	Measuring Weight: channel: 229, sat: 0.029452026, max: 0.02945562
+[07/19/26 14:37:19.232] [I] 	Measuring Weight: channel: 230, sat: 0.029413147, max: 0.029416738
+[07/19/26 14:37:19.234] [I] 	Measuring Weight: channel: 231, sat: 0.02942462, max: 0.029428212
+[07/19/26 14:37:19.236] [I] 	Measuring Weight: channel: 232, sat: 0.029451812, max: 0.029455407
+[07/19/26 14:37:19.238] [I] 	Measuring Weight: channel: 233, sat: 0.029417235, max: 0.029420825
+[07/19/26 14:37:19.239] [I] 	Measuring Weight: channel: 234, sat: 0.029428542, max: 0.029432135
+[07/19/26 14:37:19.241] [I] 	Measuring Weight: channel: 235, sat: 0.029459028, max: 0.029462624
+[07/19/26 14:37:19.243] [I] 	Measuring Weight: channel: 236, sat: 0.029451331, max: 0.029454926
+[07/19/26 14:37:19.245] [I] 	Measuring Weight: channel: 237, sat: 0.029426081, max: 0.029429672
+[07/19/26 14:37:19.247] [I] 	Measuring Weight: channel: 238, sat: 0.029454341, max: 0.029457936
+[07/19/26 14:37:19.249] [I] 	Measuring Weight: channel: 239, sat: 0.029453902, max: 0.029457496
+[07/19/26 14:37:19.251] [I] 	Measuring Weight: channel: 240, sat: 0.029456452, max: 0.029460046
+[07/19/26 14:37:19.253] [I] 	Measuring Weight: channel: 241, sat: 0.02938405, max: 0.029387638
+[07/19/26 14:37:19.255] [I] 	Measuring Weight: channel: 242, sat: 0.02944505, max: 0.029448645
+[07/19/26 14:37:19.257] [I] 	Measuring Weight: channel: 243, sat: 0.029416295, max: 0.029419884
+[07/19/26 14:37:19.259] [I] 	Measuring Weight: channel: 244, sat: 0.029451692, max: 0.029455287
+[07/19/26 14:37:19.260] [I] 	Measuring Weight: channel: 245, sat: 0.029455556, max: 0.02945915
+[07/19/26 14:37:19.262] [I] 	Measuring Weight: channel: 246, sat: 0.029455872, max: 0.029459467
+[07/19/26 14:37:19.264] [I] 	Measuring Weight: channel: 247, sat: 0.029449476, max: 0.02945307
+[07/19/26 14:37:19.266] [I] 	Measuring Weight: channel: 248, sat: 0.029425653, max: 0.029429244
+[07/19/26 14:37:19.268] [I] 	Measuring Weight: channel: 249, sat: 0.029395346, max: 0.029398933
+[07/19/26 14:37:19.270] [I] 	Measuring Weight: channel: 250, sat: 0.029415049, max: 0.029418638
+[07/19/26 14:37:19.272] [I] 	Measuring Weight: channel: 251, sat: 0.029428348, max: 0.029431941
+[07/19/26 14:37:19.273] [I] 	Measuring Weight: channel: 252, sat: 0.02945293, max: 0.029456524
+[07/19/26 14:37:19.275] [I] 	Measuring Weight: channel: 253, sat: 0.029418813, max: 0.029422404
+[07/19/26 14:37:19.277] [I] 	Measuring Weight: channel: 254, sat: 0.029459154, max: 0.029462751
+[07/19/26 14:37:19.279] [I] 	Measuring Weight: channel: 255, sat: 0.029441895, max: 0.02944549
+[07/19/26 14:37:19.281] [I] 	Measuring Weight: channel: 256, sat: 0.029458424, max: 0.02946202
+[07/19/26 14:37:19.283] [I] Quantizing Op Id: 24, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:19.283] [I] Quantizing Op Id: 25, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:19.285] [I] 	Measuring Weight: channel: 1, sat: 0.062383592, max: 0.062391207
+[07/19/26 14:37:19.287] [I] 	Measuring Weight: channel: 2, sat: 0.062214743, max: 0.06222234
+[07/19/26 14:37:19.289] [I] 	Measuring Weight: channel: 3, sat: 0.062363014, max: 0.062370628
+[07/19/26 14:37:19.291] [I] 	Measuring Weight: channel: 4, sat: 0.06236126, max: 0.06236887
+[07/19/26 14:37:19.293] [I] 	Measuring Weight: channel: 5, sat: 0.06232979, max: 0.0623374
+[07/19/26 14:37:19.294] [I] 	Measuring Weight: channel: 6, sat: 0.06237913, max: 0.062386744
+[07/19/26 14:37:19.296] [I] 	Measuring Weight: channel: 7, sat: 0.06230761, max: 0.06231522
+[07/19/26 14:37:19.299] [I] 	Measuring Weight: channel: 8, sat: 0.062166322, max: 0.06217391
+[07/19/26 14:37:19.300] [I] 	Measuring Weight: channel: 9, sat: 0.06244772, max: 0.06245534
+[07/19/26 14:37:19.302] [I] 	Measuring Weight: channel: 10, sat: 0.062300455, max: 0.06230806
+[07/19/26 14:37:19.304] [I] 	Measuring Weight: channel: 11, sat: 0.06237798, max: 0.062385596
+[07/19/26 14:37:19.306] [I] 	Measuring Weight: channel: 12, sat: 0.062384218, max: 0.062391832
+[07/19/26 14:37:19.308] [I] 	Measuring Weight: channel: 13, sat: 0.06229325, max: 0.062300853
+[07/19/26 14:37:19.310] [I] 	Measuring Weight: channel: 14, sat: 0.062440135, max: 0.062447757
+[07/19/26 14:37:19.311] [I] 	Measuring Weight: channel: 15, sat: 0.06223261, max: 0.062240206
+[07/19/26 14:37:19.313] [I] 	Measuring Weight: channel: 16, sat: 0.062306583, max: 0.06231419
+[07/19/26 14:37:19.315] [I] 	Measuring Weight: channel: 17, sat: 0.06247623, max: 0.062483855
+[07/19/26 14:37:19.317] [I] 	Measuring Weight: channel: 18, sat: 0.062439293, max: 0.062446915
+[07/19/26 14:37:19.319] [I] 	Measuring Weight: channel: 19, sat: 0.062166426, max: 0.062174015
+[07/19/26 14:37:19.320] [I] 	Measuring Weight: channel: 20, sat: 0.062334683, max: 0.062342294
+[07/19/26 14:37:19.322] [I] 	Measuring Weight: channel: 21, sat: 0.062283516, max: 0.062291116
+[07/19/26 14:37:19.324] [I] 	Measuring Weight: channel: 22, sat: 0.0623271, max: 0.06233471
+[07/19/26 14:37:19.326] [I] 	Measuring Weight: channel: 23, sat: 0.062213633, max: 0.06222123
+[07/19/26 14:37:19.328] [I] 	Measuring Weight: channel: 24, sat: 0.06237739, max: 0.062385
+[07/19/26 14:37:19.330] [I] 	Measuring Weight: channel: 25, sat: 0.06239172, max: 0.062399335
+[07/19/26 14:37:19.332] [I] 	Measuring Weight: channel: 26, sat: 0.062402442, max: 0.062410057
+[07/19/26 14:37:19.334] [I] 	Measuring Weight: channel: 27, sat: 0.06242729, max: 0.06243491
+[07/19/26 14:37:19.336] [I] 	Measuring Weight: channel: 28, sat: 0.061943505, max: 0.061951064
+[07/19/26 14:37:19.338] [I] 	Measuring Weight: channel: 29, sat: 0.062433522, max: 0.06244114
+[07/19/26 14:37:19.340] [I] 	Measuring Weight: channel: 30, sat: 0.062375847, max: 0.062383458
+[07/19/26 14:37:19.342] [I] 	Measuring Weight: channel: 31, sat: 0.062399644, max: 0.062407263
+[07/19/26 14:37:19.343] [I] 	Measuring Weight: channel: 32, sat: 0.062279873, max: 0.062287472
+[07/19/26 14:37:19.345] [I] 	Measuring Weight: channel: 33, sat: 0.062469516, max: 0.06247714
+[07/19/26 14:37:19.347] [I] 	Measuring Weight: channel: 34, sat: 0.06242919, max: 0.06243681
+[07/19/26 14:37:19.349] [I] 	Measuring Weight: channel: 35, sat: 0.062414084, max: 0.0624217
+[07/19/26 14:37:19.351] [I] 	Measuring Weight: channel: 36, sat: 0.06217103, max: 0.06217862
+[07/19/26 14:37:19.353] [I] 	Measuring Weight: channel: 37, sat: 0.062454734, max: 0.06246236
+[07/19/26 14:37:19.354] [I] 	Measuring Weight: channel: 38, sat: 0.06214404, max: 0.062151626
+[07/19/26 14:37:19.356] [I] 	Measuring Weight: channel: 39, sat: 0.06245708, max: 0.062464707
+[07/19/26 14:37:19.358] [I] 	Measuring Weight: channel: 40, sat: 0.062340513, max: 0.06234812
+[07/19/26 14:37:19.360] [I] 	Measuring Weight: channel: 41, sat: 0.062179077, max: 0.062186666
+[07/19/26 14:37:19.362] [I] 	Measuring Weight: channel: 42, sat: 0.062343836, max: 0.062351443
+[07/19/26 14:37:19.364] [I] 	Measuring Weight: channel: 43, sat: 0.062203996, max: 0.062211588
+[07/19/26 14:37:19.366] [I] 	Measuring Weight: channel: 44, sat: 0.061552837, max: 0.061560348
+[07/19/26 14:37:19.367] [I] 	Measuring Weight: channel: 45, sat: 0.06219483, max: 0.062202424
+[07/19/26 14:37:19.369] [I] 	Measuring Weight: channel: 46, sat: 0.062470254, max: 0.06247788
+[07/19/26 14:37:19.371] [I] 	Measuring Weight: channel: 47, sat: 0.06235422, max: 0.06236183
+[07/19/26 14:37:19.373] [I] 	Measuring Weight: channel: 48, sat: 0.062081285, max: 0.062088862
+[07/19/26 14:37:19.375] [I] 	Measuring Weight: channel: 49, sat: 0.061820857, max: 0.061828405
+[07/19/26 14:37:19.376] [I] 	Measuring Weight: channel: 50, sat: 0.062019013, max: 0.062026583
+[07/19/26 14:37:19.378] [I] 	Measuring Weight: channel: 51, sat: 0.06226428, max: 0.062271878
+[07/19/26 14:37:19.380] [I] 	Measuring Weight: channel: 52, sat: 0.061842732, max: 0.06185028
+[07/19/26 14:37:19.382] [I] 	Measuring Weight: channel: 53, sat: 0.06105351, max: 0.061060965
+[07/19/26 14:37:19.384] [I] 	Measuring Weight: channel: 54, sat: 0.062310267, max: 0.06231787
+[07/19/26 14:37:19.386] [I] 	Measuring Weight: channel: 55, sat: 0.062304184, max: 0.06231179
+[07/19/26 14:37:19.388] [I] 	Measuring Weight: channel: 56, sat: 0.062115546, max: 0.062123127
+[07/19/26 14:37:19.389] [I] 	Measuring Weight: channel: 57, sat: 0.06220378, max: 0.062211372
+[07/19/26 14:37:19.391] [I] 	Measuring Weight: channel: 58, sat: 0.06245533, max: 0.062462956
+[07/19/26 14:37:19.393] [I] 	Measuring Weight: channel: 59, sat: 0.062478956, max: 0.06248658
+[07/19/26 14:37:19.395] [I] 	Measuring Weight: channel: 60, sat: 0.062266476, max: 0.062274076
+[07/19/26 14:37:19.397] [I] 	Measuring Weight: channel: 61, sat: 0.06246221, max: 0.062469833
+[07/19/26 14:37:19.399] [I] 	Measuring Weight: channel: 62, sat: 0.062436868, max: 0.062444486
+[07/19/26 14:37:19.401] [I] 	Measuring Weight: channel: 63, sat: 0.06194146, max: 0.061949022
+[07/19/26 14:37:19.403] [I] 	Measuring Weight: channel: 64, sat: 0.062322587, max: 0.062330194
+[07/19/26 14:37:19.405] [I] 	Measuring Weight: channel: 65, sat: 0.06242776, max: 0.06243538
+[07/19/26 14:37:19.405] [I] Quantizing Op Id: 27, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:19.405] [I] Quantizing Op Id: 34, Type: icraft::xir::ReshapeNode
+[07/19/26 14:37:19.405] [I] Quantizing Op Id: 28, Type: icraft::xir::SoftmaxNode
+[07/19/26 14:37:19.405] [I] Quantizing Op Id: 35, Type: icraft::xir::ReshapeNode
+[07/19/26 14:37:19.405] [I] Quantizing Op Id: 39, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:19.405] [I] Quantizing Op Id: 40, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:19.405] [I] Quantizing Op Id: 41, Type: icraft::xir::TransposeNode
+[07/19/26 14:37:19.405] [I] Quantizing Op Id: 30, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:19.409] [I] 	Measuring Weight: channel: 1, sat: 0.029430343, max: 0.029433934
+[07/19/26 14:37:19.411] [I] 	Measuring Weight: channel: 2, sat: 0.029451186, max: 0.02945478
+[07/19/26 14:37:19.413] [I] 	Measuring Weight: channel: 3, sat: 0.029452026, max: 0.02945562
+[07/19/26 14:37:19.415] [I] 	Measuring Weight: channel: 4, sat: 0.02944392, max: 0.029447515
+[07/19/26 14:37:19.417] [I] 	Measuring Weight: channel: 5, sat: 0.029435314, max: 0.029438907
+[07/19/26 14:37:19.420] [I] 	Measuring Weight: channel: 6, sat: 0.02943116, max: 0.029434752
+[07/19/26 14:37:19.422] [I] 	Measuring Weight: channel: 7, sat: 0.029444927, max: 0.029448522
+[07/19/26 14:37:19.425] [I] 	Measuring Weight: channel: 8, sat: 0.029454974, max: 0.02945857
+[07/19/26 14:37:19.427] [I] 	Measuring Weight: channel: 9, sat: 0.029425127, max: 0.029428719
+[07/19/26 14:37:19.430] [I] 	Measuring Weight: channel: 10, sat: 0.029453628, max: 0.029457223
+[07/19/26 14:37:19.432] [I] 	Measuring Weight: channel: 11, sat: 0.029457536, max: 0.029461132
+[07/19/26 14:37:19.437] [I] 	Measuring Weight: channel: 12, sat: 0.029452458, max: 0.029456053
+[07/19/26 14:37:19.440] [I] 	Measuring Weight: channel: 13, sat: 0.029453438, max: 0.029457033
+[07/19/26 14:37:19.442] [I] 	Measuring Weight: channel: 14, sat: 0.02942913, max: 0.029432723
+[07/19/26 14:37:19.444] [I] 	Measuring Weight: channel: 15, sat: 0.02940889, max: 0.02941248
+[07/19/26 14:37:19.446] [I] 	Measuring Weight: channel: 16, sat: 0.029443352, max: 0.029446946
+[07/19/26 14:37:19.448] [I] 	Measuring Weight: channel: 17, sat: 0.02942783, max: 0.029431423
+[07/19/26 14:37:19.450] [I] 	Measuring Weight: channel: 18, sat: 0.029455246, max: 0.029458841
+[07/19/26 14:37:19.452] [I] 	Measuring Weight: channel: 19, sat: 0.029428761, max: 0.029432354
+[07/19/26 14:37:19.454] [I] 	Measuring Weight: channel: 20, sat: 0.02944809, max: 0.029451683
+[07/19/26 14:37:19.456] [I] 	Measuring Weight: channel: 21, sat: 0.029441854, max: 0.029445449
+[07/19/26 14:37:19.458] [I] 	Measuring Weight: channel: 22, sat: 0.02945503, max: 0.029458625
+[07/19/26 14:37:19.461] [I] 	Measuring Weight: channel: 23, sat: 0.02942865, max: 0.029432243
+[07/19/26 14:37:19.463] [I] 	Measuring Weight: channel: 24, sat: 0.029421454, max: 0.029425045
+[07/19/26 14:37:19.465] [I] 	Measuring Weight: channel: 25, sat: 0.029429754, max: 0.029433347
+[07/19/26 14:37:19.468] [I] 	Measuring Weight: channel: 26, sat: 0.029456792, max: 0.029460387
+[07/19/26 14:37:19.470] [I] 	Measuring Weight: channel: 27, sat: 0.02944458, max: 0.029448176
+[07/19/26 14:37:19.473] [I] 	Measuring Weight: channel: 28, sat: 0.02940268, max: 0.029406268
+[07/19/26 14:37:19.475] [I] 	Measuring Weight: channel: 29, sat: 0.029306363, max: 0.029309941
+[07/19/26 14:37:19.478] [I] 	Measuring Weight: channel: 30, sat: 0.02943323, max: 0.029436821
+[07/19/26 14:37:19.481] [I] 	Measuring Weight: channel: 31, sat: 0.029452223, max: 0.029455818
+[07/19/26 14:37:19.483] [I] 	Measuring Weight: channel: 32, sat: 0.029455194, max: 0.02945879
+[07/19/26 14:37:19.486] [I] 	Measuring Weight: channel: 33, sat: 0.029444622, max: 0.029448217
+[07/19/26 14:37:19.489] [I] 	Measuring Weight: channel: 34, sat: 0.029453805, max: 0.0294574
+[07/19/26 14:37:19.492] [I] 	Measuring Weight: channel: 35, sat: 0.02944017, max: 0.029443763
+[07/19/26 14:37:19.495] [I] 	Measuring Weight: channel: 36, sat: 0.029450031, max: 0.029453626
+[07/19/26 14:37:19.498] [I] 	Measuring Weight: channel: 37, sat: 0.029439919, max: 0.029443512
+[07/19/26 14:37:19.501] [I] 	Measuring Weight: channel: 38, sat: 0.029444616, max: 0.029448211
+[07/19/26 14:37:19.503] [I] 	Measuring Weight: channel: 39, sat: 0.029415859, max: 0.029419448
+[07/19/26 14:37:19.505] [I] 	Measuring Weight: channel: 40, sat: 0.029453894, max: 0.029457489
+[07/19/26 14:37:19.507] [I] 	Measuring Weight: channel: 41, sat: 0.029448353, max: 0.029451946
+[07/19/26 14:37:19.509] [I] 	Measuring Weight: channel: 42, sat: 0.029423518, max: 0.02942711
+[07/19/26 14:37:19.511] [I] 	Measuring Weight: channel: 43, sat: 0.029443046, max: 0.029446641
+[07/19/26 14:37:19.512] [I] 	Measuring Weight: channel: 44, sat: 0.029440124, max: 0.029443717
+[07/19/26 14:37:19.514] [I] 	Measuring Weight: channel: 45, sat: 0.029457571, max: 0.029461168
+[07/19/26 14:37:19.516] [I] 	Measuring Weight: channel: 46, sat: 0.0294495, max: 0.029453095
+[07/19/26 14:37:19.518] [I] 	Measuring Weight: channel: 47, sat: 0.029449254, max: 0.02945285
+[07/19/26 14:37:19.520] [I] 	Measuring Weight: channel: 48, sat: 0.02944939, max: 0.029452985
+[07/19/26 14:37:19.522] [I] 	Measuring Weight: channel: 49, sat: 0.029396102, max: 0.029399691
+[07/19/26 14:37:19.523] [I] 	Measuring Weight: channel: 50, sat: 0.029450506, max: 0.0294541
+[07/19/26 14:37:19.525] [I] 	Measuring Weight: channel: 51, sat: 0.02944423, max: 0.029447826
+[07/19/26 14:37:19.527] [I] 	Measuring Weight: channel: 52, sat: 0.029451596, max: 0.02945519
+[07/19/26 14:37:19.529] [I] 	Measuring Weight: channel: 53, sat: 0.029450102, max: 0.029453697
+[07/19/26 14:37:19.531] [I] 	Measuring Weight: channel: 54, sat: 0.029458545, max: 0.029462142
+[07/19/26 14:37:19.532] [I] 	Measuring Weight: channel: 55, sat: 0.029408652, max: 0.029412242
+[07/19/26 14:37:19.534] [I] 	Measuring Weight: channel: 56, sat: 0.029259475, max: 0.029263048
+[07/19/26 14:37:19.536] [I] 	Measuring Weight: channel: 57, sat: 0.029440511, max: 0.029444104
+[07/19/26 14:37:19.538] [I] 	Measuring Weight: channel: 58, sat: 0.029448481, max: 0.029452074
+[07/19/26 14:37:19.540] [I] 	Measuring Weight: channel: 59, sat: 0.029451316, max: 0.029454911
+[07/19/26 14:37:19.541] [I] 	Measuring Weight: channel: 60, sat: 0.029435746, max: 0.02943934
+[07/19/26 14:37:19.543] [I] 	Measuring Weight: channel: 61, sat: 0.029458063, max: 0.02946166
+[07/19/26 14:37:19.545] [I] 	Measuring Weight: channel: 62, sat: 0.029456427, max: 0.029460022
+[07/19/26 14:37:19.547] [I] 	Measuring Weight: channel: 63, sat: 0.029414695, max: 0.029418286
+[07/19/26 14:37:19.549] [I] 	Measuring Weight: channel: 64, sat: 0.0294392, max: 0.029442793
+[07/19/26 14:37:19.551] [I] 	Measuring Weight: channel: 65, sat: 0.029440288, max: 0.02944388
+[07/19/26 14:37:19.553] [I] 	Measuring Weight: channel: 66, sat: 0.029453913, max: 0.029457508
+[07/19/26 14:37:19.554] [I] 	Measuring Weight: channel: 67, sat: 0.029458195, max: 0.029461792
+[07/19/26 14:37:19.556] [I] 	Measuring Weight: channel: 68, sat: 0.029456928, max: 0.029460525
+[07/19/26 14:37:19.558] [I] 	Measuring Weight: channel: 69, sat: 0.029458627, max: 0.029462224
+[07/19/26 14:37:19.560] [I] 	Measuring Weight: channel: 70, sat: 0.02937199, max: 0.029375574
+[07/19/26 14:37:19.562] [I] 	Measuring Weight: channel: 71, sat: 0.029442273, max: 0.029445868
+[07/19/26 14:37:19.564] [I] 	Measuring Weight: channel: 72, sat: 0.029426426, max: 0.029430019
+[07/19/26 14:37:19.565] [I] 	Measuring Weight: channel: 73, sat: 0.029441854, max: 0.029445449
+[07/19/26 14:37:19.567] [I] 	Measuring Weight: channel: 74, sat: 0.02945754, max: 0.029461136
+[07/19/26 14:37:19.569] [I] 	Measuring Weight: channel: 75, sat: 0.029456226, max: 0.029459821
+[07/19/26 14:37:19.571] [I] 	Measuring Weight: channel: 76, sat: 0.02941261, max: 0.029416202
+[07/19/26 14:37:19.573] [I] 	Measuring Weight: channel: 77, sat: 0.02944067, max: 0.029444262
+[07/19/26 14:37:19.575] [I] 	Measuring Weight: channel: 78, sat: 0.029431282, max: 0.029434873
+[07/19/26 14:37:19.576] [I] 	Measuring Weight: channel: 79, sat: 0.029439975, max: 0.029443568
+[07/19/26 14:37:19.578] [I] 	Measuring Weight: channel: 80, sat: 0.029431386, max: 0.029434977
+[07/19/26 14:37:19.580] [I] 	Measuring Weight: channel: 81, sat: 0.029421424, max: 0.029425016
+[07/19/26 14:37:19.582] [I] 	Measuring Weight: channel: 82, sat: 0.029415919, max: 0.029419508
+[07/19/26 14:37:19.584] [I] 	Measuring Weight: channel: 83, sat: 0.029453212, max: 0.029456807
+[07/19/26 14:37:19.586] [I] 	Measuring Weight: channel: 84, sat: 0.02935964, max: 0.029363224
+[07/19/26 14:37:19.588] [I] 	Measuring Weight: channel: 85, sat: 0.029451584, max: 0.02945518
+[07/19/26 14:37:19.590] [I] 	Measuring Weight: channel: 86, sat: 0.029457573, max: 0.02946117
+[07/19/26 14:37:19.592] [I] 	Measuring Weight: channel: 87, sat: 0.029437706, max: 0.029441299
+[07/19/26 14:37:19.594] [I] 	Measuring Weight: channel: 88, sat: 0.029429175, max: 0.029432768
+[07/19/26 14:37:19.596] [I] 	Measuring Weight: channel: 89, sat: 0.029458158, max: 0.029461754
+[07/19/26 14:37:19.598] [I] 	Measuring Weight: channel: 90, sat: 0.0294581, max: 0.029461697
+[07/19/26 14:37:19.600] [I] 	Measuring Weight: channel: 91, sat: 0.029438294, max: 0.029441888
+[07/19/26 14:37:19.602] [I] 	Measuring Weight: channel: 92, sat: 0.029442778, max: 0.029446373
+[07/19/26 14:37:19.604] [I] 	Measuring Weight: channel: 93, sat: 0.02945519, max: 0.029458785
+[07/19/26 14:37:19.605] [I] 	Measuring Weight: channel: 94, sat: 0.029450899, max: 0.029454494
+[07/19/26 14:37:19.607] [I] 	Measuring Weight: channel: 95, sat: 0.029450329, max: 0.029453924
+[07/19/26 14:37:19.609] [I] 	Measuring Weight: channel: 96, sat: 0.029454386, max: 0.02945798
+[07/19/26 14:37:19.611] [I] 	Measuring Weight: channel: 97, sat: 0.029449208, max: 0.0294528
+[07/19/26 14:37:19.613] [I] 	Measuring Weight: channel: 98, sat: 0.029454065, max: 0.02945766
+[07/19/26 14:37:19.615] [I] 	Measuring Weight: channel: 99, sat: 0.029457077, max: 0.029460674
+[07/19/26 14:37:19.617] [I] 	Measuring Weight: channel: 100, sat: 0.029445153, max: 0.029448748
+[07/19/26 14:37:19.618] [I] 	Measuring Weight: channel: 101, sat: 0.029437896, max: 0.029441489
+[07/19/26 14:37:19.620] [I] 	Measuring Weight: channel: 102, sat: 0.029450115, max: 0.02945371
+[07/19/26 14:37:19.622] [I] 	Measuring Weight: channel: 103, sat: 0.029432246, max: 0.029435838
+[07/19/26 14:37:19.624] [I] 	Measuring Weight: channel: 104, sat: 0.029453333, max: 0.029456928
+[07/19/26 14:37:19.626] [I] 	Measuring Weight: channel: 105, sat: 0.029451257, max: 0.029454852
+[07/19/26 14:37:19.628] [I] 	Measuring Weight: channel: 106, sat: 0.029450607, max: 0.029454201
+[07/19/26 14:37:19.630] [I] 	Measuring Weight: channel: 107, sat: 0.029419152, max: 0.029422743
+[07/19/26 14:37:19.632] [I] 	Measuring Weight: channel: 108, sat: 0.029447414, max: 0.029451007
+[07/19/26 14:37:19.634] [I] 	Measuring Weight: channel: 109, sat: 0.029430006, max: 0.029433599
+[07/19/26 14:37:19.635] [I] 	Measuring Weight: channel: 110, sat: 0.0294544, max: 0.029457996
+[07/19/26 14:37:19.637] [I] 	Measuring Weight: channel: 111, sat: 0.029404245, max: 0.029407835
+[07/19/26 14:37:19.639] [I] 	Measuring Weight: channel: 112, sat: 0.0294544, max: 0.029457996
+[07/19/26 14:37:19.641] [I] 	Measuring Weight: channel: 113, sat: 0.029397774, max: 0.029401364
+[07/19/26 14:37:19.643] [I] 	Measuring Weight: channel: 114, sat: 0.029453596, max: 0.029457191
+[07/19/26 14:37:19.645] [I] 	Measuring Weight: channel: 115, sat: 0.029399209, max: 0.029402798
+[07/19/26 14:37:19.647] [I] 	Measuring Weight: channel: 116, sat: 0.029446606, max: 0.029450199
+[07/19/26 14:37:19.648] [I] 	Measuring Weight: channel: 117, sat: 0.029429786, max: 0.029433379
+[07/19/26 14:37:19.650] [I] 	Measuring Weight: channel: 118, sat: 0.029366292, max: 0.029369878
+[07/19/26 14:37:19.652] [I] 	Measuring Weight: channel: 119, sat: 0.02945443, max: 0.029458025
+[07/19/26 14:37:19.654] [I] 	Measuring Weight: channel: 120, sat: 0.029457565, max: 0.029461162
+[07/19/26 14:37:19.656] [I] 	Measuring Weight: channel: 121, sat: 0.029411051, max: 0.02941464
+[07/19/26 14:37:19.657] [I] 	Measuring Weight: channel: 122, sat: 0.02938636, max: 0.029389946
+[07/19/26 14:37:19.659] [I] 	Measuring Weight: channel: 123, sat: 0.029453224, max: 0.029456818
+[07/19/26 14:37:19.661] [I] 	Measuring Weight: channel: 124, sat: 0.029451344, max: 0.029454939
+[07/19/26 14:37:19.663] [I] 	Measuring Weight: channel: 125, sat: 0.029402314, max: 0.029405901
+[07/19/26 14:37:19.665] [I] 	Measuring Weight: channel: 126, sat: 0.029458715, max: 0.029462311
+[07/19/26 14:37:19.667] [I] 	Measuring Weight: channel: 127, sat: 0.029378785, max: 0.02938237
+[07/19/26 14:37:19.668] [I] 	Measuring Weight: channel: 128, sat: 0.029452557, max: 0.029456152
+[07/19/26 14:37:19.670] [I] 	Measuring Weight: channel: 129, sat: 0.029453827, max: 0.029457422
+[07/19/26 14:37:19.672] [I] 	Measuring Weight: channel: 130, sat: 0.029456245, max: 0.02945984
+[07/19/26 14:37:19.674] [I] 	Measuring Weight: channel: 131, sat: 0.029415078, max: 0.029418668
+[07/19/26 14:37:19.676] [I] 	Measuring Weight: channel: 132, sat: 0.02944565, max: 0.029449243
+[07/19/26 14:37:19.677] [I] 	Measuring Weight: channel: 133, sat: 0.029429322, max: 0.029432915
+[07/19/26 14:37:19.679] [I] 	Measuring Weight: channel: 134, sat: 0.029414326, max: 0.029417917
+[07/19/26 14:37:19.681] [I] 	Measuring Weight: channel: 135, sat: 0.029400403, max: 0.02940399
+[07/19/26 14:37:19.683] [I] 	Measuring Weight: channel: 136, sat: 0.02942821, max: 0.029431803
+[07/19/26 14:37:19.685] [I] 	Measuring Weight: channel: 137, sat: 0.029419268, max: 0.029422859
+[07/19/26 14:37:19.686] [I] 	Measuring Weight: channel: 138, sat: 0.029447624, max: 0.029451218
+[07/19/26 14:37:19.688] [I] 	Measuring Weight: channel: 139, sat: 0.029451251, max: 0.029454846
+[07/19/26 14:37:19.690] [I] 	Measuring Weight: channel: 140, sat: 0.029427662, max: 0.029431256
+[07/19/26 14:37:19.692] [I] 	Measuring Weight: channel: 141, sat: 0.029456394, max: 0.029459989
+[07/19/26 14:37:19.694] [I] 	Measuring Weight: channel: 142, sat: 0.029446032, max: 0.029449625
+[07/19/26 14:37:19.696] [I] 	Measuring Weight: channel: 143, sat: 0.029455556, max: 0.02945915
+[07/19/26 14:37:19.698] [I] 	Measuring Weight: channel: 144, sat: 0.029456565, max: 0.02946016
+[07/19/26 14:37:19.699] [I] 	Measuring Weight: channel: 145, sat: 0.029424949, max: 0.02942854
+[07/19/26 14:37:19.701] [I] 	Measuring Weight: channel: 146, sat: 0.029446539, max: 0.029450132
+[07/19/26 14:37:19.703] [I] 	Measuring Weight: channel: 147, sat: 0.029450478, max: 0.029454073
+[07/19/26 14:37:19.705] [I] 	Measuring Weight: channel: 148, sat: 0.029449081, max: 0.029452674
+[07/19/26 14:37:19.707] [I] 	Measuring Weight: channel: 149, sat: 0.029456234, max: 0.029459829
+[07/19/26 14:37:19.709] [I] 	Measuring Weight: channel: 150, sat: 0.02945773, max: 0.029461326
+[07/19/26 14:37:19.711] [I] 	Measuring Weight: channel: 151, sat: 0.029343322, max: 0.029346904
+[07/19/26 14:37:19.712] [I] 	Measuring Weight: channel: 152, sat: 0.0294561, max: 0.029459694
+[07/19/26 14:37:19.714] [I] 	Measuring Weight: channel: 153, sat: 0.029423455, max: 0.029427046
+[07/19/26 14:37:19.716] [I] 	Measuring Weight: channel: 154, sat: 0.02945485, max: 0.029458445
+[07/19/26 14:37:19.718] [I] 	Measuring Weight: channel: 155, sat: 0.029332018, max: 0.029335598
+[07/19/26 14:37:19.720] [I] 	Measuring Weight: channel: 156, sat: 0.029434158, max: 0.02943775
+[07/19/26 14:37:19.722] [I] 	Measuring Weight: channel: 157, sat: 0.02940194, max: 0.029405527
+[07/19/26 14:37:19.723] [I] 	Measuring Weight: channel: 158, sat: 0.02944123, max: 0.029444823
+[07/19/26 14:37:19.725] [I] 	Measuring Weight: channel: 159, sat: 0.02941473, max: 0.029418321
+[07/19/26 14:37:19.727] [I] 	Measuring Weight: channel: 160, sat: 0.029453263, max: 0.029456858
+[07/19/26 14:37:19.729] [I] 	Measuring Weight: channel: 161, sat: 0.029432612, max: 0.029436203
+[07/19/26 14:37:19.731] [I] 	Measuring Weight: channel: 162, sat: 0.029448122, max: 0.029451715
+[07/19/26 14:37:19.732] [I] 	Measuring Weight: channel: 163, sat: 0.029449645, max: 0.02945324
+[07/19/26 14:37:19.734] [I] 	Measuring Weight: channel: 164, sat: 0.029435538, max: 0.02943913
+[07/19/26 14:37:19.736] [I] 	Measuring Weight: channel: 165, sat: 0.029434122, max: 0.029437715
+[07/19/26 14:37:19.738] [I] 	Measuring Weight: channel: 166, sat: 0.029432004, max: 0.029435595
+[07/19/26 14:37:19.741] [I] 	Measuring Weight: channel: 167, sat: 0.02945452, max: 0.029458115
+[07/19/26 14:37:19.742] [I] 	Measuring Weight: channel: 168, sat: 0.029395433, max: 0.02939902
+[07/19/26 14:37:19.744] [I] 	Measuring Weight: channel: 169, sat: 0.029430391, max: 0.029433982
+[07/19/26 14:37:19.746] [I] 	Measuring Weight: channel: 170, sat: 0.029451052, max: 0.029454647
+[07/19/26 14:37:19.748] [I] 	Measuring Weight: channel: 171, sat: 0.029434063, max: 0.029437656
+[07/19/26 14:37:19.750] [I] 	Measuring Weight: channel: 172, sat: 0.029454414, max: 0.029458009
+[07/19/26 14:37:19.751] [I] 	Measuring Weight: channel: 173, sat: 0.029442655, max: 0.02944625
+[07/19/26 14:37:19.753] [I] 	Measuring Weight: channel: 174, sat: 0.029450154, max: 0.029453749
+[07/19/26 14:37:19.755] [I] 	Measuring Weight: channel: 175, sat: 0.0293837, max: 0.029387288
+[07/19/26 14:37:19.757] [I] 	Measuring Weight: channel: 176, sat: 0.029416457, max: 0.029420046
+[07/19/26 14:37:19.759] [I] 	Measuring Weight: channel: 177, sat: 0.029389935, max: 0.029393522
+[07/19/26 14:37:19.761] [I] 	Measuring Weight: channel: 178, sat: 0.029456811, max: 0.029460406
+[07/19/26 14:37:19.763] [I] 	Measuring Weight: channel: 179, sat: 0.02940271, max: 0.029406298
+[07/19/26 14:37:19.765] [I] 	Measuring Weight: channel: 180, sat: 0.029409386, max: 0.029412976
+[07/19/26 14:37:19.767] [I] 	Measuring Weight: channel: 181, sat: 0.029421572, max: 0.029425163
+[07/19/26 14:37:19.769] [I] 	Measuring Weight: channel: 182, sat: 0.029408582, max: 0.02941217
+[07/19/26 14:37:19.771] [I] 	Measuring Weight: channel: 183, sat: 0.029457126, max: 0.029460723
+[07/19/26 14:37:19.773] [I] 	Measuring Weight: channel: 184, sat: 0.029448466, max: 0.02945206
+[07/19/26 14:37:19.775] [I] 	Measuring Weight: channel: 185, sat: 0.02943628, max: 0.029439872
+[07/19/26 14:37:19.776] [I] 	Measuring Weight: channel: 186, sat: 0.029424293, max: 0.029427884
+[07/19/26 14:37:19.779] [I] 	Measuring Weight: channel: 187, sat: 0.029455127, max: 0.029458722
+[07/19/26 14:37:19.780] [I] 	Measuring Weight: channel: 188, sat: 0.029456103, max: 0.029459698
+[07/19/26 14:37:19.782] [I] 	Measuring Weight: channel: 189, sat: 0.029430276, max: 0.029433867
+[07/19/26 14:37:19.785] [I] 	Measuring Weight: channel: 190, sat: 0.029442329, max: 0.029445924
+[07/19/26 14:37:19.786] [I] 	Measuring Weight: channel: 191, sat: 0.029391406, max: 0.029394994
+[07/19/26 14:37:19.788] [I] 	Measuring Weight: channel: 192, sat: 0.029417384, max: 0.029420974
+[07/19/26 14:37:19.790] [I] 	Measuring Weight: channel: 193, sat: 0.02945762, max: 0.029461216
+[07/19/26 14:37:19.792] [I] 	Measuring Weight: channel: 194, sat: 0.029425861, max: 0.029429452
+[07/19/26 14:37:19.794] [I] 	Measuring Weight: channel: 195, sat: 0.029445196, max: 0.02944879
+[07/19/26 14:37:19.795] [I] 	Measuring Weight: channel: 196, sat: 0.029450273, max: 0.029453868
+[07/19/26 14:37:19.797] [I] 	Measuring Weight: channel: 197, sat: 0.02942588, max: 0.029429471
+[07/19/26 14:37:19.799] [I] 	Measuring Weight: channel: 198, sat: 0.029454915, max: 0.02945851
+[07/19/26 14:37:19.801] [I] 	Measuring Weight: channel: 199, sat: 0.02944498, max: 0.029448574
+[07/19/26 14:37:19.803] [I] 	Measuring Weight: channel: 200, sat: 0.029441359, max: 0.029444952
+[07/19/26 14:37:19.805] [I] 	Measuring Weight: channel: 201, sat: 0.02944505, max: 0.029448645
+[07/19/26 14:37:19.807] [I] 	Measuring Weight: channel: 202, sat: 0.02943419, max: 0.029437782
+[07/19/26 14:37:19.808] [I] 	Measuring Weight: channel: 203, sat: 0.029455746, max: 0.02945934
+[07/19/26 14:37:19.810] [I] 	Measuring Weight: channel: 204, sat: 0.029437814, max: 0.029441407
+[07/19/26 14:37:19.812] [I] 	Measuring Weight: channel: 205, sat: 0.029435005, max: 0.029438598
+[07/19/26 14:37:19.814] [I] 	Measuring Weight: channel: 206, sat: 0.029435981, max: 0.029439574
+[07/19/26 14:37:19.816] [I] 	Measuring Weight: channel: 207, sat: 0.029445611, max: 0.029449204
+[07/19/26 14:37:19.818] [I] 	Measuring Weight: channel: 208, sat: 0.029420635, max: 0.029424226
+[07/19/26 14:37:19.820] [I] 	Measuring Weight: channel: 209, sat: 0.029453034, max: 0.029456628
+[07/19/26 14:37:19.822] [I] 	Measuring Weight: channel: 210, sat: 0.02945472, max: 0.029458314
+[07/19/26 14:37:19.823] [I] 	Measuring Weight: channel: 211, sat: 0.029458392, max: 0.02946199
+[07/19/26 14:37:19.825] [I] 	Measuring Weight: channel: 212, sat: 0.029458571, max: 0.029462168
+[07/19/26 14:37:19.827] [I] 	Measuring Weight: channel: 213, sat: 0.029421762, max: 0.029425353
+[07/19/26 14:37:19.829] [I] 	Measuring Weight: channel: 214, sat: 0.029454295, max: 0.02945789
+[07/19/26 14:37:19.831] [I] 	Measuring Weight: channel: 215, sat: 0.029405456, max: 0.029409045
+[07/19/26 14:37:19.832] [I] 	Measuring Weight: channel: 216, sat: 0.029409748, max: 0.029413337
+[07/19/26 14:37:19.834] [I] 	Measuring Weight: channel: 217, sat: 0.029435735, max: 0.029439328
+[07/19/26 14:37:19.836] [I] 	Measuring Weight: channel: 218, sat: 0.029446479, max: 0.029450072
+[07/19/26 14:37:19.838] [I] 	Measuring Weight: channel: 219, sat: 0.029434983, max: 0.029438576
+[07/19/26 14:37:19.840] [I] 	Measuring Weight: channel: 220, sat: 0.029454848, max: 0.029458443
+[07/19/26 14:37:19.841] [I] 	Measuring Weight: channel: 221, sat: 0.029455023, max: 0.029458618
+[07/19/26 14:37:19.843] [I] 	Measuring Weight: channel: 222, sat: 0.02945423, max: 0.029457824
+[07/19/26 14:37:19.845] [I] 	Measuring Weight: channel: 223, sat: 0.02944782, max: 0.029451413
+[07/19/26 14:37:19.847] [I] 	Measuring Weight: channel: 224, sat: 0.02942693, max: 0.029430524
+[07/19/26 14:37:19.849] [I] 	Measuring Weight: channel: 225, sat: 0.0294023, max: 0.029405888
+[07/19/26 14:37:19.850] [I] 	Measuring Weight: channel: 226, sat: 0.029446384, max: 0.029449977
+[07/19/26 14:37:19.852] [I] 	Measuring Weight: channel: 227, sat: 0.029440947, max: 0.02944454
+[07/19/26 14:37:19.854] [I] 	Measuring Weight: channel: 228, sat: 0.029450359, max: 0.029453954
+[07/19/26 14:37:19.856] [I] 	Measuring Weight: channel: 229, sat: 0.029425787, max: 0.029429378
+[07/19/26 14:37:19.858] [I] 	Measuring Weight: channel: 230, sat: 0.02945657, max: 0.029460166
+[07/19/26 14:37:19.860] [I] 	Measuring Weight: channel: 231, sat: 0.02939885, max: 0.029402439
+[07/19/26 14:37:19.862] [I] 	Measuring Weight: channel: 232, sat: 0.029435648, max: 0.02943924
+[07/19/26 14:37:19.863] [I] 	Measuring Weight: channel: 233, sat: 0.029404398, max: 0.029407987
+[07/19/26 14:37:19.865] [I] 	Measuring Weight: channel: 234, sat: 0.029433036, max: 0.029436627
+[07/19/26 14:37:19.867] [I] 	Measuring Weight: channel: 235, sat: 0.029434772, max: 0.029438365
+[07/19/26 14:37:19.869] [I] 	Measuring Weight: channel: 236, sat: 0.029447574, max: 0.029451167
+[07/19/26 14:37:19.871] [I] 	Measuring Weight: channel: 237, sat: 0.029448383, max: 0.029451976
+[07/19/26 14:37:19.873] [I] 	Measuring Weight: channel: 238, sat: 0.029432481, max: 0.029436072
+[07/19/26 14:37:19.874] [I] 	Measuring Weight: channel: 239, sat: 0.02945763, max: 0.029461227
+[07/19/26 14:37:19.876] [I] 	Measuring Weight: channel: 240, sat: 0.029454106, max: 0.029457701
+[07/19/26 14:37:19.878] [I] 	Measuring Weight: channel: 241, sat: 0.029406257, max: 0.029409846
+[07/19/26 14:37:19.880] [I] 	Measuring Weight: channel: 242, sat: 0.029436866, max: 0.029440459
+[07/19/26 14:37:19.882] [I] 	Measuring Weight: channel: 243, sat: 0.02943955, max: 0.029443143
+[07/19/26 14:37:19.884] [I] 	Measuring Weight: channel: 244, sat: 0.029450824, max: 0.02945442
+[07/19/26 14:37:19.886] [I] 	Measuring Weight: channel: 245, sat: 0.029452177, max: 0.029455772
+[07/19/26 14:37:19.888] [I] 	Measuring Weight: channel: 246, sat: 0.029451909, max: 0.029455503
+[07/19/26 14:37:19.889] [I] 	Measuring Weight: channel: 247, sat: 0.029427271, max: 0.029430864
+[07/19/26 14:37:19.891] [I] 	Measuring Weight: channel: 248, sat: 0.02945291, max: 0.029456506
+[07/19/26 14:37:19.893] [I] 	Measuring Weight: channel: 249, sat: 0.029396057, max: 0.029399646
+[07/19/26 14:37:19.895] [I] 	Measuring Weight: channel: 250, sat: 0.029449198, max: 0.029452791
+[07/19/26 14:37:19.897] [I] 	Measuring Weight: channel: 251, sat: 0.029410517, max: 0.029414106
+[07/19/26 14:37:19.899] [I] 	Measuring Weight: channel: 252, sat: 0.029372478, max: 0.029376062
+[07/19/26 14:37:19.900] [I] 	Measuring Weight: channel: 253, sat: 0.029453829, max: 0.029457424
+[07/19/26 14:37:19.902] [I] 	Measuring Weight: channel: 254, sat: 0.029435944, max: 0.029439537
+[07/19/26 14:37:19.904] [I] 	Measuring Weight: channel: 255, sat: 0.0294564, max: 0.029459994
+[07/19/26 14:37:19.906] [I] 	Measuring Weight: channel: 256, sat: 0.029442659, max: 0.029446254
+[07/19/26 14:37:19.908] [I] Quantizing Op Id: 31, Type: icraft::xir::ReLUNode
+[07/19/26 14:37:19.908] [I] Quantizing Op Id: 32, Type: icraft::xir::Conv2dNode
+[07/19/26 14:37:19.911] [I] 	Measuring Weight: channel: 1, sat: 0.061868306, max: 0.061875857
+[07/19/26 14:37:19.913] [I] 	Measuring Weight: channel: 2, sat: 0.06237134, max: 0.06237895
+[07/19/26 14:37:19.915] [I] 	Measuring Weight: channel: 3, sat: 0.06242184, max: 0.062429458
+[07/19/26 14:37:19.917] [I] 	Measuring Weight: channel: 4, sat: 0.062428072, max: 0.062435694
+[07/19/26 14:37:19.919] [I] 	Measuring Weight: channel: 5, sat: 0.062490217, max: 0.062497847
+[07/19/26 14:37:19.921] [I] 	Measuring Weight: channel: 6, sat: 0.061647713, max: 0.06165524
+[07/19/26 14:37:19.923] [I] 	Measuring Weight: channel: 7, sat: 0.06245516, max: 0.062462784
+[07/19/26 14:37:19.925] [I] 	Measuring Weight: channel: 8, sat: 0.06240012, max: 0.06240774
+[07/19/26 14:37:19.927] [I] 	Measuring Weight: channel: 9, sat: 0.06231807, max: 0.06232568
+[07/19/26 14:37:19.931] [I] 	Measuring Weight: channel: 10, sat: 0.06238424, max: 0.062391855
+[07/19/26 14:37:19.934] [I] 	Measuring Weight: channel: 11, sat: 0.06246135, max: 0.062468976
+[07/19/26 14:37:19.937] [I] 	Measuring Weight: channel: 12, sat: 0.06197271, max: 0.061980277
+[07/19/26 14:37:19.940] [I] 	Measuring Weight: channel: 13, sat: 0.06189517, max: 0.061902724
+[07/19/26 14:37:19.942] [I] 	Measuring Weight: channel: 14, sat: 0.062375296, max: 0.062382907
+[07/19/26 14:37:19.945] [I] 	Measuring Weight: channel: 15, sat: 0.062359866, max: 0.062367477
+[07/19/26 14:37:19.947] [I] 	Measuring Weight: channel: 16, sat: 0.062437568, max: 0.062445186
+[07/19/26 14:37:19.949] [I] 	Measuring Weight: channel: 17, sat: 0.061953574, max: 0.061961137
+[07/19/26 14:37:19.952] [I] 	Measuring Weight: channel: 18, sat: 0.0619545, max: 0.06196206
+[07/19/26 14:37:19.954] [I] 	Measuring Weight: channel: 19, sat: 0.062308952, max: 0.06231656
+[07/19/26 14:37:19.957] [I] 	Measuring Weight: channel: 20, sat: 0.06236018, max: 0.06236779
+[07/19/26 14:37:19.959] [I] 	Measuring Weight: channel: 21, sat: 0.06235143, max: 0.062359042
+[07/19/26 14:37:19.961] [I] 	Measuring Weight: channel: 22, sat: 0.062389225, max: 0.06239684
+[07/19/26 14:37:19.963] [I] 	Measuring Weight: channel: 23, sat: 0.062393017, max: 0.06240063
+[07/19/26 14:37:19.965] [I] 	Measuring Weight: channel: 24, sat: 0.062054034, max: 0.062061608
+[07/19/26 14:37:19.967] [I] 	Measuring Weight: channel: 25, sat: 0.062128115, max: 0.062135696
+[07/19/26 14:37:19.969] [I] 	Measuring Weight: channel: 26, sat: 0.062410433, max: 0.06241805
+[07/19/26 14:37:19.971] [I] 	Measuring Weight: channel: 27, sat: 0.062491477, max: 0.062499106
+[07/19/26 14:37:19.973] [I] 	Measuring Weight: channel: 28, sat: 0.06223205, max: 0.062239647
+[07/19/26 14:37:19.975] [I] 	Measuring Weight: channel: 29, sat: 0.061560605, max: 0.06156812
+[07/19/26 14:37:19.977] [I] 	Measuring Weight: channel: 30, sat: 0.06241591, max: 0.062423527
+[07/19/26 14:37:19.979] [I] 	Measuring Weight: channel: 31, sat: 0.062329493, max: 0.0623371
+[07/19/26 14:37:19.981] [I] 	Measuring Weight: channel: 32, sat: 0.062391616, max: 0.06239923
+[07/19/26 14:37:19.983] [I] 	Measuring Weight: channel: 33, sat: 0.06223234, max: 0.062239937
+[07/19/26 14:37:19.985] [I] 	Measuring Weight: channel: 34, sat: 0.06203286, max: 0.062040433
+[07/19/26 14:37:19.987] [I] 	Measuring Weight: channel: 35, sat: 0.062403843, max: 0.062411457
+[07/19/26 14:37:19.990] [I] 	Measuring Weight: channel: 36, sat: 0.062413443, max: 0.06242106
+[07/19/26 14:37:19.992] [I] 	Measuring Weight: channel: 37, sat: 0.062468484, max: 0.062476106
+[07/19/26 14:37:19.995] [I] 	Measuring Weight: channel: 38, sat: 0.06238845, max: 0.062396064
+[07/19/26 14:37:19.997] [I] 	Measuring Weight: channel: 39, sat: 0.062215734, max: 0.06222333
+[07/19/26 14:37:20.000] [I] 	Measuring Weight: channel: 40, sat: 0.06237997, max: 0.062387586
+[07/19/26 14:37:20.003] [I] 	Measuring Weight: channel: 41, sat: 0.06244482, max: 0.062452443
+[07/19/26 14:37:20.005] [I] 	Measuring Weight: channel: 42, sat: 0.061992545, max: 0.06200011
+[07/19/26 14:37:20.007] [I] 	Measuring Weight: channel: 43, sat: 0.061980277, max: 0.06198784
+[07/19/26 14:37:20.009] [I] 	Measuring Weight: channel: 44, sat: 0.061724793, max: 0.06173233
+[07/19/26 14:37:20.011] [I] 	Measuring Weight: channel: 45, sat: 0.062016465, max: 0.062024035
+[07/19/26 14:37:20.013] [I] 	Measuring Weight: channel: 46, sat: 0.06213516, max: 0.062142745
+[07/19/26 14:37:20.015] [I] 	Measuring Weight: channel: 47, sat: 0.062450886, max: 0.062458508
+[07/19/26 14:37:20.017] [I] 	Measuring Weight: channel: 48, sat: 0.060787033, max: 0.06079445
+[07/19/26 14:37:20.019] [I] 	Measuring Weight: channel: 49, sat: 0.062318064, max: 0.06232567
+[07/19/26 14:37:20.020] [I] 	Measuring Weight: channel: 50, sat: 0.06244175, max: 0.062449373
+[07/19/26 14:37:20.022] [I] 	Measuring Weight: channel: 51, sat: 0.062299397, max: 0.062307
+[07/19/26 14:37:20.024] [I] 	Measuring Weight: channel: 52, sat: 0.06193742, max: 0.061944984
+[07/19/26 14:37:20.026] [I] 	Measuring Weight: channel: 53, sat: 0.06220048, max: 0.06220807
+[07/19/26 14:37:20.028] [I] 	Measuring Weight: channel: 54, sat: 0.062473353, max: 0.06248098
+[07/19/26 14:37:20.030] [I] 	Measuring Weight: channel: 55, sat: 0.062453575, max: 0.062461197
+[07/19/26 14:37:20.031] [I] 	Measuring Weight: channel: 56, sat: 0.062297847, max: 0.06230545
+[07/19/26 14:37:20.033] [I] 	Measuring Weight: channel: 57, sat: 0.062107768, max: 0.06211535
+[07/19/26 14:37:20.035] [I] 	Measuring Weight: channel: 58, sat: 0.062276375, max: 0.062283978
+[07/19/26 14:37:20.037] [I] 	Measuring Weight: channel: 59, sat: 0.062484, max: 0.062491626
+[07/19/26 14:37:20.039] [I] 	Measuring Weight: channel: 60, sat: 0.06240151, max: 0.062409125
+[07/19/26 14:37:20.040] [I] 	Measuring Weight: channel: 61, sat: 0.06247763, max: 0.062485255
+[07/19/26 14:37:20.042] [I] 	Measuring Weight: channel: 62, sat: 0.06242152, max: 0.062429138
+[07/19/26 14:37:20.044] [I] 	Measuring Weight: channel: 63, sat: 0.06247228, max: 0.062479906
+[07/19/26 14:37:20.046] [I] 	Measuring Weight: channel: 64, sat: 0.062162794, max: 0.06217038
+[07/19/26 14:37:20.048] [I] 	Measuring Weight: channel: 65, sat: 0.06243888, max: 0.062446497
+[07/19/26 14:37:20.049] [I] 	Measuring Weight: channel: 66, sat: 0.062196255, max: 0.062203847
+[07/19/26 14:37:20.051] [I] 	Measuring Weight: channel: 67, sat: 0.062265217, max: 0.062272817
+[07/19/26 14:37:20.053] [I] 	Measuring Weight: channel: 68, sat: 0.062358525, max: 0.062366135
+[07/19/26 14:37:20.055] [I] 	Measuring Weight: channel: 69, sat: 0.061970595, max: 0.06197816
+[07/19/26 14:37:20.057] [I] 	Measuring Weight: channel: 70, sat: 0.062210213, max: 0.06221781
+[07/19/26 14:37:20.059] [I] 	Measuring Weight: channel: 71, sat: 0.061393097, max: 0.061400592
+[07/19/26 14:37:20.061] [I] 	Measuring Weight: channel: 72, sat: 0.06248709, max: 0.062494718
+[07/19/26 14:37:20.062] [I] 	Measuring Weight: channel: 73, sat: 0.062388115, max: 0.06239573
+[07/19/26 14:37:20.064] [I] 	Measuring Weight: channel: 74, sat: 0.06248067, max: 0.062488295
+[07/19/26 14:37:20.066] [I] 	Measuring Weight: channel: 75, sat: 0.062140316, max: 0.0621479
+[07/19/26 14:37:20.068] [I] 	Measuring Weight: channel: 76, sat: 0.062080532, max: 0.06208811
+[07/19/26 14:37:20.070] [I] 	Measuring Weight: channel: 77, sat: 0.061381374, max: 0.061388865
+[07/19/26 14:37:20.072] [I] 	Measuring Weight: channel: 78, sat: 0.061862547, max: 0.061870098
+[07/19/26 14:37:20.073] [I] 	Measuring Weight: channel: 79, sat: 0.061822508, max: 0.06183005
+[07/19/26 14:37:20.075] [I] 	Measuring Weight: channel: 80, sat: 0.061923977, max: 0.061931536
+[07/19/26 14:37:20.077] [I] 	Measuring Weight: channel: 81, sat: 0.061861146, max: 0.061868697
+[07/19/26 14:37:20.079] [I] 	Measuring Weight: channel: 82, sat: 0.062231142, max: 0.062238738
+[07/19/26 14:37:20.081] [I] 	Measuring Weight: channel: 83, sat: 0.062467262, max: 0.062474884
+[07/19/26 14:37:20.082] [I] 	Measuring Weight: channel: 84, sat: 0.062274452, max: 0.062282056
+[07/19/26 14:37:20.084] [I] 	Measuring Weight: channel: 85, sat: 0.062467217, max: 0.06247484
+[07/19/26 14:37:20.086] [I] 	Measuring Weight: channel: 86, sat: 0.06230299, max: 0.0623106
+[07/19/26 14:37:20.088] [I] 	Measuring Weight: channel: 87, sat: 0.062390752, max: 0.062398367
+[07/19/26 14:37:20.090] [I] 	Measuring Weight: channel: 88, sat: 0.06226757, max: 0.06227517
+[07/19/26 14:37:20.092] [I] 	Measuring Weight: channel: 89, sat: 0.062481973, max: 0.0624896
+[07/19/26 14:37:20.093] [I] 	Measuring Weight: channel: 90, sat: 0.062248636, max: 0.062256232
+[07/19/26 14:37:20.095] [I] 	Measuring Weight: channel: 91, sat: 0.062446095, max: 0.062453717
+[07/19/26 14:37:20.097] [I] 	Measuring Weight: channel: 92, sat: 0.06223849, max: 0.062246084
+[07/19/26 14:37:20.099] [I] 	Measuring Weight: channel: 93, sat: 0.062436927, max: 0.062444545
+[07/19/26 14:37:20.101] [I] 	Measuring Weight: channel: 94, sat: 0.062265344, max: 0.062272944
+[07/19/26 14:37:20.103] [I] 	Measuring Weight: channel: 95, sat: 0.062283315, max: 0.062290914
+[07/19/26 14:37:20.104] [I] 	Measuring Weight: channel: 96, sat: 0.062116068, max: 0.06212365
+[07/19/26 14:37:20.106] [I] 	Measuring Weight: channel: 97, sat: 0.062351506, max: 0.062359117
+[07/19/26 14:37:20.108] [I] 	Measuring Weight: channel: 98, sat: 0.062435832, max: 0.06244345
+[07/19/26 14:37:20.110] [I] 	Measuring Weight: channel: 99, sat: 0.06235997, max: 0.06236758
+[07/19/26 14:37:20.112] [I] 	Measuring Weight: channel: 100, sat: 0.06235377, max: 0.062361382
+[07/19/26 14:37:20.113] [I] 	Measuring Weight: channel: 101, sat: 0.062319502, max: 0.06232711
+[07/19/26 14:37:20.115] [I] 	Measuring Weight: channel: 102, sat: 0.06234648, max: 0.062354088
+[07/19/26 14:37:20.117] [I] 	Measuring Weight: channel: 103, sat: 0.062489033, max: 0.062496662
+[07/19/26 14:37:20.119] [I] 	Measuring Weight: channel: 104, sat: 0.062401623, max: 0.062409237
+[07/19/26 14:37:20.121] [I] 	Measuring Weight: channel: 105, sat: 0.0619074, max: 0.061914958
+[07/19/26 14:37:20.122] [I] 	Measuring Weight: channel: 106, sat: 0.062064707, max: 0.062072285
+[07/19/26 14:37:20.124] [I] 	Measuring Weight: channel: 107, sat: 0.062113907, max: 0.06212149
+[07/19/26 14:37:20.126] [I] 	Measuring Weight: channel: 108, sat: 0.0621991, max: 0.062206693
+[07/19/26 14:37:20.128] [I] 	Measuring Weight: channel: 109, sat: 0.06247103, max: 0.062478654
+[07/19/26 14:37:20.130] [I] 	Measuring Weight: channel: 110, sat: 0.062173348, max: 0.062180936
+[07/19/26 14:37:20.132] [I] 	Measuring Weight: channel: 111, sat: 0.062362652, max: 0.062370263
+[07/19/26 14:37:20.134] [I] 	Measuring Weight: channel: 112, sat: 0.062173996, max: 0.062181585
+[07/19/26 14:37:20.135] [I] 	Measuring Weight: channel: 113, sat: 0.062479425, max: 0.06248705
+[07/19/26 14:37:20.137] [I] 	Measuring Weight: channel: 114, sat: 0.062417995, max: 0.062425613
+[07/19/26 14:37:20.139] [I] 	Measuring Weight: channel: 115, sat: 0.062400687, max: 0.062408306
+[07/19/26 14:37:20.141] [I] 	Measuring Weight: channel: 116, sat: 0.06239975, max: 0.062407367
+[07/19/26 14:37:20.143] [I] 	Measuring Weight: channel: 117, sat: 0.06240491, max: 0.062412523
+[07/19/26 14:37:20.145] [I] 	Measuring Weight: channel: 118, sat: 0.062235367, max: 0.062242962
+[07/19/26 14:37:20.147] [I] 	Measuring Weight: channel: 119, sat: 0.062401623, max: 0.062409237
+[07/19/26 14:37:20.149] [I] 	Measuring Weight: channel: 120, sat: 0.062345386, max: 0.062352993
+[07/19/26 14:37:20.151] [I] 	Measuring Weight: channel: 121, sat: 0.06243735, max: 0.06244497
+[07/19/26 14:37:20.153] [I] 	Measuring Weight: channel: 122, sat: 0.062298257, max: 0.06230586
+[07/19/26 14:37:20.154] [I] 	Measuring Weight: channel: 123, sat: 0.062350195, max: 0.062357806
+[07/19/26 14:37:20.156] [I] 	Measuring Weight: channel: 124, sat: 0.062470447, max: 0.062478073
+[07/19/26 14:37:20.158] [I] 	Measuring Weight: channel: 125, sat: 0.062413987, max: 0.062421605
+[07/19/26 14:37:20.160] [I] 	Measuring Weight: channel: 126, sat: 0.062431436, max: 0.062439054
+[07/19/26 14:37:20.162] [I] 	Measuring Weight: channel: 127, sat: 0.0624493, max: 0.06245692
+[07/19/26 14:37:20.164] [I] 	Measuring Weight: channel: 128, sat: 0.06231275, max: 0.06232035
+[07/19/26 14:37:20.166] [I] 	Measuring Weight: channel: 129, sat: 0.06247552, max: 0.062483147
+[07/19/26 14:37:20.168] [I] 	Measuring Weight: channel: 130, sat: 0.062437404, max: 0.062445022
+[07/19/26 14:37:20.170] [I] 	Measuring Weight: channel: 131, sat: 0.06239624, max: 0.062403858
+[07/19/26 14:37:20.171] [I] 	Measuring Weight: channel: 132, sat: 0.06244219, max: 0.062449813
+[07/19/26 14:37:20.173] [I] 	Measuring Weight: channel: 133, sat: 0.062424697, max: 0.06243232
+[07/19/26 14:37:20.175] [I] 	Measuring Weight: channel: 134, sat: 0.06248069, max: 0.062488317
+[07/19/26 14:37:20.177] [I] 	Measuring Weight: channel: 135, sat: 0.061562013, max: 0.061569527
+[07/19/26 14:37:20.179] [I] 	Measuring Weight: channel: 136, sat: 0.061074633, max: 0.061082087
+[07/19/26 14:37:20.181] [I] 	Measuring Weight: channel: 137, sat: 0.062441595, max: 0.062449217
+[07/19/26 14:37:20.183] [I] 	Measuring Weight: channel: 138, sat: 0.0616298, max: 0.06163732
+[07/19/26 14:37:20.185] [I] 	Measuring Weight: channel: 139, sat: 0.062329695, max: 0.0623373
+[07/19/26 14:37:20.186] [I] 	Measuring Weight: channel: 140, sat: 0.061908264, max: 0.061915822
+[07/19/26 14:37:20.188] [I] 	Measuring Weight: channel: 141, sat: 0.062294077, max: 0.06230168
+[07/19/26 14:37:20.190] [I] 	Measuring Weight: channel: 142, sat: 0.062308952, max: 0.06231656
+[07/19/26 14:37:20.192] [I] 	Measuring Weight: channel: 143, sat: 0.06192064, max: 0.061928198
+[07/19/26 14:37:20.194] [I] 	Measuring Weight: channel: 144, sat: 0.062387727, max: 0.06239534
+[07/19/26 14:37:20.196] [I] 	Measuring Weight: channel: 145, sat: 0.0622179, max: 0.06222549
+[07/19/26 14:37:20.198] [I] 	Measuring Weight: channel: 146, sat: 0.062277015, max: 0.06228462
+[07/19/26 14:37:20.199] [I] 	Measuring Weight: channel: 147, sat: 0.06247809, max: 0.062485717
+[07/19/26 14:37:20.201] [I] 	Measuring Weight: channel: 148, sat: 0.062368467, max: 0.062376082
+[07/19/26 14:37:20.203] [I] 	Measuring Weight: channel: 149, sat: 0.06214547, max: 0.062153056
+[07/19/26 14:37:20.205] [I] 	Measuring Weight: channel: 150, sat: 0.06205407, max: 0.062061645
+[07/19/26 14:37:20.207] [I] 	Measuring Weight: channel: 151, sat: 0.062228043, max: 0.06223564
+[07/19/26 14:37:20.208] [I] 	Measuring Weight: channel: 152, sat: 0.06229798, max: 0.062305585
+[07/19/26 14:37:20.210] [I] 	Measuring Weight: channel: 153, sat: 0.06242861, max: 0.06243623
+[07/19/26 14:37:20.212] [I] 	Measuring Weight: channel: 154, sat: 0.06218947, max: 0.06219706
+[07/19/26 14:37:20.214] [I] 	Measuring Weight: channel: 155, sat: 0.061777398, max: 0.061784938
+[07/19/26 14:37:20.216] [I] 	Measuring Weight: channel: 156, sat: 0.06226985, max: 0.06227745
+[07/19/26 14:37:20.217] [I] 	Measuring Weight: channel: 157, sat: 0.0624589, max: 0.062466525
+[07/19/26 14:37:20.219] [I] 	Measuring Weight: channel: 158, sat: 0.06188957, max: 0.06189712
+[07/19/26 14:37:20.221] [I] 	Measuring Weight: channel: 159, sat: 0.062285468, max: 0.062293068
+[07/19/26 14:37:20.223] [I] 	Measuring Weight: channel: 160, sat: 0.062160343, max: 0.062167928
+[07/19/26 14:37:20.225] [I] 	Measuring Weight: channel: 161, sat: 0.06203225, max: 0.062039822
+[07/19/26 14:37:20.227] [I] 	Measuring Weight: channel: 162, sat: 0.062297817, max: 0.06230542
+[07/19/26 14:37:20.229] [I] 	Measuring Weight: channel: 163, sat: 0.062398423, max: 0.06240604
+[07/19/26 14:37:20.231] [I] 	Measuring Weight: channel: 164, sat: 0.062413994, max: 0.062421612
+[07/19/26 14:37:20.232] [I] 	Measuring Weight: channel: 165, sat: 0.06248009, max: 0.062487714
+[07/19/26 14:37:20.234] [I] 	Measuring Weight: channel: 166, sat: 0.062219284, max: 0.062226877
+[07/19/26 14:37:20.236] [I] 	Measuring Weight: channel: 167, sat: 0.06224773, max: 0.06225533
+[07/19/26 14:37:20.238] [I] 	Measuring Weight: channel: 168, sat: 0.062463507, max: 0.06247113
+[07/19/26 14:37:20.240] [I] 	Measuring Weight: channel: 169, sat: 0.06161544, max: 0.061622962
+[07/19/26 14:37:20.242] [I] 	Measuring Weight: channel: 170, sat: 0.062400293, max: 0.06240791
+[07/19/26 14:37:20.244] [I] 	Measuring Weight: channel: 171, sat: 0.062433217, max: 0.062440835
+[07/19/26 14:37:20.246] [I] 	Measuring Weight: channel: 172, sat: 0.06235629, max: 0.0623639
+[07/19/26 14:37:20.247] [I] 	Measuring Weight: channel: 173, sat: 0.062489927, max: 0.062497556
+[07/19/26 14:37:20.249] [I] 	Measuring Weight: channel: 174, sat: 0.06246741, max: 0.062475033
+[07/19/26 14:37:20.251] [I] 	Measuring Weight: channel: 175, sat: 0.06234339, max: 0.062350996
+[07/19/26 14:37:20.253] [I] 	Measuring Weight: channel: 176, sat: 0.061865766, max: 0.061873317
+[07/19/26 14:37:20.255] [I] 	Measuring Weight: channel: 177, sat: 0.0621192, max: 0.062126786
+[07/19/26 14:37:20.257] [I] 	Measuring Weight: channel: 178, sat: 0.062230144, max: 0.06223774
+[07/19/26 14:37:20.259] [I] 	Measuring Weight: channel: 179, sat: 0.06225575, max: 0.062263347
+[07/19/26 14:37:20.261] [I] 	Measuring Weight: channel: 180, sat: 0.06246507, max: 0.062472694
+[07/19/26 14:37:20.262] [I] 	Measuring Weight: channel: 181, sat: 0.06237269, max: 0.0623803
+[07/19/26 14:37:20.264] [I] 	Measuring Weight: channel: 182, sat: 0.062357094, max: 0.062364705
+[07/19/26 14:37:20.266] [I] 	Measuring Weight: channel: 183, sat: 0.062423352, max: 0.06243097
+[07/19/26 14:37:20.268] [I] 	Measuring Weight: channel: 184, sat: 0.062458057, max: 0.062465683
+[07/19/26 14:37:20.270] [I] 	Measuring Weight: channel: 185, sat: 0.06218288, max: 0.062190473
+[07/19/26 14:37:20.272] [I] 	Measuring Weight: channel: 186, sat: 0.06215722, max: 0.062164806
+[07/19/26 14:37:20.274] [I] 	Measuring Weight: channel: 187, sat: 0.06216644, max: 0.06217403
+[07/19/26 14:37:20.276] [I] 	Measuring Weight: channel: 188, sat: 0.062339257, max: 0.06234687
+[07/19/26 14:37:20.277] [I] 	Measuring Weight: channel: 189, sat: 0.062128384, max: 0.062135965
+[07/19/26 14:37:20.279] [I] 	Measuring Weight: channel: 190, sat: 0.06227894, max: 0.06228654
+[07/19/26 14:37:20.281] [I] 	Measuring Weight: channel: 191, sat: 0.062460195, max: 0.06246782
+[07/19/26 14:37:20.283] [I] 	Measuring Weight: channel: 192, sat: 0.062273685, max: 0.06228129
+[07/19/26 14:37:20.285] [I] 	Measuring Weight: channel: 193, sat: 0.06204902, max: 0.062056594
+[07/19/26 14:37:20.286] [I] 	Measuring Weight: channel: 194, sat: 0.06239934, max: 0.062406957
+[07/19/26 14:37:20.288] [I] 	Measuring Weight: channel: 195, sat: 0.062411923, max: 0.06241954
+[07/19/26 14:37:20.290] [I] 	Measuring Weight: channel: 196, sat: 0.062114466, max: 0.062122047
+[07/19/26 14:37:20.292] [I] 	Measuring Weight: channel: 197, sat: 0.062440127, max: 0.06244775
+[07/19/26 14:37:20.294] [I] 	Measuring Weight: channel: 198, sat: 0.062413003, max: 0.06242062
+[07/19/26 14:37:20.296] [I] 	Measuring Weight: channel: 199, sat: 0.062413435, max: 0.062421054
+[07/19/26 14:37:20.297] [I] 	Measuring Weight: channel: 200, sat: 0.062178258, max: 0.062185846
+[07/19/26 14:37:20.299] [I] 	Measuring Weight: channel: 201, sat: 0.061985146, max: 0.061992712
+[07/19/26 14:37:20.301] [I] 	Measuring Weight: channel: 202, sat: 0.061915055, max: 0.06192261
+[07/19/26 14:37:20.303] [I] 	Measuring Weight: channel: 203, sat: 0.06242592, max: 0.06243354
+[07/19/26 14:37:20.305] [I] 	Measuring Weight: channel: 204, sat: 0.062370833, max: 0.062378444
+[07/19/26 14:37:20.307] [I] 	Measuring Weight: channel: 205, sat: 0.061946113, max: 0.06195367
+[07/19/26 14:37:20.309] [I] 	Measuring Weight: channel: 206, sat: 0.061812866, max: 0.06182041
+[07/19/26 14:37:20.311] [I] 	Measuring Weight: channel: 207, sat: 0.062330253, max: 0.06233786
+[07/19/26 14:37:20.313] [I] 	Measuring Weight: channel: 208, sat: 0.062437218, max: 0.062444836
+[07/19/26 14:37:20.315] [I] 	Measuring Weight: channel: 209, sat: 0.062023446, max: 0.062031016
+[07/19/26 14:37:20.316] [I] 	Measuring Weight: channel: 210, sat: 0.062371094, max: 0.062378705
+[07/19/26 14:37:20.318] [I] 	Measuring Weight: channel: 211, sat: 0.062245376, max: 0.062252976
+[07/19/26 14:37:20.320] [I] 	Measuring Weight: channel: 212, sat: 0.062365472, max: 0.062373087
+[07/19/26 14:37:20.322] [I] 	Measuring Weight: channel: 213, sat: 0.0624361, max: 0.06244372
+[07/19/26 14:37:20.324] [I] 	Measuring Weight: channel: 214, sat: 0.062046494, max: 0.062054068
+[07/19/26 14:37:20.325] [I] 	Measuring Weight: channel: 215, sat: 0.062343307, max: 0.062350914
+[07/19/26 14:37:20.327] [I] 	Measuring Weight: channel: 216, sat: 0.062431518, max: 0.062439136
+[07/19/26 14:37:20.329] [I] 	Measuring Weight: channel: 217, sat: 0.061371457, max: 0.06137895
+[07/19/26 14:37:20.331] [I] 	Measuring Weight: channel: 218, sat: 0.062123887, max: 0.062131472
+[07/19/26 14:37:20.333] [I] 	Measuring Weight: channel: 219, sat: 0.062488653, max: 0.062496282
+[07/19/26 14:37:20.335] [I] 	Measuring Weight: channel: 220, sat: 0.06236598, max: 0.062373593
+[07/19/26 14:37:20.337] [I] 	Measuring Weight: channel: 221, sat: 0.062034022, max: 0.062041596
+[07/19/26 14:37:20.339] [I] 	Measuring Weight: channel: 222, sat: 0.06182012, max: 0.061827667
+[07/19/26 14:37:20.341] [I] 	Measuring Weight: channel: 223, sat: 0.062227968, max: 0.062235564
+[07/19/26 14:37:20.342] [I] 	Measuring Weight: channel: 224, sat: 0.06117509, max: 0.06118256
+[07/19/26 14:37:20.344] [I] 	Measuring Weight: channel: 225, sat: 0.061367847, max: 0.061375335
+[07/19/26 14:37:20.346] [I] 	Measuring Weight: channel: 226, sat: 0.06244258, max: 0.0624502
+[07/19/26 14:37:20.348] [I] 	Measuring Weight: channel: 227, sat: 0.062453464, max: 0.062461086
+[07/19/26 14:37:20.350] [I] 	Measuring Weight: channel: 228, sat: 0.061740566, max: 0.061748102
+[07/19/26 14:37:20.352] [I] 	Measuring Weight: channel: 229, sat: 0.06217735, max: 0.062184937
+[07/19/26 14:37:20.353] [I] 	Measuring Weight: channel: 230, sat: 0.06239387, max: 0.06240149
+[07/19/26 14:37:20.355] [I] 	Measuring Weight: channel: 231, sat: 0.062375102, max: 0.062382713
+[07/19/26 14:37:20.357] [I] 	Measuring Weight: channel: 232, sat: 0.062313315, max: 0.062320918
+[07/19/26 14:37:20.359] [I] 	Measuring Weight: channel: 233, sat: 0.0623365, max: 0.06234411
+[07/19/26 14:37:20.361] [I] 	Measuring Weight: channel: 234, sat: 0.06247894, max: 0.062486567
+[07/19/26 14:37:20.362] [I] 	Measuring Weight: channel: 235, sat: 0.061888773, max: 0.061896324
+[07/19/26 14:37:20.364] [I] 	Measuring Weight: channel: 236, sat: 0.062436488, max: 0.062444106
+[07/19/26 14:37:20.366] [I] 	Measuring Weight: channel: 237, sat: 0.062410954, max: 0.062418573
+[07/19/26 14:37:20.368] [I] 	Measuring Weight: channel: 238, sat: 0.06226614, max: 0.06227374
+[07/19/26 14:37:20.370] [I] 	Measuring Weight: channel: 239, sat: 0.062374283, max: 0.062381893
+[07/19/26 14:37:20.372] [I] 	Measuring Weight: channel: 240, sat: 0.062420633, max: 0.06242825
+[07/19/26 14:37:20.374] [I] 	Measuring Weight: channel: 241, sat: 0.062193114, max: 0.062200703
+[07/19/26 14:37:20.376] [I] 	Measuring Weight: channel: 242, sat: 0.06201115, max: 0.062018715
+[07/19/26 14:37:20.377] [I] 	Measuring Weight: channel: 243, sat: 0.062366642, max: 0.062374257
+[07/19/26 14:37:20.379] [I] 	Measuring Weight: channel: 244, sat: 0.062400863, max: 0.062408477
+[07/19/26 14:37:20.381] [I] 	Measuring Weight: channel: 245, sat: 0.061221354, max: 0.061228827
+[07/19/26 14:37:20.383] [I] 	Measuring Weight: channel: 246, sat: 0.062377837, max: 0.062385447
+[07/19/26 14:37:20.385] [I] 	Measuring Weight: channel: 247, sat: 0.06141934, max: 0.06142684
+[07/19/26 14:37:20.386] [I] 	Measuring Weight: channel: 248, sat: 0.06236843, max: 0.062376045
+[07/19/26 14:37:20.388] [I] 	Measuring Weight: channel: 249, sat: 0.06245055, max: 0.062458172
+[07/19/26 14:37:20.390] [I] 	Measuring Weight: channel: 250, sat: 0.062472243, max: 0.06247987
+[07/19/26 14:37:20.392] [I] 	Measuring Weight: channel: 251, sat: 0.062398586, max: 0.062406205
+[07/19/26 14:37:20.394] [I] 	Measuring Weight: channel: 252, sat: 0.062408667, max: 0.062416285
+[07/19/26 14:37:20.396] [I] 	Measuring Weight: channel: 253, sat: 0.062390417, max: 0.06239803
+[07/19/26 14:37:20.398] [I] 	Measuring Weight: channel: 254, sat: 0.062261075, max: 0.062268674
+[07/19/26 14:37:20.400] [I] 	Measuring Weight: channel: 255, sat: 0.06244211, max: 0.06244973
+[07/19/26 14:37:20.401] [I] 	Measuring Weight: channel: 256, sat: 0.062232595, max: 0.06224019
+[07/19/26 14:37:20.402] [I] Quantizing Op Id: 51, Type: icraft::xir::CastNode
+[07/19/26 14:37:20.402] [I] Quantizing Op Id: 52, Type: icraft::xir::CastNode
+[07/19/26 14:37:20.402] [I] Quantizing Op Id: 53, Type: icraft::xir::CastNode
+[07/19/26 14:37:20.402] [I] Quantizing Op Id: 54, Type: icraft::xir::CastNode
+[07/19/26 14:37:20.402] [I] Quantizing Op Id: 33, Type: icraft::xir::OutputNode

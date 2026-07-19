@@ -1,0 +1,45 @@
+[parse]
+net_name = "superpoint_zg"
+framework = "onnx"
+inputs = [ 1, 480, 640, 1]
+inputs_layout = "NHWC"
+inputs_dtype = ["FP32"]
+pre_method = "nop"
+pre_scale = [ 1.0]
+pre_mean = [ 0.0]
+channel_swap = [ 0]
+network = "../superpoint_test_softmax.onnx"
+jr_path = "build/"
+target = "zhuge"
+
+[optimize]
+target = "zhuge"
+json = "build/superpoint_zg_parsed.json"
+raw = "build/superpoint_zg_parsed.raw"
+jr_path = "build/"
+
+[quantize]
+forward_mode = "image"
+saturation = "kld"
+forward_dir = "../qtset"
+forward_list = "../qtset/list.txt"
+qdtype = "int8"
+json = "build/superpoint_zg_optimized.json"
+raw = "build/superpoint_zg_optimized.raw"
+jr_path = "build/"
+per = "channel"
+target = "zhuge"
+
+[adapt]
+target = "zhuge"
+json = "build/superpoint_zg_quantized.json"
+raw = "build/superpoint_zg_quantized.raw"
+jr_path = "build/"
+
+[generate]
+json = "build/superpoint_zg_adapted.json"
+raw = "build/superpoint_zg_adapted.raw"
+jr_path = "build/"
+log_path = "build/logs/"
+no_mergeops = true
+etmopt = 0

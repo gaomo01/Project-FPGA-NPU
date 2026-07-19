@@ -1,0 +1,342 @@
+time      : Sun Jul 19 14:36:46 2026
+network   : superpoint_zg
+framework : onnx
+ai_target : ZhuGe
+
+graph     :
+op_type   : Input
+name&shape: image;[1,1,480,640]
+
+op_type   : Conv
+op_name   : /conv1a/Conv
+inputs    : image
+            conv1a.weight
+            conv1a.bias
+outputs   : /conv1a/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu/Relu
+inputs    : /conv1a/Conv_output_0
+outputs   : /relu/Relu_output_0
+
+op_type   : Conv
+op_name   : /conv1b/Conv
+inputs    : /relu/Relu_output_0
+            conv1b.weight
+            conv1b.bias
+outputs   : /conv1b/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu_1/Relu
+inputs    : /conv1b/Conv_output_0
+outputs   : /relu_1/Relu_output_0
+
+op_type   : MaxPool
+op_name   : /pool/MaxPool
+inputs    : /relu_1/Relu_output_0
+outputs   : /pool/MaxPool_output_0
+
+op_type   : Conv
+op_name   : /conv2a/Conv
+inputs    : /pool/MaxPool_output_0
+            conv2a.weight
+            conv2a.bias
+outputs   : /conv2a/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu_2/Relu
+inputs    : /conv2a/Conv_output_0
+outputs   : /relu_2/Relu_output_0
+
+op_type   : Conv
+op_name   : /conv2b/Conv
+inputs    : /relu_2/Relu_output_0
+            conv2b.weight
+            conv2b.bias
+outputs   : /conv2b/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu_3/Relu
+inputs    : /conv2b/Conv_output_0
+outputs   : /relu_3/Relu_output_0
+
+op_type   : MaxPool
+op_name   : /pool_1/MaxPool
+inputs    : /relu_3/Relu_output_0
+outputs   : /pool_1/MaxPool_output_0
+
+op_type   : Conv
+op_name   : /conv3a/Conv
+inputs    : /pool_1/MaxPool_output_0
+            conv3a.weight
+            conv3a.bias
+outputs   : /conv3a/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu_4/Relu
+inputs    : /conv3a/Conv_output_0
+outputs   : /relu_4/Relu_output_0
+
+op_type   : Conv
+op_name   : /conv3b/Conv
+inputs    : /relu_4/Relu_output_0
+            conv3b.weight
+            conv3b.bias
+outputs   : /conv3b/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu_5/Relu
+inputs    : /conv3b/Conv_output_0
+outputs   : /relu_5/Relu_output_0
+
+op_type   : MaxPool
+op_name   : /pool_2/MaxPool
+inputs    : /relu_5/Relu_output_0
+outputs   : /pool_2/MaxPool_output_0
+
+op_type   : Conv
+op_name   : /conv4a/Conv
+inputs    : /pool_2/MaxPool_output_0
+            conv4a.weight
+            conv4a.bias
+outputs   : /conv4a/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu_6/Relu
+inputs    : /conv4a/Conv_output_0
+outputs   : /relu_6/Relu_output_0
+
+op_type   : Conv
+op_name   : /conv4b/Conv
+inputs    : /relu_6/Relu_output_0
+            conv4b.weight
+            conv4b.bias
+outputs   : /conv4b/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu_7/Relu
+inputs    : /conv4b/Conv_output_0
+outputs   : /relu_7/Relu_output_0
+
+op_type   : Conv
+op_name   : /convPa/Conv
+inputs    : /relu_7/Relu_output_0
+            convPa.weight
+            convPa.bias
+outputs   : /convPa/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu_8/Relu
+inputs    : /convPa/Conv_output_0
+outputs   : /relu_8/Relu_output_0
+
+op_type   : Conv
+op_name   : /convPb/Conv
+inputs    : /relu_8/Relu_output_0
+            convPb.weight
+            convPb.bias
+outputs   : /convPb/Conv_output_0
+
+op_type   : Transpose
+op_name   : /softmax/Transpose
+inputs    : /convPb/Conv_output_0
+outputs   : /softmax/Transpose_output_0
+
+op_type   : Softmax
+op_name   : /softmax/Softmax
+inputs    : /softmax/Transpose_output_0
+outputs   : /softmax/Softmax_output_0
+
+op_type   : Transpose
+op_name   : /softmax/Transpose_1
+inputs    : /softmax/Softmax_output_0
+outputs   : semi
+
+op_type   : Conv
+op_name   : /convDa/Conv
+inputs    : /relu_7/Relu_output_0
+            convDa.weight
+            convDa.bias
+outputs   : /convDa/Conv_output_0
+
+op_type   : Relu
+op_name   : /relu_9/Relu
+inputs    : /convDa/Conv_output_0
+outputs   : /relu_9/Relu_output_0
+
+op_type   : Conv
+op_name   : /convDb/Conv
+inputs    : /relu_9/Relu_output_0
+            convDb.weight
+            convDb.bias
+outputs   : desc
+
+op_type   : Output
+name&shape: semi;[1,65,60,80]
+name&shape: desc;[1,256,60,80]
+
+===================================
+             Parsing...            
+===================================
+
+Pattern : Input ; node_name: network_input;
+op_id : 0 ; op_type: <<icraft::xir::InputNode>>
+Input  tensor : 
+Output tensor : { 1 480 640 1 } 
+op_id : 1 ; op_type: <<icraft::xir::SwapOrderNode>>
+Input  tensor : { 1 480 640 1 } 
+Output tensor : { 1 480 640 1 } 
+op_id : 2 ; op_type: <<icraft::xir::AddNode>>
+Input  tensor : { 1 480 640 1 } { 1 } 
+Output tensor : { 1 480 640 1 } 
+op_id : 3 ; op_type: <<icraft::xir::MultiplyNode>>
+Input  tensor : { 1 480 640 1 } { 1 } 
+Output tensor : { 1 480 640 1 } 
+
+Pattern : Conv ; node_name: /conv1a/Conv;
+op_id : 4 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 480 640 1 } { 3 3 1 64 } { 64 } 
+Output tensor : { 1 480 640 64 } 
+
+Pattern : Relu ; node_name: /relu/Relu;
+op_id : 5 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 480 640 64 } 
+Output tensor : { 1 480 640 64 } 
+
+Pattern : Conv ; node_name: /conv1b/Conv;
+op_id : 6 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 480 640 64 } { 3 3 64 64 } { 64 } 
+Output tensor : { 1 480 640 64 } 
+
+Pattern : Relu ; node_name: /relu_1/Relu;
+op_id : 7 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 480 640 64 } 
+Output tensor : { 1 480 640 64 } 
+
+Pattern : MaxPool ; node_name: /pool/MaxPool;
+op_id : 8 ; op_type: <<icraft::xir::MaxPool2dNode>>
+Input  tensor : { 1 480 640 64 } 
+Output tensor : { 1 240 320 64 } 
+
+Pattern : Conv ; node_name: /conv2a/Conv;
+op_id : 9 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 240 320 64 } { 3 3 64 64 } { 64 } 
+Output tensor : { 1 240 320 64 } 
+
+Pattern : Relu ; node_name: /relu_2/Relu;
+op_id : 10 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 240 320 64 } 
+Output tensor : { 1 240 320 64 } 
+
+Pattern : Conv ; node_name: /conv2b/Conv;
+op_id : 11 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 240 320 64 } { 3 3 64 64 } { 64 } 
+Output tensor : { 1 240 320 64 } 
+
+Pattern : Relu ; node_name: /relu_3/Relu;
+op_id : 12 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 240 320 64 } 
+Output tensor : { 1 240 320 64 } 
+
+Pattern : MaxPool ; node_name: /pool_1/MaxPool;
+op_id : 13 ; op_type: <<icraft::xir::MaxPool2dNode>>
+Input  tensor : { 1 240 320 64 } 
+Output tensor : { 1 120 160 64 } 
+
+Pattern : Conv ; node_name: /conv3a/Conv;
+op_id : 14 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 120 160 64 } { 3 3 64 128 } { 128 } 
+Output tensor : { 1 120 160 128 } 
+
+Pattern : Relu ; node_name: /relu_4/Relu;
+op_id : 15 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 120 160 128 } 
+Output tensor : { 1 120 160 128 } 
+
+Pattern : Conv ; node_name: /conv3b/Conv;
+op_id : 16 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 120 160 128 } { 3 3 128 128 } { 128 } 
+Output tensor : { 1 120 160 128 } 
+
+Pattern : Relu ; node_name: /relu_5/Relu;
+op_id : 17 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 120 160 128 } 
+Output tensor : { 1 120 160 128 } 
+
+Pattern : MaxPool ; node_name: /pool_2/MaxPool;
+op_id : 18 ; op_type: <<icraft::xir::MaxPool2dNode>>
+Input  tensor : { 1 120 160 128 } 
+Output tensor : { 1 60 80 128 } 
+
+Pattern : Conv ; node_name: /conv4a/Conv;
+op_id : 19 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 60 80 128 } { 3 3 128 128 } { 128 } 
+Output tensor : { 1 60 80 128 } 
+
+Pattern : Relu ; node_name: /relu_6/Relu;
+op_id : 20 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 60 80 128 } 
+Output tensor : { 1 60 80 128 } 
+
+Pattern : Conv ; node_name: /conv4b/Conv;
+op_id : 21 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 60 80 128 } { 3 3 128 128 } { 128 } 
+Output tensor : { 1 60 80 128 } 
+
+Pattern : Relu ; node_name: /relu_7/Relu;
+op_id : 22 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 60 80 128 } 
+Output tensor : { 1 60 80 128 } 
+
+Pattern : Conv ; node_name: /convPa/Conv;
+op_id : 23 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 60 80 128 } { 3 3 128 256 } { 256 } 
+Output tensor : { 1 60 80 256 } 
+
+Pattern : Relu ; node_name: /relu_8/Relu;
+op_id : 24 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 60 80 256 } 
+Output tensor : { 1 60 80 256 } 
+
+Pattern : Conv ; node_name: /convPb/Conv;
+op_id : 25 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 60 80 256 } { 1 1 256 65 } { 65 } 
+Output tensor : { 1 60 80 65 } 
+
+Pattern : Transpose ; node_name: /softmax/Transpose;
+op_id : 26 ; op_type: <<icraft::xir::TransposeNode>>
+Input  tensor : { 1 60 80 65 } 
+Output tensor : { 1 65 60 80 } 
+op_id : 27 ; op_type: <<icraft::xir::TransposeNode>>
+Input  tensor : { 1 65 60 80 } 
+Output tensor : { 1 80 60 65 } 
+
+Pattern : Softmax ; node_name: /softmax/Softmax;
+op_id : 28 ; op_type: <<icraft::xir::SoftmaxNode>>
+Input  tensor : { 1 80 60 65 } 
+Output tensor : { 1 80 60 65 } 
+
+Pattern : Transpose ; node_name: /softmax/Transpose_1;
+op_id : 29 ; op_type: <<icraft::xir::TransposeNode>>
+Input  tensor : { 1 80 60 65 } 
+Output tensor : { 1 65 60 80 } 
+
+Pattern : Conv ; node_name: /convDa/Conv;
+op_id : 30 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 60 80 128 } { 3 3 128 256 } { 256 } 
+Output tensor : { 1 60 80 256 } 
+
+Pattern : Relu ; node_name: /relu_9/Relu;
+op_id : 31 ; op_type: <<icraft::xir::ReLUNode>>
+Input  tensor : { 1 60 80 256 } 
+Output tensor : { 1 60 80 256 } 
+
+Pattern : Conv ; node_name: /convDb/Conv;
+op_id : 32 ; op_type: <<icraft::xir::Conv2dNode>>
+Input  tensor : { 1 60 80 256 } { 1 1 256 256 } { 256 } 
+Output tensor : { 1 60 80 256 } 
+
+Pattern : Output ; ftmp_name: network_output
+op_id : 33 ; op_type: <<icraft::xir::OutputNode>>
+Input  tensor : { 1 65 60 80 } { 1 60 80 256 } 
+Output tensor : 
